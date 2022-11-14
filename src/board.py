@@ -19,15 +19,29 @@ class Board:
     def vehicle_location(self, vehicle):
         coords = []
         for x, y in np.argwhere(self.state == vehicle):
-            coords.append((y, x))
+            coords.append((x, y))
         return coords
 
-    def move_left(self, vehicle):
+    def can_move_left(self, vehicle, distance):
+        coords = self.vehicle_location(vehicle)
+        horizontal = coords[0][0]
+        for x, y in coords:
+            if y < distance or (self.state[x][y - distance] != '.' and self.state[x][y - distance] != vehicle) or x != horizontal:
+                return False
+        return self.fuel[vehicle] >= distance
 
-    def move_up(self, vehicle):
+    def move_left(self, vehicle, distance):
+        if self.can_move_left(vehicle, distance):
+            coords = self.vehicle_location(vehicle)
+            for x, y in coords:
+                self.state[x][y - distance] = vehicle
+                self.state[x][y] = '.'
 
-    def move_down(self, vehicle):
+    # def can_move_right(self, vehicle):
+    # def move_right(self, vehicle):
+    # def can_move_up(self, vehicle):
+    # def move_up(self, vehicle):
+    # def can_move_down(self, vehicle):
+    # def move_down(self, vehicle):
 
-    def move_right(self, vehicle):
-
-    def remove_vehicle(self, vehicle):
+    # def remove_vehicle(self, vehicle):
