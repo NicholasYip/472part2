@@ -49,7 +49,7 @@ class Board:
     def move_right(self, vehicle, distance):
         if self.can_move_right(vehicle, distance):
             coords = self.vehicle_location(vehicle)
-            for x, y in coords:
+            for x, y in reversed(coords):
                 self.state[x][y + distance] = vehicle
                 self.state[x][y] = '.'
             self.fuel[vehicle] = self.fuel[vehicle] - distance
@@ -81,9 +81,23 @@ class Board:
     def move_down(self, vehicle, distance):
         if self.can_move_down(vehicle, distance):
             coords = self.vehicle_location(vehicle)
-            for x, y in coords:
+            for x, y in reversed(coords):
                 self.state[x + distance][y] = vehicle
                 self.state[x][y] = '.'
             self.fuel[vehicle] = self.fuel[vehicle] - distance
 
-    # def remove_vehicle(self, vehicle):
+    def can_remove_vehicle(self, vehicle):
+        coords = self.vehicle_location(vehicle)
+        valid_y = [3, 4, 5]
+        for x, y in coords:
+            if x != 2 and y not in valid_y:
+                return False
+        return True
+
+    def remove_vehicle(self, vehicle):
+        if self.can_remove_vehicle(vehicle):
+            coords = self.vehicle_location(vehicle)
+            for x, y in coords:
+                self.state[x][y] = '.'
+
+
