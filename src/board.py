@@ -101,3 +101,40 @@ class Board:
                 self.state[x][y] = '.'
 
 
+    def h1(self, vehicle):
+        a_coords = self.vehicle_location(vehicle)
+        
+        right_position = a_coords[1][1] + 1
+        blocking_vehicles = []
+        
+        while (right_position < 6):
+            if self.state[2][right_position] != '.' and blocking_vehicles.count(self.state[2][right_position]) == 0 :
+                blocking_vehicles.append(self.state[2][right_position])
+            right_position = right_position + 1
+        
+        return(len(blocking_vehicles))
+
+
+    def h2(self, vehicle):
+        a_coords = self.vehicle_location(vehicle)
+        right_position = a_coords[1][1] + 1
+        blocked_position = 0
+
+        while (right_position < 6):
+            if self.state[2][right_position] != '.' :
+                blocked_position = blocked_position + 1
+            right_position = right_position + 1
+        
+        return(blocked_position)
+
+    def h3(self, vehicle, constant):
+        a_coords = self.vehicle_location(vehicle)
+        right_position = a_coords[1][1] + 1
+        blocked_position = 0
+
+        while (right_position < 6):
+            if self.state[2][right_position] != '.' :
+                blocked_position = blocked_position + 1
+            right_position = right_position + 1
+
+        return(blocked_position * constant)
