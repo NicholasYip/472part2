@@ -36,12 +36,54 @@ class Board:
             for x, y in coords:
                 self.state[x][y - distance] = vehicle
                 self.state[x][y] = '.'
+            self.fuel[vehicle] = self.fuel[vehicle] - distance
 
-    # def can_move_right(self, vehicle):
-    # def move_right(self, vehicle):
-    # def can_move_up(self, vehicle):
-    # def move_up(self, vehicle):
-    # def can_move_down(self, vehicle):
-    # def move_down(self, vehicle):
+    def can_move_right(self, vehicle, distance):
+        coords = self.vehicle_location(vehicle)
+        horizontal = coords[0][0]
+        for x, y in coords:
+            if y > 5 - distance or (self.state[x][y + distance] != '.' and self.state[x][y + distance] != vehicle) or x != horizontal:
+                return False
+        return self.fuel[vehicle] >= distance
+
+    def move_right(self, vehicle, distance):
+        if self.can_move_right(vehicle, distance):
+            coords = self.vehicle_location(vehicle)
+            for x, y in coords:
+                self.state[x][y + distance] = vehicle
+                self.state[x][y] = '.'
+            self.fuel[vehicle] = self.fuel[vehicle] - distance
+
+    def can_move_up(self, vehicle, distance):
+        coords = self.vehicle_location(vehicle)
+        vertical = coords[0][1]
+        for x, y in coords:
+            if x < distance or (self.state[x - distance][y] != '.' and self.state[x - distance][y] != vehicle) or y != vertical:
+                return False
+        return self.fuel[vehicle] >= distance
+
+    def move_up(self, vehicle, distance):
+        if self.can_move_up(vehicle, distance):
+            coords = self.vehicle_location(vehicle)
+            for x, y in coords:
+                self.state[x - distance][y] = vehicle
+                self.state[x][y] = '.'
+            self.fuel[vehicle] = self.fuel[vehicle] - distance
+
+    def can_move_down(self, vehicle, distance):
+        coords = self.vehicle_location(vehicle)
+        vertical = coords[0][1]
+        for x, y in coords:
+            if x > 5 - distance or (self.state[x + distance][y] != '.' and self.state[x + distance][y] != vehicle) or y != vertical:
+                return False
+        return self.fuel[vehicle] >= distance
+
+    def move_down(self, vehicle, distance):
+        if self.can_move_down(vehicle, distance):
+            coords = self.vehicle_location(vehicle)
+            for x, y in coords:
+                self.state[x + distance][y] = vehicle
+                self.state[x][y] = '.'
+            self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     # def remove_vehicle(self, vehicle):
