@@ -22,13 +22,31 @@ class Board:
             coords.append((x, y))
         return coords
 
-    def can_move_left(self, vehicle, distance):
+    def vehicle_length(self, vehicle):
+        return len(self.vehicle_location(vehicle))
+
+    def is_horizontal(self, vehicle):
         coords = self.vehicle_location(vehicle)
         horizontal = coords[0][0]
         for x, y in coords:
-            if y < distance or (self.state[x][y - distance] != '.' and self.state[x][y - distance] != vehicle) or x != horizontal:
+            if x != horizontal:
                 return False
-        return self.fuel[vehicle] >= distance
+        return True
+
+    def is_vertical(self, vehicle):
+        coords = self.vehicle_location(vehicle)
+        vertical = coords[0][1]
+        for x, y in coords:
+            if y != vertical:
+                return False
+        return True
+
+    def can_move_left(self, vehicle, distance):
+        coords = self.vehicle_location(vehicle)
+        for x, y in coords:
+            if y < distance or (self.state[x][y - distance] != '.' and self.state[x][y - distance] != vehicle):
+                return False
+        return self.fuel[vehicle] >= distance and self.is_horizontal(vehicle)
 
     def move_left(self, vehicle, distance):
         if self.can_move_left(vehicle, distance):
@@ -40,11 +58,10 @@ class Board:
 
     def can_move_right(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
-        horizontal = coords[0][0]
         for x, y in coords:
-            if y > 5 - distance or (self.state[x][y + distance] != '.' and self.state[x][y + distance] != vehicle) or x != horizontal:
+            if y > 5 - distance or (self.state[x][y + distance] != '.' and self.state[x][y + distance] != vehicle):
                 return False
-        return self.fuel[vehicle] >= distance
+        return self.fuel[vehicle] >= distance and self.is_horizontal(vehicle)
 
     def move_right(self, vehicle, distance):
         if self.can_move_right(vehicle, distance):
@@ -56,11 +73,10 @@ class Board:
 
     def can_move_up(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
-        vertical = coords[0][1]
         for x, y in coords:
-            if x < distance or (self.state[x - distance][y] != '.' and self.state[x - distance][y] != vehicle) or y != vertical:
+            if x < distance or (self.state[x - distance][y] != '.' and self.state[x - distance][y] != vehicle):
                 return False
-        return self.fuel[vehicle] >= distance
+        return self.fuel[vehicle] >= distance and self.is_vertical(vehicle)
 
     def move_up(self, vehicle, distance):
         if self.can_move_up(vehicle, distance):
@@ -72,11 +88,10 @@ class Board:
 
     def can_move_down(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
-        vertical = coords[0][1]
         for x, y in coords:
-            if x > 5 - distance or (self.state[x + distance][y] != '.' and self.state[x + distance][y] != vehicle) or y != vertical:
+            if x > 5 - distance or (self.state[x + distance][y] != '.' and self.state[x + distance][y] != vehicle):
                 return False
-        return self.fuel[vehicle] >= distance
+        return self.fuel[vehicle] >= distance and self.is_vertical(vehicle)
 
     def move_down(self, vehicle, distance):
         if self.can_move_down(vehicle, distance):
@@ -100,33 +115,35 @@ class Board:
             for x, y in coords:
                 self.state[x][y] = '.'
 
-
-    def h1(self, vehicle):
-        a_coords = self.vehicle_location(vehicle)
-        
+    def h1(self):
+        a_coords = self.vehicle_location('A')
         right_position = a_coords[1][1] + 1
-        blocking_vehicles = []
-        
-        while (right_position < 6):
-            if self.state[2][right_position] != '.' and blocking_vehicles.count(self.state[2][right_position]) == 0 :
-                blocking_vehicles.append(self.state[2][right_position])
+        blocking_vehicles = set()
+
+        while right_position < 6:
+            if self.state[2][right_position] != '.':
+                blocking_vehicles.add(self.state[2][right_position])
             right_position = right_position + 1
-        
-        return(len(blocking_vehicles))
+        return len(blocking_vehicles)
 
-
-    def h2(self, vehicle):
-        a_coords = self.vehicle_location(vehicle)
+    def h2(self):
+        a_coords = self.vehicle_location('A')
         right_position = a_coords[1][1] + 1
         blocked_position = 0
 
-        while (right_position < 6):
-            if self.state[2][right_position] != '.' :
+        while right_position < 6:
+            if self.state[2][right_position] != '.':
                 blocked_position = blocked_position + 1
             right_position = right_position + 1
-        
-        return(blocked_position)
 
-    def h3(self, vehicle, constant):
-        return constant * self.h1(vehicle)
+        return blocked_position
 
+    def h3(self, constant):
+        return constant * self.h1()
+
+    def h4(self):
+        a_coords = self.vehicle_location('A')
+        right_position = a_coords[1][1] + 1
+        while right_position < 6
+            if self.state[2][right_position] != '.':
+                print('wip')
