@@ -100,4 +100,5 @@ class Board:
             for x, y in coords:
                 self.state[x][y] = '.'
 
-
+    def is_equal(self, board):
+        return np.array_equal(self.state, board)
