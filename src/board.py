@@ -142,8 +142,20 @@ class Board:
         return constant * self.h1()
 
     def h4(self):
+        heuristic = 0
         a_coords = self.vehicle_location('A')
         right_position = a_coords[1][1] + 1
-        while right_position < 6
-            if self.state[2][right_position] != '.':
-                print('wip')
+        while right_position < 6:
+            current_cell = self.state[2][right_position]
+            if current_cell == '.':
+                right_position = right_position + 1
+                continue
+            length = self.vehicle_length(current_cell)
+            vertical = self.is_vertical(current_cell)
+            if vertical:
+                heuristic = heuristic + length - 1
+                right_position = right_position + 1
+            elif not vertical:
+                heuristic = heuristic + (2 if length == 2 else 1)
+                right_position = right_position + length
+        return heuristic

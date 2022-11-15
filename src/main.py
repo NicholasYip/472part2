@@ -17,9 +17,12 @@ print(board.state)
 
 
 
-print("Heuristic 1")
-print(board.h1("A"))
-print("Heuristic 2")
-print(board.h2("A"))
-print("Heuristic 3")
-print(board.h3("A", 2))
+# print("Heuristic 1")
+# print(board.h1())
+# print("Heuristic 2")
+# print(board.h2())
+# print("Heuristic 3")
+# print(board.h3(2))
+print("Heuristic 4")
+print(board.h4())
+print("DONE")
