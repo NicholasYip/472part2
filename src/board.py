@@ -128,13 +128,5 @@ class Board:
         return(blocked_position)
 
     def h3(self, vehicle, constant):
-        a_coords = self.vehicle_location(vehicle)
-        right_position = a_coords[1][1] + 1
-        blocked_position = 0
+        return constant * self.h1(vehicle)
 
-        while (right_position < 6):
-            if self.state[2][right_position] != '.' :
-                blocked_position = blocked_position + 1
-            right_position = right_position + 1
-
-        return(blocked_position * constant)
