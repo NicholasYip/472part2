@@ -115,6 +115,7 @@ class Board:
             for x, y in coords:
                 self.state[x][y] = '.'
 
+<<<<<<< HEAD
     def h1(self):
         a_coords = self.vehicle_location('A')
         right_position = a_coords[1][1] + 1
@@ -159,3 +160,7 @@ class Board:
                 heuristic = heuristic + (2 if length == 2 else 1)
                 right_position = right_position + length
         return heuristic
+=======
+    def is_equal(self, board):
+        return np.array_equal(self.state, board)
+>>>>>>> badd97af3ea07e8c905d11c8c90a0c41649529cb
