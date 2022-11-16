@@ -153,6 +153,7 @@ class Board:
             if current_cell == '.':
                 right_position = right_position + 1
                 continue
+<<<<<<< HEAD
             is_vertical = self.is_vertical(current_cell)
             if is_vertical:
                 can_move = self.can_move_up(current_cell, 1) or self.can_move_down(current_cell, 1)
@@ -162,4 +163,14 @@ class Board:
                 can_move = self.can_move_right(current_cell, 1) or self.can_remove_vehicle(current_cell)
                 heuristic = heuristic + (1 if can_move else 2)
                 right_position = right_position + self.vehicle_length(current_cell)
+=======
+            length = self.vehicle_length(current_cell)
+            vertical = self.is_vertical(current_cell)
+            if vertical:
+                heuristic = heuristic + length - 1
+                right_position = right_position + 1
+            elif not vertical:
+                heuristic = heuristic + (2 if length == 2 else 1)
+                right_position = right_position + length
+>>>>>>> c4755095ab5288b4aabd0f570757b531e6a8aaeb
         return heuristic
