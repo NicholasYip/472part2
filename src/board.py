@@ -4,28 +4,28 @@ from copy import deepcopy
 
 class Board:
     def __init__(self, string=None, fuel=[]):
-        if string is None and fuel == []:
+        self.cost = 0
+        self.fuel = {}
+        self.vehicles = {}
+
+        if string is None:
             self.state = np.array(list("....................................")).reshape((6, 6))
         else:
-            self.cost = 0
             self.state = np.array(string).reshape((6, 6))
-            self.fuel = {}
-            self.vehicles = {}
-            for col in self.state:
-                for el in col:
-                    if el != ".":
-                        self.fuel[el] = 100
-                        self.vehicles[el] = self.vehicle_location(el)
-            for el in fuel:
-                vehicle, fuel_count = np.array(list(el))
-                self.fuel[vehicle] = fuel_count
+
+        for col in self.state:
+            for el in col:
+                if el != ".":
+                    self.fuel[el] = 100
+                    self.vehicles[el] = self.vehicle_location(el)
+        for el in fuel:
+            vehicle, fuel_count = el
+            self.fuel[vehicle] = fuel_count
 
     def __copy__(self):
         copy = deepcopy(self)
+        copy.cost = self.cost + 1
         return copy
-
-    def __lt__(self, other):
-        return self.cost < other.cost
 
     def is_winning_board(self):
         return self.state[2][4] == 'A' and self.state[2][5] == 'A'
