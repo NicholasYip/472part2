@@ -1,22 +1,38 @@
 import numpy as np
+from copy import deepcopy
 
 
 class Board:
-    def __init__(self, string, fuel=[]):
-        self.state = np.array(string).reshape((6, 6))
-        self.fuel = {}
-        for row in self.state:
-            for el in row:
-                if el != ".":
-                    self.fuel[el] = 100
-        for el in fuel:
-            vehicle, fuel_count = list(el)
-            self.fuel[vehicle] = fuel_count
+    def __init__(self, string=None, fuel=[]):
+        if string is None and fuel == []:
+            self.state = np.array(list("....................................")).reshape((6, 6))
+        else:
+            self.cost = 0
+            self.state = np.array(string).reshape((6, 6))
+            self.fuel = {}
+            self.vehicles = {}
+            for col in self.state:
+                for el in col:
+                    if el != ".":
+                        self.fuel[el] = 100
+                        self.vehicles[el] = self.vehicle_location(el)
+            for el in fuel:
+                vehicle, fuel_count = np.array(list(el))
+                self.fuel[vehicle] = fuel_count
+
+    def __copy__(self):
+        copy = deepcopy(self)
+        return copy
+
+    def __lt__(self, other):
+        return self.cost < other.cost
 
     def is_winning_board(self):
         return self.state[2][4] == 'A' and self.state[2][5] == 'A'
 
     def vehicle_location(self, vehicle):
+        if vehicle in self.vehicles:
+            return self.vehicles[vehicle]
         coords = []
         for x, y in np.argwhere(self.state == vehicle):
             coords.append((x, y))
@@ -43,18 +59,22 @@ class Board:
 
     def can_move_left(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
-        for x, y in coords:
-            if y < distance or (self.state[x][y - distance] != '.' and self.state[x][y - distance] != vehicle):
-                return False
+        for i in range(distance):
+            for x, y in coords:
+                if y < i + 1 or (self.state[x][y - (i + 1)] != '.' and self.state[x][y - (i + 1)] != vehicle):
+                    return False
         return self.fuel[vehicle] >= distance and self.is_horizontal(vehicle)
 
-    def move_left(self, vehicle, distance):
-        if self.can_move_left(vehicle, distance):
-            coords = self.vehicle_location(vehicle)
-            for x, y in coords:
-                self.state[x][y - distance] = vehicle
-                self.state[x][y] = '.'
-            self.fuel[vehicle] = self.fuel[vehicle] - distance
+    def move_left(self, vehicle, distance, ):
+        coords = self.vehicle_location(vehicle)
+        self.vehicles[vehicle] = np.empty(len(coords), dtype=tuple)
+        i = 0
+        for x, y in coords:
+            self.state[x][y - distance] = vehicle
+            self.state[x][y] = '.'
+            self.vehicles[vehicle][i] = (x, y - distance)
+            i = i + 1
+        self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_move_right(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
@@ -64,12 +84,15 @@ class Board:
         return self.fuel[vehicle] >= distance and self.is_horizontal(vehicle)
 
     def move_right(self, vehicle, distance):
-        if self.can_move_right(vehicle, distance):
-            coords = self.vehicle_location(vehicle)
-            for x, y in reversed(coords):
-                self.state[x][y + distance] = vehicle
-                self.state[x][y] = '.'
-            self.fuel[vehicle] = self.fuel[vehicle] - distance
+        coords = self.vehicle_location(vehicle)
+        self.vehicles[vehicle] = np.empty(len(coords), dtype=tuple)
+        i = 0
+        for x, y in reversed(coords):
+            self.state[x][y + distance] = vehicle
+            self.state[x][y] = '.'
+            self.vehicles[vehicle][i] = (x, y + distance)
+            i = i + 1
+        self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_move_up(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
@@ -79,12 +102,15 @@ class Board:
         return self.fuel[vehicle] >= distance and self.is_vertical(vehicle)
 
     def move_up(self, vehicle, distance):
-        if self.can_move_up(vehicle, distance):
-            coords = self.vehicle_location(vehicle)
-            for x, y in coords:
-                self.state[x - distance][y] = vehicle
-                self.state[x][y] = '.'
-            self.fuel[vehicle] = self.fuel[vehicle] - distance
+        coords = self.vehicle_location(vehicle)
+        self.vehicles[vehicle] = np.empty(len(coords), dtype=tuple)
+        i = 0
+        for x, y in coords:
+            self.state[x - distance][y] = vehicle
+            self.state[x][y] = '.'
+            self.vehicles[vehicle][i] = (x - distance, y)
+            i = i + 1
+        self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_move_down(self, vehicle, distance):
         coords = self.vehicle_location(vehicle)
@@ -94,12 +120,15 @@ class Board:
         return self.fuel[vehicle] >= distance and self.is_vertical(vehicle)
 
     def move_down(self, vehicle, distance):
-        if self.can_move_down(vehicle, distance):
-            coords = self.vehicle_location(vehicle)
-            for x, y in reversed(coords):
-                self.state[x + distance][y] = vehicle
-                self.state[x][y] = '.'
-            self.fuel[vehicle] = self.fuel[vehicle] - distance
+        coords = self.vehicle_location(vehicle)
+        self.vehicles[vehicle] = np.empty(len(coords), dtype=tuple)
+        i = 0
+        for x, y in reversed(coords):
+            self.state[x + distance][y] = vehicle
+            self.state[x][y] = '.'
+            self.vehicles[vehicle][i] = (x + distance, y)
+            i = i + 1
+        self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_remove_vehicle(self, vehicle):
         coords = self.vehicle_location(vehicle)
@@ -110,13 +139,14 @@ class Board:
         return True
 
     def remove_vehicle(self, vehicle):
-        if self.can_remove_vehicle(vehicle):
-            coords = self.vehicle_location(vehicle)
-            for x, y in coords:
-                self.state[x][y] = '.'
+        coords = self.vehicle_location(vehicle)
+        for x, y in coords:
+            self.state[x][y] = '.'
+        self.vehicles.pop(vehicle)
+        self.fuel.pop(vehicle)
 
-    def is_equal(self, board):
-        return np.array_equal(self.state, board)
+    def __eq__(self, board):
+        return np.array_equal(self.state, board.state)
 
     def h1(self):
         a_coords = self.vehicle_location('A')
