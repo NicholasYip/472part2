@@ -3,6 +3,9 @@ from copy import deepcopy
 
 
 class Board:
+    def __hash__(self):
+        return hash(str(self.state))
+
     def __init__(self, string=None, fuel=[]):
         self.cost = 0
         self.fuel = {}
@@ -23,10 +26,11 @@ class Board:
                 self.fuel[vehicle] = fuel_count
 
     def __copy__(self, vehicle=0, movement=0, distance=0):
-        copy = Board()
-        copy.state = np.array(self.state, copy=True)
-        copy.fuel = self.fuel.copy()
-        copy.vehicles = self.vehicles.copy()
+        copy = deepcopy(self)
+        # copy = Board()
+        # copy.state = np.array(self.state, copy=True)
+        # copy.fuel = self.fuel.copy()
+        # copy.vehicles = self.vehicles.copy()
         copy.previous_move = (vehicle, movement, distance)
         copy.cost = self.cost + 1
 
@@ -36,18 +40,16 @@ class Board:
         return self.state[2][4] == 'A' and self.state[2][5] == 'A'
 
     def vehicle_location(self, vehicle):
-        if vehicle in self.vehicles:
-            return self.vehicles[vehicle]
         coords = []
         for x, y in np.argwhere(self.state == vehicle):
             coords.append((x, y))
         return coords
 
     def vehicle_length(self, vehicle):
-        return len(self.vehicle_location(vehicle))
+        return len(self.vehicles[vehicle])
 
     def is_horizontal(self, vehicle):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         horizontal = coords[0][0]
         for x, y in coords:
             if x != horizontal:
@@ -55,7 +57,7 @@ class Board:
         return True
 
     def is_vertical(self, vehicle):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         vertical = coords[0][1]
         for x, y in coords:
             if y != vertical:
@@ -63,7 +65,7 @@ class Board:
         return True
 
     def can_move_left(self, vehicle, distance):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         for i in range(distance):
             for x, y in coords:
                 if y < i + 1 or (self.state[x][y - (i + 1)] != '.' and self.state[x][y - (i + 1)] != vehicle):
@@ -71,7 +73,7 @@ class Board:
         return self.fuel[vehicle] >= distance and self.is_horizontal(vehicle)
 
     def move_left(self, vehicle, distance, ):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         self.vehicles[vehicle] = []
         for x, y in coords:
             self.state[x][y - distance] = vehicle
@@ -80,14 +82,14 @@ class Board:
         self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_move_right(self, vehicle, distance):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         for x, y in coords:
             if y > 5 - distance or (self.state[x][y + distance] != '.' and self.state[x][y + distance] != vehicle):
                 return False
         return self.fuel[vehicle] >= distance and self.is_horizontal(vehicle)
 
     def move_right(self, vehicle, distance):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         self.vehicles[vehicle] = []
         for x, y in reversed(coords):
             self.state[x][y + distance] = vehicle
@@ -96,14 +98,14 @@ class Board:
         self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_move_up(self, vehicle, distance):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         for x, y in coords:
             if x < distance or (self.state[x - distance][y] != '.' and self.state[x - distance][y] != vehicle):
                 return False
         return self.fuel[vehicle] >= distance and self.is_vertical(vehicle)
 
     def move_up(self, vehicle, distance):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         self.vehicles[vehicle] = []
         for x, y in coords:
             self.state[x - distance][y] = vehicle
@@ -112,7 +114,7 @@ class Board:
         self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_move_down(self, vehicle, distance):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         for x, y in coords:
             if x > 5 - distance or (self.state[x + distance][y] != '.' and self.state[x + distance][y] != vehicle):
                 return False
@@ -128,7 +130,7 @@ class Board:
         self.fuel[vehicle] = self.fuel[vehicle] - distance
 
     def can_remove_vehicle(self, vehicle):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         valid_y = [3, 4, 5]
         for x, y in coords:
             if x != 2 or y not in valid_y:
@@ -136,7 +138,7 @@ class Board:
         return True
 
     def remove_vehicle(self, vehicle):
-        coords = self.vehicle_location(vehicle)
+        coords = self.vehicles[vehicle]
         for x, y in coords:
             self.state[x][y] = '.'
         self.vehicles.pop(vehicle)
@@ -150,7 +152,7 @@ class Board:
         return True
 
     def h1(self):
-        a_coords = self.vehicle_location('A')
+        a_coords = self.vehicles('A')
         right_position = a_coords[1][1] + 1
         blocking_vehicles = set()
 
@@ -161,7 +163,7 @@ class Board:
         return len(blocking_vehicles)
 
     def h2(self):
-        a_coords = self.vehicle_location('A')
+        a_coords = self.vehicles('A')
         right_position = a_coords[1][1] + 1
         blocked_position = 0
 
@@ -177,7 +179,7 @@ class Board:
 
     def h4(self):
         heuristic = 0
-        a_coords = self.vehicle_location('A')
+        a_coords = self.vehicles('A')
         right_position = a_coords[1][1] + 1
         while right_position < 6:
             current_cell = self.state[2][right_position]
