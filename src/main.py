@@ -7,7 +7,7 @@ import time
 # fileName = input('File name containing the board information to initialize the board: ')
 
 fileName = 'test.txt'
-file = open('./static/' + fileName, "r")
+file = open('../static/' + fileName, "r")
 
 for line in file:
     if line[0] == '#' or line == "\n":
