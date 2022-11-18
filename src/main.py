@@ -15,6 +15,7 @@ for line in file:
     board_fuel = line.strip().split(" ")
     board = Board(list(board_fuel[0]), board_fuel[1:])
     print(board.state)
+    start = time.time()
     uniform_cost_search(board)
-
-
+    end = time.time()
+    print(end - start)
