@@ -19,3 +19,4 @@ for line in file:
     uniform_cost_search(board)
     end = time.time()
     print(end - start)
+

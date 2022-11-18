@@ -1,7 +1,12 @@
 # delete this file after
 # 2 moves
-#BBIJ....IJCC..IAAMGDDK.MGH.KL.GHFFL.
+# BB.J...I.JCC.IAA.MGDDK.MGH.KL.GHFFL.
 # kelvin 5 moves
-BBBBBBKKKKKKAAECZD..ECZD......FFFFFF
+# BBBBBBKKKKKKAAECZD..ECZD......FFFFFF
 # 10 moves
-#..I...BBI.K.GHAAKLGHDDKLG..JEEFF.J..
+# ..I...BBI.K.GHAAKLGHDDKLG..JEEFF.J..
+
+#
+# JBBCCCJDD..MJAAL.MFFKL.N..KGGN.HH...
+
+..............AKKK..................

@@ -5,97 +5,97 @@ from collections import deque
 def uniform_cost_search(initial_board):
     print('=*=*=*=*=*=*=*=*=*Uniform Cost Search=*=*=*=*=*=*=*=*=*=*=*')
     visited_boards = set()
-
-    to_visit_boards = deque(np.array([initial_board]))
-    possible_distances = [1, 2, 3, 4]
-    winning_board = None
+    to_visit_boards = deque([initial_board])
 
     while not len(to_visit_boards) == 0:
         board = to_visit_boards.popleft()
         visited_boards.add(board)
         vehicle_list = sorted(list(board.vehicles.keys()))
+
         if board.is_winning_board():
             print(board.state)
             print("Cost: ", board.cost)
             print("States: ", len(visited_boards))
-
             winning_board = board
             break
 
         for vehicle in vehicle_list:
-            for distance in possible_distances:
-                if not board.can_move_down(vehicle, distance):
-                    break
-                board1 = board.__copy__(vehicle, "down", distance)
-                board1.move_down(vehicle, distance)
+            temp_board = board.__copy__()
+            while temp_board.can_move_left(vehicle):
+                temp_board.move_left(vehicle)
+
+                board1 = temp_board.__copy__()
+                board1.cost = board.cost + 1
 
                 found = False
+                # TODO: Optimize this
                 for i, el in enumerate(to_visit_boards):
                     if board1.__eq__(el) and el.cost > board1.cost:
-                        to_visit_boards[i] = el
+                        to_visit_boards[i] = board1
                         found = True
                         break
                 if not found:
                     to_visit_boards.append(board1)
 
-            for distance in possible_distances:
-                if not board.can_move_up(vehicle, distance):
-                    break
-                board2 = board.__copy__(vehicle, "up", distance)
-                board2.move_up(vehicle, distance)
+            temp_board = board.__copy__()
+            while temp_board.can_move_right(vehicle):
+                temp_board.move_right(vehicle)
+                board2 = temp_board.__copy__()
+                board2.cost = board.cost + 1
 
                 found = False
                 for i, el in enumerate(to_visit_boards):
                     if board2.__eq__(el) and el.cost > board2.cost:
-                        to_visit_boards[i] = el
+                        to_visit_boards[i] = board2
                         found = True
                         break
                 if not found:
                     to_visit_boards.append(board2)
 
-            for distance in possible_distances:
-                if not board.can_move_left(vehicle, distance):
-                    break
-                board3 = board.__copy__(vehicle, "left", distance)
-                board3.move_left(vehicle, distance)
+            temp_board = board.__copy__()
+            while temp_board.can_move_up(vehicle):
+                temp_board.move_up(vehicle)
+
+                board3 = temp_board.__copy__()
+                board3.cost = board.cost + 1
 
                 found = False
                 for i, el in enumerate(to_visit_boards):
                     if board3.__eq__(el) and el.cost > board3.cost:
-                        to_visit_boards[i] = el
+                        to_visit_boards[i] = board3
                         found = True
                         break
                 if not found:
                     to_visit_boards.append(board3)
 
-            for distance in possible_distances:
-                if not board.can_move_right(vehicle, distance):
-                    break
-                board4 = board.__copy__(vehicle, 'right', distance)
-                board4.move_right(vehicle, distance)
+            temp_board = board.__copy__()
+            while temp_board.can_move_down(vehicle):
+                temp_board.move_down(vehicle)
+
+                board4 = temp_board.__copy__()
+                board4.cost = board.cost + 1
 
                 found = False
                 for i, el in enumerate(to_visit_boards):
                     if board4.__eq__(el) and el.cost > board4.cost:
-                        to_visit_boards[i] = el
+                        to_visit_boards[i] = board4
                         found = True
                         break
                 if not found:
                     to_visit_boards.append(board4)
 
-            if board.can_remove_vehicle(vehicle):
-                board5 = board.__copy__(vehicle, "add")
-                board5.cost = board5.cost - 1
-                board5.remove_vehicle(vehicle)
+            if board.can_remove(vehicle):
+                temp_board = board.__copy__()
+                temp_board.remove(vehicle)
 
                 found = False
                 for i, el in enumerate(to_visit_boards):
-                    if board5.__eq__(el) and el.cost > board5.cost:
-                        to_visit_boards[i] = el
+                    if temp_board.__eq__(el) and el.cost > temp_board.cost:
+                        to_visit_boards[i] = temp_board
                         found = True
                         break
                 if not found:
-                    to_visit_boards.append(board5)
+                    to_visit_boards.append(temp_board)
 
     # path = np.empty(len(winning_board))
     #
