@@ -5,22 +5,11 @@ from collections import deque
 def uniform_cost_search(initial_board):
     print('=*=*=*=*=*=*=*=*=*Uniform Cost Search=*=*=*=*=*=*=*=*=*=*=*')
     visited_boards = set()
-    # tuple (Board, parentBoard, direction, vehicle name, distance)
-    tup = (initial_board, None,"null", "null",0) 
-
-    to_visit_boards = deque([tup])
+    to_visit_boards = deque([initial_board])
 
     while not len(to_visit_boards) == 0:
-        present = to_visit_boards.popleft()
-        board = present[0]
-        parent = board
-        direction = "LOL"
-        vehicle_name = "LOL"
-        distance = 0
-
-
-
-        visited_boards.add(present)
+        board = to_visit_boards.popleft()
+        visited_boards.add(board)
         vehicle_list = sorted(list(board.vehicles.keys()))
 
         if board.is_winning_board():

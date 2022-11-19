@@ -24,8 +24,6 @@ class Board:
                 vehicle, fuel_count = el
                 self.fuel[vehicle] = fuel_count
 
-        # TODO: OPTIMIZE THIS CODE
-
     def __copy__(self):
         copy = Board()
         np.copyto(copy.state, self.state)
@@ -107,11 +105,6 @@ class Board:
 
     def __eq__(self, board):
         return np.array_equal(self.state, board.state)
-        # for i, col in enumerate(self.state):
-        #     for j, el in enumerate(col):
-        #         if board.state[i][j] != el:
-        #             return False
-        # return True
 
     def h1(self):
         a_coords = self.vehicles['A']
