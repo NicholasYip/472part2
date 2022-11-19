@@ -25,7 +25,8 @@ def uniform_cost_search(initial_board):
                 board1 = board.move_left(vehicle)
                 board1.gn = board.gn + 1
                 board1.parent = board
-                board1.movement = (vehicle,"left",1)
+                distance = 1
+                board1.movement = (vehicle,"left",distance)
                 try:
                     i = to_visit_boards.index(board1)
                     if i and board1.gn < to_visit_boards[i].gn:
@@ -35,7 +36,9 @@ def uniform_cost_search(initial_board):
 
                 while board1.can_move_left(vehicle):
                     board1 = board1.move_left(vehicle)
+                    distance = distance + 1
                     board1.parent = board
+                    board1.movement = (vehicle,"left",distance)
 
                     try:
                         i = to_visit_boards.index(board1)
@@ -48,7 +51,8 @@ def uniform_cost_search(initial_board):
                 board2 = board.move_right(vehicle)
                 board2.gn = board.gn + 1
                 board2.parent = board
-
+                distance = 1
+                board2.movement = (vehicle,"right",distance)
                 try:
                     i = to_visit_boards.index(board2)
                     if i and board2.gn < to_visit_boards[i].gn:
@@ -58,7 +62,9 @@ def uniform_cost_search(initial_board):
 
                 while board2.can_move_right(vehicle):
                     board2 = board2.move_right(vehicle)
+                    distance = distance + 1
                     board2.parent = board
+                    board2.movement = (vehicle,"right",distance)
 
                     try:
                         i = to_visit_boards.index(board2)
@@ -71,6 +77,8 @@ def uniform_cost_search(initial_board):
                 board3 = board.move_up(vehicle)
                 board3.gn = board.gn + 1
                 board3.parent = board
+                distance = 1
+                board3.movement = (vehicle,"up",distance)
 
                 try:
                     i = to_visit_boards.index(board3)
@@ -81,7 +89,9 @@ def uniform_cost_search(initial_board):
 
                 while board3.can_move_up(vehicle):
                     board3 = board3.move_up(vehicle)
+                    distance = distance + 1
                     board3.parent = board
+                    board3.movement = (vehicle,"up",distance)
 
                     try:
                         i = to_visit_boards.index(board3)
@@ -94,6 +104,8 @@ def uniform_cost_search(initial_board):
                 board4 = board.move_down(vehicle)
                 board4.gn = board.gn + 1
                 board4.parent = board
+                distance = 1
+                board4.movement = (vehicle,"down",distance)
 
                 try:
                     i = to_visit_boards.index(board4)
@@ -104,7 +116,9 @@ def uniform_cost_search(initial_board):
 
                 while board4.can_move_down(vehicle):
                     board4 = board4.move_down(vehicle)
+                    distance = distance + 1
                     board4.parent = board
+                    board4.movement = (vehicle,"down",distance)
                     try:
                         i = to_visit_boards.index(board4)
                         if i and board4.gn < to_visit_boards[i].gn:
@@ -130,11 +144,12 @@ def uniform_cost_search(initial_board):
 
     # path.append(initial_board)
     
-    #path = path.reverse
-    # print(path[0])
+    # path = path.reverse()
+    print(len(path))
     for item in path:
+        if(item.state is None): continue
         print("========")
-        print(item.state)
+        print("move: ", item.movement, "\n",item.state)
     # print(path[-1].state)
 
 # use tuple or dict for movements
