@@ -10,7 +10,7 @@ class Board:
         self.fuel = {}
         self.vehicles = {}
         self.parent = None
-        self.movement = ()
+        self.movement = () #ex: ("A","left", 1))
         self.fn = 0
         self.gn = 0
         self.hn = 0
@@ -27,7 +27,7 @@ class Board:
             for el in fuel:
                 vehicle, fuel_count = el
                 self.fuel[vehicle] = int(fuel_count)
-
+                
     def __copy__(self):
         copy = Board()
         np.copyto(copy.state, self.state)

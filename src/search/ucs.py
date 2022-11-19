@@ -25,6 +25,7 @@ def uniform_cost_search(initial_board):
                 board1 = board.move_left(vehicle)
                 board1.gn = board.gn + 1
                 board1.parent = board
+                board1.movement = (vehicle,"left",1)
                 try:
                     i = to_visit_boards.index(board1)
                     if i and board1.gn < to_visit_boards[i].gn:
