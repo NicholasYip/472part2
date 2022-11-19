@@ -27,12 +27,11 @@ class Board:
         # TODO: OPTIMIZE THIS CODE
 
     def __copy__(self):
-        copy = deepcopy(self)
-        # copy = Board()
-        # copy.state = np.array(self.state, copy=True)
-        # copy.fuel = self.fuel.copy()
-        # copy.vehicles = deepcopy(self.vehicles)  ## bug here after moving, swaps indices
-        copy.cost = self.cost + 1
+        copy = Board()
+        np.copyto(copy.state, self.state)
+        copy.fuel = self.fuel.copy()
+        copy.vehicles = {key: [x[:] for x in value] for key, value in self.vehicles.items()}
+        copy.cost = self.cost
         return copy
 
     def is_winning_board(self):

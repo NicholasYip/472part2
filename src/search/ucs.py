@@ -21,11 +21,13 @@ def uniform_cost_search(initial_board):
 
         for vehicle in vehicle_list:
             temp_board = board.__copy__()
+
+            cost1 = board.cost + 1
             while temp_board.can_move_left(vehicle):
                 temp_board.move_left(vehicle)
 
                 board1 = temp_board.__copy__()
-                board1.cost = board.cost + 1
+                board1.cost = cost1
 
                 try:
                     i = to_visit_boards.index(board1)
@@ -35,10 +37,11 @@ def uniform_cost_search(initial_board):
                     to_visit_boards.append(board1)
 
             temp_board = board.__copy__()
+            cost2 = board.cost + 1
             while temp_board.can_move_right(vehicle):
                 temp_board.move_right(vehicle)
                 board2 = temp_board.__copy__()
-                board2.cost = board.cost + 1
+                board2.cost = cost2
 
                 try:
                     i = to_visit_boards.index(board2)
@@ -48,11 +51,12 @@ def uniform_cost_search(initial_board):
                     to_visit_boards.append(board2)
 
             temp_board = board.__copy__()
+            cost3 = board.cost + 1;
             while temp_board.can_move_up(vehicle):
                 temp_board.move_up(vehicle)
 
                 board3 = temp_board.__copy__()
-                board3.cost = board.cost + 1
+                board3.cost = cost3
 
                 try:
                     i = to_visit_boards.index(board3)
@@ -62,11 +66,12 @@ def uniform_cost_search(initial_board):
                     to_visit_boards.append(board3)
 
             temp_board = board.__copy__()
+            cost4 = board.cost + 1
             while temp_board.can_move_down(vehicle):
                 temp_board.move_down(vehicle)
 
                 board4 = temp_board.__copy__()
-                board4.cost = board.cost + 1
+                board4.cost = cost4
 
                 try:
                     i = to_visit_boards.index(board4)
