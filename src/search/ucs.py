@@ -1,13 +1,6 @@
 import numpy as np
 from collections import deque
 
-def array_to_string(self, array):
-    grid = ""
-    for list in array:
-        grid += "".join(list)
-
-    return grid
-
 def uniform_cost_search(initial_board):
     print('=*=*=*=*=*=*=*=*=*Uniform Cost Search=*=*=*=*=*=*=*=*=*=*=*')
     visited_boards = set()
@@ -163,8 +156,3 @@ def uniform_cost_search(initial_board):
 
         print("========")
         print(item.fn, " ", item.gn, " ", item.hn, " ", item.state, " ", item.movement )
-       
-    
-    
-
-# use tuple or dict for movements
