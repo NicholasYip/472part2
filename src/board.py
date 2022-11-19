@@ -33,13 +33,6 @@ class Board:
         copy.fuel = self.fuel.copy()
         copy.vehicles = {key: [x[:] for x in value] for key, value in self.vehicles.items()}
         copy.cost = self.cost
-=======
-        copy = deepcopy(self)
-        # copy = Board()
-        # copy.state = np.array(self.state, copy=True)
-        # copy.fuel = self.fuel.copy()
-        # copy.vehicles = deepcopy(self.vehicles)  ## bug here after moving, swaps indices
->>>>>>> 773f53c79da49a6104a726d4d08a905fd4b4a6e1
         return copy
 
     def is_winning_board(self):
