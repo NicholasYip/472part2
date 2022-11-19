@@ -106,11 +106,12 @@ class Board:
         self.fuel.pop(vehicle)
 
     def __eq__(self, board):
-        for i, col in enumerate(self.state):
-            for j, el in enumerate(col):
-                if board.state[i][j] != el:
-                    return False
-        return True
+        return np.array_equal(self.state, board.state)
+        # for i, col in enumerate(self.state):
+        #     for j, el in enumerate(col):
+        #         if board.state[i][j] != el:
+        #             return False
+        # return True
 
     def h1(self):
         a_coords = self.vehicles['A']
