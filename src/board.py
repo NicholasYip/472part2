@@ -32,7 +32,6 @@ class Board:
         # copy.state = np.array(self.state, copy=True)
         # copy.fuel = self.fuel.copy()
         # copy.vehicles = deepcopy(self.vehicles)  ## bug here after moving, swaps indices
-        copy.cost = self.cost + 1
         return copy
 
     def is_winning_board(self):
