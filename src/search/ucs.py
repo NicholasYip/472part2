@@ -1,6 +1,12 @@
 import numpy as np
 from collections import deque
 
+def array_to_string(self, array):
+    grid = ""
+    for list in array:
+        grid += "".join(list)
+
+    return grid
 
 def uniform_cost_search(initial_board):
     print('=*=*=*=*=*=*=*=*=*Uniform Cost Search=*=*=*=*=*=*=*=*=*=*=*')
@@ -142,14 +148,23 @@ def uniform_cost_search(initial_board):
         path.append(temp)
         temp = temp.parent
 
-    # path.append(initial_board)
+    path.append(initial_board)
     
-    # path = path.reverse()
+    path.reverse()
     print(len(path))
     for item in path:
         if(item.state is None): continue
+        
+
+        grid = ""
+        for x in item.state:
+            grid += "".join(x)
+        item.state = grid
+
         print("========")
-        print("move: ", item.movement, "\n",item.state)
-    # print(path[-1].state)
+        print(item.fn, " ", item.gn, " ", item.hn, " ", item.state, " ", item.movement )
+       
+    
+    
 
 # use tuple or dict for movements
