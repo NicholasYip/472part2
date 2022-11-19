@@ -27,7 +27,6 @@ class Board:
         # TODO: OPTIMIZE THIS CODE
 
     def __copy__(self):
-<<<<<<< HEAD
         copy = Board()
         np.copyto(copy.state, self.state)
         copy.fuel = self.fuel.copy()
