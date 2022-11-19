@@ -10,7 +10,7 @@ def uniform_cost_search(initial_board):
     while not len(to_visit_boards) == 0:
         board = to_visit_boards.popleft()
         visited_boards.add(board)
-        vehicle_list = sorted(list(board.vehicles.keys()))
+        vehicle_list = list(board.vehicles.keys())
 
         if board.is_winning_board():
             print(board.state)

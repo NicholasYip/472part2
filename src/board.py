@@ -22,7 +22,7 @@ class Board:
                         self.vehicles[el] = self.vehicle_location(el)
             for el in fuel:
                 vehicle, fuel_count = el
-                self.fuel[vehicle] = fuel_count
+                self.fuel[vehicle] = int(fuel_count)
 
     def __copy__(self):
         copy = Board()
