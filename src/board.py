@@ -50,11 +50,14 @@ class Board:
 
     def move_left(self, vehicle):
         coords = self.vehicles[vehicle]
-        self.state[coords[-1][0]][coords[-1][1]] = "."
-        self.state[coords[-1][0]][coords[-1][1] - len(coords)] = vehicle
-        self.vehicles[vehicle][-1][1] = self.vehicles[vehicle][-1][1] - len(coords)
-        self.vehicles[vehicle] = [self.vehicles[vehicle][-1]] + self.vehicles[vehicle][0:-1]
-        self.fuel[vehicle] = self.fuel[vehicle] - 1
+        copy = self.__copy__()
+        copy.state[coords[-1][0]][coords[-1][1]] = "."
+        copy.state[coords[-1][0]][coords[-1][1] - len(coords)] = vehicle
+        copy.vehicles[vehicle][-1][1] = copy.vehicles[vehicle][-1][1] - len(coords)
+        copy.vehicles[vehicle] = [copy.vehicles[vehicle][-1]] + copy.vehicles[vehicle][0:-1]
+        copy.fuel[vehicle] = copy.fuel[vehicle] - 1
+        return copy
+
 
     def can_move_right(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -62,11 +65,13 @@ class Board:
 
     def move_right(self, vehicle):
         coords = self.vehicles[vehicle]
-        self.state[coords[0][0]][coords[0][1]] = "."
-        self.state[coords[0][0]][coords[0][1] + len(coords)] = vehicle
-        self.vehicles[vehicle][0][1] = self.vehicles[vehicle][0][1] + len(coords)
-        self.vehicles[vehicle] = self.vehicles[vehicle][1:] + [self.vehicles[vehicle][0]]
-        self.fuel[vehicle] = self.fuel[vehicle] - 1
+        copy = self.__copy__()
+        copy.state[coords[0][0]][coords[0][1]] = "."
+        copy.state[coords[0][0]][coords[0][1] + len(coords)] = vehicle
+        copy.vehicles[vehicle][0][1] = copy.vehicles[vehicle][0][1] + len(coords)
+        copy.vehicles[vehicle] = copy.vehicles[vehicle][1:] + [copy.vehicles[vehicle][0]]
+        copy.fuel[vehicle] = copy.fuel[vehicle] - 1
+        return copy
 
     def can_move_up(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -74,11 +79,13 @@ class Board:
 
     def move_up(self, vehicle):
         coords = self.vehicles[vehicle]
-        self.state[coords[-1][0]][coords[-1][1]] = "."
-        self.state[coords[-1][0] - len(coords)][coords[-1][1]] = vehicle
-        self.vehicles[vehicle][-1][0] = self.vehicles[vehicle][-1][0] - len(coords)
-        self.vehicles[vehicle] = [self.vehicles[vehicle][-1]] + self.vehicles[vehicle][0:-1]
-        self.fuel[vehicle] = self.fuel[vehicle] - 1
+        copy = self.__copy__()
+        copy.state[coords[-1][0]][coords[-1][1]] = "."
+        copy.state[coords[-1][0] - len(coords)][coords[-1][1]] = vehicle
+        copy.vehicles[vehicle][-1][0] = copy.vehicles[vehicle][-1][0] - len(coords)
+        copy.vehicles[vehicle] = [copy.vehicles[vehicle][-1]] + copy.vehicles[vehicle][0:-1]
+        copy.fuel[vehicle] = copy.fuel[vehicle] - 1
+        return copy
 
     def can_move_down(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -86,11 +93,13 @@ class Board:
 
     def move_down(self, vehicle):
         coords = self.vehicles[vehicle]
-        self.state[coords[0][0]][coords[0][1]] = "."
-        self.state[coords[0][0] + len(coords)][coords[0][1]] = vehicle
-        self.vehicles[vehicle][0][0] = self.vehicles[vehicle][0][0] + len(coords)
-        self.vehicles[vehicle] = self.vehicles[vehicle][1:] + [self.vehicles[vehicle][0]]
-        self.fuel[vehicle] = self.fuel[vehicle] - 1
+        copy = self.__copy__()
+        copy.state[coords[0][0]][coords[0][1]] = "."
+        copy.state[coords[0][0] + len(coords)][coords[0][1]] = vehicle
+        copy.vehicles[vehicle][0][0] = copy.vehicles[vehicle][0][0] + len(coords)
+        copy.vehicles[vehicle] = copy.vehicles[vehicle][1:] + [copy.vehicles[vehicle][0]]
+        copy.fuel[vehicle] = copy.fuel[vehicle] - 1
+        return copy
 
     def can_remove(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -98,10 +107,12 @@ class Board:
 
     def remove(self, vehicle):
         coords = self.vehicles[vehicle]
+        copy = self.__copy__()
         for x, y in coords:
-            self.state[x][y] = '.'
-        self.vehicles.pop(vehicle)
-        self.fuel.pop(vehicle)
+            copy.state[x][y] = '.'
+        copy.vehicles.pop(vehicle)
+        copy.fuel.pop(vehicle)
+        return copy
 
     def __eq__(self, board):
         return np.array_equal(self.state, board.state)
