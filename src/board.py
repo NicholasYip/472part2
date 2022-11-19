@@ -7,9 +7,13 @@ class Board:
         return hash(str(self.state))
 
     def __init__(self, string=None, fuel=[]):
-        self.cost = 0
         self.fuel = {}
         self.vehicles = {}
+        self.parent = None
+        self.movement = ()
+        self.fn = 0
+        self.gn = 0
+        self.hn = 0
 
         if string is None:
             self.state = np.array(list("....................................")).reshape((6, 6))
@@ -29,7 +33,10 @@ class Board:
         np.copyto(copy.state, self.state)
         copy.fuel = self.fuel.copy()
         copy.vehicles = {key: [x[:] for x in value] for key, value in self.vehicles.items()}
-        copy.cost = self.cost
+        # copy.parent = self.parent
+        copy.fn = self.fn
+        copy.gn = self.gn
+        copy.hn = self.hn
         return copy
 
     def is_winning_board(self):
