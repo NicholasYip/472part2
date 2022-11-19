@@ -23,6 +23,8 @@ def uniform_cost_search(initial_board):
 
             if board.can_move_left(vehicle):
                 board1 = board.move_left(vehicle)
+                board1.cost = board.cost + 1
+
                 try:
                     i = to_visit_boards.index(board1)
                     if i and board1.cost < to_visit_boards[i].cost:
@@ -41,6 +43,8 @@ def uniform_cost_search(initial_board):
 
             if board.can_move_right(vehicle):
                 board2 = board.move_right(vehicle)
+                board2.cost = board.cost + 1
+
                 try:
                     i = to_visit_boards.index(board2)
                     if i and board2.cost < to_visit_boards[i].cost:
@@ -59,6 +63,8 @@ def uniform_cost_search(initial_board):
 
             if board.can_move_up(vehicle):
                 board3 = board.move_up(vehicle)
+                board3.cost = board.cost + 1
+
                 try:
                     i = to_visit_boards.index(board3)
                     if i and board3.cost < to_visit_boards[i].cost:
@@ -77,6 +83,7 @@ def uniform_cost_search(initial_board):
 
             if board.can_move_down(vehicle):
                 board4 = board.move_down(vehicle)
+                board4.cost = board.cost + 1
                 try:
                     i = to_visit_boards.index(board4)
                     if i and board4.cost < to_visit_boards[i].cost:
