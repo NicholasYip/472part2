@@ -20,65 +20,75 @@ def uniform_cost_search(initial_board):
             break
 
         for vehicle in vehicle_list:
-            temp_board = board.__copy__()
 
-            cost1 = board.cost + 1
-            while temp_board.can_move_left(vehicle):
-                temp_board.move_left(vehicle)
+            if board.can_move_left(vehicle):
+                temp_board = board.__copy__()
+                cost1 = board.cost + 1
+                while temp_board.can_move_left(vehicle):
+                    temp_board.move_left(vehicle)
 
-                board1 = temp_board.__copy__()
-                board1.cost = cost1
+                    board1 = temp_board.__copy__()
+                    board1.cost = cost1
 
-                try:
-                    i = to_visit_boards.index(board1)
-                    if i and board1.cost < to_visit_boards[i].cost:
-                        to_visit_boards[i] = board1
-                except:
-                    to_visit_boards.append(board1)
+                    try:
+                        i = to_visit_boards.index(board1)
+                        if i and board1.cost < to_visit_boards[i].cost:
+                            to_visit_boards[i] = board1
+                    except:
+                        to_visit_boards.append(board1)
 
-            temp_board = board.__copy__()
-            cost2 = board.cost + 1
-            while temp_board.can_move_right(vehicle):
-                temp_board.move_right(vehicle)
-                board2 = temp_board.__copy__()
-                board2.cost = cost2
 
-                try:
-                    i = to_visit_boards.index(board2)
-                    if i and board2.cost < to_visit_boards[i].cost:
-                        to_visit_boards[i] = board2
-                except:
-                    to_visit_boards.append(board2)
+            if board.can_move_right(vehicle):
+                temp_board = board.__copy__()
+                cost2 = board.cost + 1
+                while temp_board.can_move_right(vehicle):
+                    temp_board.move_right(vehicle)
+                    board2 = temp_board.__copy__()
+                    board2.cost = cost2
 
-            temp_board = board.__copy__()
-            cost3 = board.cost + 1;
-            while temp_board.can_move_up(vehicle):
-                temp_board.move_up(vehicle)
+                    try:
+                        i = to_visit_boards.index(board2)
+                        if i and board2.cost < to_visit_boards[i].cost:
+                            to_visit_boards[i] = board2
+                    except:
+                        to_visit_boards.append(board2)
 
-                board3 = temp_board.__copy__()
-                board3.cost = cost3
 
-                try:
-                    i = to_visit_boards.index(board3)
-                    if i and board3.cost < to_visit_boards[i].cost:
-                        to_visit_boards[i] = board3
-                except:
-                    to_visit_boards.append(board3)
 
-            temp_board = board.__copy__()
-            cost4 = board.cost + 1
-            while temp_board.can_move_down(vehicle):
-                temp_board.move_down(vehicle)
+            if board.can_move_up(vehicle):
+                temp_board = board.__copy__()
+                cost3 = board.cost + 1;
+                while temp_board.can_move_up(vehicle):
+                    temp_board.move_up(vehicle)
 
-                board4 = temp_board.__copy__()
-                board4.cost = cost4
+                    board3 = temp_board.__copy__()
+                    board3.cost = cost3
 
-                try:
-                    i = to_visit_boards.index(board4)
-                    if i and board4.cost < to_visit_boards[i].cost:
-                        to_visit_boards[i] = board4
-                except:
-                    to_visit_boards.append(board4)
+                    try:
+                        i = to_visit_boards.index(board3)
+                        if i and board3.cost < to_visit_boards[i].cost:
+                            to_visit_boards[i] = board3
+                    except:
+                        to_visit_boards.append(board3)
+
+
+
+
+            if board.can_move_down(vehicle):
+                temp_board = board.__copy__()
+                cost4 = board.cost + 1
+                while temp_board.can_move_down(vehicle):
+                    temp_board.move_down(vehicle)
+
+                    board4 = temp_board.__copy__()
+                    board4.cost = cost4
+
+                    try:
+                        i = to_visit_boards.index(board4)
+                        if i and board4.cost < to_visit_boards[i].cost:
+                            to_visit_boards[i] = board4
+                    except:
+                        to_visit_boards.append(board4)
 
             if board.can_remove(vehicle):
                 temp_board = board.__copy__()
