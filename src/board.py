@@ -27,12 +27,12 @@ class Board:
         # TODO: OPTIMIZE THIS CODE
 
     def __copy__(self):
-        # copy = deepcopy(self)
-        copy = Board()
-        copy.state = np.array(self.state, copy=True)
-        copy.fuel = self.fuel.copy()
-        copy.vehicles = deepcopy(self.vehicles)  ## bug here after moving, swaps indices
-        # copy.cost = self.cost + 1
+        copy = deepcopy(self)
+        # copy = Board()
+        # copy.state = np.array(self.state, copy=True)
+        # copy.fuel = self.fuel.copy()
+        # copy.vehicles = deepcopy(self.vehicles)  ## bug here after moving, swaps indices
+        copy.cost = self.cost + 1
         return copy
 
     def is_winning_board(self):
@@ -114,7 +114,7 @@ class Board:
         return True
 
     def h1(self):
-        a_coords = self.vehicles('A')
+        a_coords = self.vehicles['A']
         right_position = a_coords[1][1] + 1
         blocking_vehicles = set()
 
@@ -125,7 +125,7 @@ class Board:
         return len(blocking_vehicles)
 
     def h2(self):
-        a_coords = self.vehicles('A')
+        a_coords = self.vehicles['A']
         right_position = a_coords[1][1] + 1
         blocked_position = 0
 
@@ -141,7 +141,7 @@ class Board:
 
     def h4(self):
         heuristic = 0
-        a_coords = self.vehicles('A')
+        a_coords = self.vehicles['A']
         right_position = a_coords[1][1] + 1
         while right_position < 6:
             current_cell = self.state[2][right_position]

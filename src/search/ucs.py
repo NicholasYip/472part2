@@ -27,21 +27,12 @@ def uniform_cost_search(initial_board):
                 board1 = temp_board.__copy__()
                 board1.cost = board.cost + 1
 
-                if board1 in to_visit_boards and board1.cost < to_visit_boards[to_visit_boards.index(board1)].cost:
-                    to_visit_boards[to_visit_boards.index(board1)] = board1
-                else:
+                try:
+                    i = to_visit_boards.index(board1)
+                    if i and board1.cost < to_visit_boards[i].cost:
+                        to_visit_boards[i] = board1
+                except:
                     to_visit_boards.append(board1)
-
-
-                # found = False
-                # TODO: Optimize this
-                # for i, el in enumerate(to_visit_boards):
-                #     if board1.__eq__(el) and el.cost > board1.cost:
-                #         to_visit_boards[i] = board1
-                #         found = True
-                #         break
-                # if not found:
-                #     to_visit_boards.append(board1)
 
             temp_board = board.__copy__()
             while temp_board.can_move_right(vehicle):
@@ -49,18 +40,12 @@ def uniform_cost_search(initial_board):
                 board2 = temp_board.__copy__()
                 board2.cost = board.cost + 1
 
-                if board2 in to_visit_boards and board2.cost < to_visit_boards[to_visit_boards.index(board2)].cost:
-                    to_visit_boards[to_visit_boards.index(board2)] = board2
-                else:
+                try:
+                    i = to_visit_boards.index(board2)
+                    if i and board2.cost < to_visit_boards[i].cost:
+                        to_visit_boards[i] = board2
+                except:
                     to_visit_boards.append(board2)
-                # found = False
-                # for i, el in enumerate(to_visit_boards):
-                #     if board2.__eq__(el) and el.cost > board2.cost:
-                #         to_visit_boards[i] = board2
-                #         found = True
-                #         break
-                # if not found:
-                #     to_visit_boards.append(board2)
 
             temp_board = board.__copy__()
             while temp_board.can_move_up(vehicle):
@@ -69,20 +54,12 @@ def uniform_cost_search(initial_board):
                 board3 = temp_board.__copy__()
                 board3.cost = board.cost + 1
 
-                if board3 in to_visit_boards and board3.cost < to_visit_boards[to_visit_boards.index(board3)].cost:
-                    to_visit_boards[to_visit_boards.index(board3)] = board3
-                else:
+                try:
+                    i = to_visit_boards.index(board3)
+                    if i and board3.cost < to_visit_boards[i].cost:
+                        to_visit_boards[i] = board3
+                except:
                     to_visit_boards.append(board3)
-                # board3.cost = board.cost + 1
-
-                # found = False
-                # for i, el in enumerate(to_visit_boards):
-                #     if board3.__eq__(el) and el.cost > board3.cost:
-                #         to_visit_boards[i] = board3
-                #         found = True
-                #         break
-                # if not found:
-                #     to_visit_boards.append(board3)
 
             temp_board = board.__copy__()
             while temp_board.can_move_down(vehicle):
@@ -91,30 +68,21 @@ def uniform_cost_search(initial_board):
                 board4 = temp_board.__copy__()
                 board4.cost = board.cost + 1
 
-                if board4 in to_visit_boards and board4.cost < to_visit_boards[to_visit_boards.index(board4)].cost:
-                    to_visit_boards[to_visit_boards.index(board4)] = board4
-                else:
+                try:
+                    i = to_visit_boards.index(board4)
+                    if i and board4.cost < to_visit_boards[i].cost:
+                        to_visit_boards[i] = board4
+                except:
                     to_visit_boards.append(board4)
-                # found = False
-                # for i, el in enumerate(to_visit_boards):
-                #     if board4.__eq__(el) and el.cost > board4.cost:
-                #         to_visit_boards[i] = board4
-                #         found = True
-                #         break
-                # if not found:
-                    # to_visit_boards.append(board4)
 
             if board.can_remove(vehicle):
                 temp_board = board.__copy__()
                 temp_board.remove(vehicle)
-
-                found = False
-                for i, el in enumerate(to_visit_boards):
-                    if temp_board.__eq__(el) and el.cost > temp_board.cost:
+                try:
+                    i = to_visit_boards.index(temp_board)
+                    if i and temp_board.cost < to_visit_boards[i].cost:
                         to_visit_boards[i] = temp_board
-                        found = True
-                        break
-                if not found:
+                except:
                     to_visit_boards.append(temp_board)
 
     # path = np.empty(len(winning_board))
