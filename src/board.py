@@ -10,7 +10,7 @@ class Board:
         self.fuel = {}
         self.vehicles = {}
         self.parent = None
-        self.movement = () #ex: ("A","left", 1))
+        self.movement = ()  # ex: ("A","left", 1))
         self.fn = 0
         self.gn = 0
         self.hn = 0
@@ -27,7 +27,7 @@ class Board:
             for el in fuel:
                 vehicle, fuel_count = el
                 self.fuel[vehicle] = int(fuel_count)
-                
+
     def __copy__(self):
         copy = Board()
         np.copyto(copy.state, self.state)
@@ -53,7 +53,8 @@ class Board:
 
     def can_move_left(self, vehicle):
         coords = self.vehicles[vehicle]
-        return self.fuel[vehicle] > 0 and coords[0][0] == coords[1][0] and coords[0][1] != 0 and self.state[coords[0][0]][coords[0][1] - 1] == "."
+        return self.fuel[vehicle] > 0 and coords[0][0] == coords[1][0] and coords[0][1] != 0 and \
+               self.state[coords[0][0]][coords[0][1] - 1] == "."
 
     def move_left(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -65,10 +66,10 @@ class Board:
         copy.fuel[vehicle] = copy.fuel[vehicle] - 1
         return copy
 
-
     def can_move_right(self, vehicle):
         coords = self.vehicles[vehicle]
-        return self.fuel[vehicle] > 0 and coords[0][0] == coords[1][0] and coords[-1][1] != 5 and self.state[coords[-1][0]][coords[-1][1] + 1] == "."
+        return self.fuel[vehicle] > 0 and coords[0][0] == coords[1][0] and coords[-1][1] != 5 and \
+               self.state[coords[-1][0]][coords[-1][1] + 1] == "."
 
     def move_right(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -82,7 +83,8 @@ class Board:
 
     def can_move_up(self, vehicle):
         coords = self.vehicles[vehicle]
-        return self.fuel[vehicle] > 0 and coords[0][1] == coords[1][1] and coords[0][0] != 0 and self.state[coords[0][0] - 1][coords[0][1]] == "."
+        return self.fuel[vehicle] > 0 and coords[0][1] == coords[1][1] and coords[0][0] != 0 and \
+               self.state[coords[0][0] - 1][coords[0][1]] == "."
 
     def move_up(self, vehicle):
         coords = self.vehicles[vehicle]
@@ -96,7 +98,8 @@ class Board:
 
     def can_move_down(self, vehicle):
         coords = self.vehicles[vehicle]
-        return self.fuel[vehicle] > 0 and coords[0][1] == coords[1][1] and coords[-1][0] != 5 and self.state[coords[-1][0] + 1][coords[-1][1]] == "."
+        return self.fuel[vehicle] > 0 and coords[0][1] == coords[1][1] and coords[-1][0] != 5 and \
+               self.state[coords[-1][0] + 1][coords[-1][1]] == "."
 
     def move_down(self, vehicle):
         coords = self.vehicles[vehicle]
