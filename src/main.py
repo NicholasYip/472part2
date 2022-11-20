@@ -12,5 +12,4 @@ for line  in file:
         continue
     i = i + 1
     uniform_cost_search(line, i)
-    # print(end - start)
 

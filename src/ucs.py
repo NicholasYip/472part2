@@ -7,6 +7,7 @@ from src.board import Board
 
 def uniform_cost_search(board_line, index):
     f = open('../static/ucs/ucs-sol-{}.txt'.format(index), "w")
+    s = open('../static/ucs/ucs-search-{}.txt'.format(index), "w")
     board_fuel = board_line.strip().split(" ")
     initial_board = Board(list(board_fuel[0]), board_fuel[1:])
     f.write("Initial board configuration: " + board_line + "\n")
@@ -23,10 +24,6 @@ def uniform_cost_search(board_line, index):
         vehicle_list = list(board.vehicles.keys())
 
         if board.is_winning_board():
-            print(board.state)
-            print("Cost: ", board.gn)
-            print("States: ", len(visited_boards))
-
             winning_board = board
             break
 
@@ -127,6 +124,13 @@ def uniform_cost_search(board_line, index):
     end = time.time()
     f.write("\nRuntime: " + str(end - start) + " seconds")
 
+    for board in visited_boards:
+        stringified_board = ''
+        for row in board.state:
+            for char in row:
+                stringified_board = stringified_board + (str(char))
+        s.write("{} {} {} : {} \n".format(board.fn, board.gn, board.hn, stringified_board))
+
     if winning_board is not None:
         f.write("\nSearch path length: " + str(len(visited_boards)))
         f.write("\nSolution path length: " + str(board.gn))
@@ -140,7 +144,6 @@ def uniform_cost_search(board_line, index):
         path.append(initial_board)
 
         path.reverse()
-
         f.write("\nSolution path: ")
         for item in path:
             if not item.movement:
@@ -160,4 +163,5 @@ def uniform_cost_search(board_line, index):
         f.write("\n{}".format(np.array(list(winning_board.state)).reshape((6, 6))))
     else:
         f.write("\n\nNo solution found GG WP ")
+    s.close()
     f.close()
