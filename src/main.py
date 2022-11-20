@@ -16,8 +16,5 @@ for line in file:
     # uniform_cost_search(line, i)
     # end_ucs = time.time()
     # print("ucs time : ", end_ucs - start_ucs)
-    start_gbfs = time.time()
     greedy_best_first_search(line, i)
-    end_gbfs = time.time()
-    print("gbfs time : ", end_gbfs - start_gbfs)
 

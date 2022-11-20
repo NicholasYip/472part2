@@ -127,6 +127,9 @@ class Board:
     def __eq__(self, board):
         return np.array_equal(self.state, board.state)
 
+    def __lt__(self, board):
+        return self.hn < board.hn
+
     def h1(self):
         a_coords = self.vehicles['A']
         right_position = a_coords[1][1] + 1

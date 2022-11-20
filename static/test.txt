@@ -4,11 +4,11 @@
 # kelvin 5 moves
 # BBBBBBKKKKKKAAECZD..ECZD......FFFFFF
 # 10 moves
-# ..I...BBI.K.GHAAKLGHDDKLG..JEEFF.J..
+..I...BBI.K.GHAAKLGHDDKLG..JEEFF.J..
 
 #............AAAB.....B.....B.ZDDCC.Z
 #
-JBBCCCJDD..MJAAL.MFFKL.N..KGGN.HH...
+#JBBCCCJDD..MJAAL.MFFKL.N..KGGN.HH...
 
 # 6 moves
 #
