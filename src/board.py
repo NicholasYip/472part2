@@ -9,11 +9,11 @@ class Board:
     def __init__(self, string=None, fuel=[]):
         self.fuel = {}
         self.vehicles = {}
-        self.parent = None
         self.movement = ()  # ex: ("A","left", 1))
         self.fn = 0
         self.gn = 0
         self.hn = 0
+        self.parent = None
 
         if string is None:
             self.state = np.array(list("....................................")).reshape((6, 6))
@@ -33,7 +33,7 @@ class Board:
         np.copyto(copy.state, self.state)
         copy.fuel = self.fuel.copy()
         copy.vehicles = {key: [x[:] for x in value] for key, value in self.vehicles.items()}
-        # copy.parent = self.parent
+        copy.parent = self.parent
         copy.fn = self.fn
         copy.gn = self.gn
         copy.hn = self.hn

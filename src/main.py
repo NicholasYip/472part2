@@ -1,15 +1,23 @@
-import numpy as np
-
 from board import Board
-from search.ucs import uniform_cost_search
+from ucs import uniform_cost_search
+import time
+from gbfs import greedy_best_first_search
+
 
 fileName = 'test.txt'
 file = open('../static/' + fileName, "r")
 
 i = 0
-for line  in file:
+for line in file:
     if line[0] == '#' or line == "\n":
         continue
     i = i + 1
-    uniform_cost_search(line, i)
+    # start_ucs = time.time()
+    # uniform_cost_search(line, i)
+    # end_ucs = time.time()
+    # print("ucs time : ", end_ucs - start_ucs)
+    start_gbfs = time.time()
+    greedy_best_first_search(line, i)
+    end_gbfs = time.time()
+    print("gbfs time : ", end_gbfs - start_gbfs)
 
