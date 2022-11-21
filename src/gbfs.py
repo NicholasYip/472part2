@@ -20,7 +20,7 @@ def greedy_best_first_search(board_line, index, h):
 
     while not to_visit_boards.empty():
         board = to_visit_boards.get()
-
+        print(board)
         if board in visited_boards:
             continue
 
@@ -43,7 +43,8 @@ def greedy_best_first_search(board_line, index, h):
                 board1.movement = (vehicle, "left", distance)
 
                 while True:
-                    to_visit_boards.put(board1)
+                    if board1 not in to_visit_boards.queue:
+                        to_visit_boards.put(board1)
                     if not board1.can_move_left(vehicle):
                         break
                     board1 = board1.move_left(vehicle)
@@ -60,7 +61,8 @@ def greedy_best_first_search(board_line, index, h):
                 distance = 1
                 board2.movement = (vehicle, "right", distance)
                 while True:
-                    to_visit_boards.put(board2)
+                    if board2 not in to_visit_boards.queue:
+                        to_visit_boards.put(board2)
                     if not board2.can_move_right(vehicle):
                         break
                     board2 = board2.move_right(vehicle)
@@ -77,7 +79,8 @@ def greedy_best_first_search(board_line, index, h):
                 distance = 1
                 board3.movement = (vehicle, "up", distance)
                 while True:
-                    to_visit_boards.put(board3)
+                    if board3 not in to_visit_boards.queue:
+                        to_visit_boards.put(board3)
                     if not board3.can_move_up(vehicle):
                         break
                     board3 = board3.move_up(vehicle)
@@ -94,7 +97,8 @@ def greedy_best_first_search(board_line, index, h):
                 distance = 1
                 board4.movement = (vehicle, "down", distance)
                 while True:
-                    to_visit_boards.put(board4)
+                    if board4 not in to_visit_boards.queue:
+                        to_visit_boards.put(board4)
                     if not board4.can_move_down(vehicle):
                         break
                     board4 = board4.move_down(vehicle)
@@ -106,7 +110,9 @@ def greedy_best_first_search(board_line, index, h):
                 board5 = board.remove(vehicle)
                 h_switch(board5, h)
                 board5.fn = board5.gn + board5.hn
-                to_visit_boards.put(board5)
+                if board5 not in to_visit_boards.queue:
+                    to_visit_boards.put(board4)
+
 
     end = time.time()
     f.write("\nRuntime: " + str(end - start) + " seconds")

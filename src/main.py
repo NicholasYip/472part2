@@ -1,7 +1,5 @@
-from board import Board
-from aa import aa
+from a_star import a_star
 from ucs import uniform_cost_search
-import time
 from gbfs import greedy_best_first_search
 
 fileName = 'test.txt'
@@ -16,4 +14,4 @@ for line in file:
     for h in range(1, 5):
         greedy_best_first_search(line, i, h)
     for h in range(1, 5):
-        aa(line, i, h)
+        a_star(line, i, h)

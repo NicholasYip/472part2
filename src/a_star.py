@@ -4,9 +4,9 @@ from collections import deque
 from board import Board
 
 
-def aa(board_line, index, h):
-    f = open('../static/aa/aa-h{}-sol-{}.txt'.format(h, index), "w")
-    s = open('../static/aa/aa-h{}-search-{}.txt'.format(h, index), "w")
+def a_star(board_line, index, h):
+    f = open('../static/a_star/a_star-h{}-sol-{}.txt'.format(h, index), "w")
+    s = open('../static/a_star/a_star-h{}-search-{}.txt'.format(h, index), "w")
     board_fuel = board_line.strip().split(" ")
     initial_board = Board(list(board_fuel[0]), board_fuel[1:])
     f.write("Initial board configuration: " + board_line + "\n")
