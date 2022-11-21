@@ -16,16 +16,16 @@ def greedy_best_first_search(board_line, index):
     visited_boards = set()
     # to_visit_boards = deque([initial_board])
     to_visit_boards = PriorityQueue()
-    to_visit_boards.put((1, initial_board))
+    to_visit_boards.put(initial_board)
     start = time.time()
     winning_board = None
 
     while not to_visit_boards.empty():
-        board = to_visit_boards.get()[1]
+        board = to_visit_boards.get()
         visited_boards.add(board)
         vehicle_list = list(board.vehicles.keys())
-        board.hn = board.h1()
-
+        board.h1()
+        new_cost = board.gn + 1
         if board.is_winning_board():
             print(board.state)
             print("Cost: ", board.gn)
@@ -36,81 +36,81 @@ def greedy_best_first_search(board_line, index):
         for vehicle in vehicle_list:
             if board.can_move_left(vehicle):
                 board1 = board.move_left(vehicle)
-                board1.gn = board.gn + 1
-                board1.hn = board1.h1()
+                board1.gn = new_cost
+                board1.h1()
                 board1.fn = board1.gn + board1.hn
                 board1.parent = board
                 distance = 1
                 board1.movement = (vehicle, "left", distance)
 
                 while True:
-                    to_visit_boards.put((board1.hn, board1))
+                    to_visit_boards.put(board1)
                     if not board1.can_move_left(vehicle):
                         break
                     board1 = board1.move_left(vehicle)
-                    board1.hn = board1.h1()
+                    board1.h1()
                     distance = distance + 1
                     board1.movement = (vehicle, "left", distance)
 
             if board.can_move_right(vehicle):
                 board2 = board.move_right(vehicle)
-                board2.gn = board.gn + 1
-                board2.hn = board2.h1()
+                board2.gn = new_cost
+                board2.h1()
                 board2.fn = board2.gn + board2.hn
                 board2.parent = board
                 distance = 1
                 board2.movement = (vehicle, "right", distance)
                 while True:
-                    to_visit_boards.put((board2.hn, board2))
+                    to_visit_boards.put(board2)
                     if not board2.can_move_right(vehicle):
                         break
                     board2 = board2.move_right(vehicle)
-                    board2.hn = board2.h1()
+                    board2.h1()
                     distance = distance + 1
                     board2.movement = (vehicle, "right", distance)
 
             if board.can_move_up(vehicle):
                 board3 = board.move_up(vehicle)
-                board3.gn = board.gn + 1
-                board3.hn = board3.h1()
+                board3.gn = new_cost
+                board3.h1()
                 board3.fn = board3.gn + board3.hn
                 board3.parent = board
                 distance = 1
                 board3.movement = (vehicle, "up", distance)
                 while True:
-                    to_visit_boards.put((board3.hn, board3))
+                    to_visit_boards.put(board3)
                     if not board3.can_move_up(vehicle):
                         break
                     board3 = board3.move_up(vehicle)
-                    board3.hn = board3.h1()
+                    board3.h1()
                     distance = distance + 1
                     board3.movement = (vehicle, "up", distance)
 
             if board.can_move_down(vehicle):
                 board4 = board.move_down(vehicle)
-                board4.gn = board.gn + 1
-                board4.hn = board4.h1()
+                board4.gn = new_cost
+                board4.h1()
                 board4.fn = board4.gn + board4.hn
                 board4.parent = board
                 distance = 1
                 board4.movement = (vehicle, "down", distance)
                 while True:
-                    to_visit_boards.put((board4.hn, board4))
+                    to_visit_boards.put(board4)
                     if not board4.can_move_down(vehicle):
                         break
                     board4 = board4.move_down(vehicle)
-                    board4.hn = board4.h1()
+                    board4.h1()
                     distance = distance + 1
                     board4.movement = (vehicle, "down", distance)
 
             if board.can_remove(vehicle):
                 board5 = board.remove(vehicle)
-                board5.hn = board5.h1()
+                board5.h1()
                 board5.fn = board5.gn + board5.hn
-                to_visit_boards.put((board5.hn, board5))
+                to_visit_boards.put(board5)
 
     end = time.time()
-    print("gbfs time: ", end-start)
+    print("gbfs time: ", end - start)
     # f.write("\nRuntime: " + str(end - start) + " seconds")
 
     # for board in visited_boards:

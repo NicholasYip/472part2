@@ -10,9 +10,9 @@ Initial board configuration: BBBBBBKKKKKKAAECZD..ECZD......FFFFFF
 Car fuel available: {'B': 100, 'K': 100, 'A': 100, 'E': 100, 'C': 100, 'Z': 100, 'D': 100, 'F': 100}
 
 
-Runtime: 0.10671520233154297 seconds
+Runtime: 0.045012474060058594 seconds
 Search path length: 32
-Solution path length: 1
+Solution path length: 5
 Solution path: E down 1 -> C down 1 -> Z down 1 -> D down 1 -> A right 4 -> 
 
 E	down	1 	 99 BBBBBBKKKKKKAA.CZD..ECZD..E...FFFFFF 

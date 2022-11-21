@@ -2,7 +2,7 @@
 # 2 moves
 #BB.J...I.JCC.IAA.MGDDK.MGH.KL.GHFFL.
 # kelvin 5 moves
-# BBBBBBKKKKKKAAECZD..ECZD......FFFFFF
+#BBBBBBKKKKKKAAECZD..ECZD......FFFFFF
 # 10 moves
 ..I...BBI.K.GHAAKLGHDDKLG..JEEFF.J..
 
@@ -16,3 +16,5 @@
 #no solution
 #BBB..MCCDD.MAAKL.MJ.KLEEJ.GG..JHHHII B4 J0
 #BBBBBBCCCCCDAAGGGDEEEEE.FFFFFF......
+
+#............AA...K.....K............

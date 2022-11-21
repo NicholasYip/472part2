@@ -139,7 +139,7 @@ class Board:
             if self.state[2][right_position] != '.':
                 blocking_vehicles.add(self.state[2][right_position])
             right_position = right_position + 1
-        return len(blocking_vehicles)
+        self.hn = len(blocking_vehicles)
 
     def h2(self):
         a_coords = self.vehicles['A']
@@ -151,10 +151,10 @@ class Board:
                 blocked_position = blocked_position + 1
             right_position = right_position + 1
 
-        return blocked_position
+        self.hn = blocked_position
 
-    def h3(self, constant):
-        return constant * self.h1()
+    def h3(self):
+        self.hn = 2 * self.h1()
 
     def h4(self):
         heuristic = 0
@@ -174,4 +174,4 @@ class Board:
                 can_move = self.can_move_right(current_cell, 1) or self.can_remove_vehicle(current_cell)
                 heuristic = heuristic + (1 if can_move else 2)
                 right_position = right_position + self.vehicle_length(current_cell)
-        return heuristic
+        self.hn = heuristic

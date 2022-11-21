@@ -20,7 +20,7 @@ def aa(board_line, index):
         board = to_visit_boards.popleft()
         visited_boards.add(board)
         vehicle_list = list(board.vehicles.keys())
-        board.hn = board.h1()
+        board.h1()
 
         if board.is_winning_board():
             print(board.state)
@@ -33,7 +33,7 @@ def aa(board_line, index):
             if board.can_move_left(vehicle):
                 board1 = board.move_left(vehicle)
                 board1.gn = board.gn + 1
-                board1.hn = board1.h1()
+                board1.h1()
                 board1.fn = board1.gn + board1.hn
                 board1.parent = board
                 distance = 1
@@ -49,14 +49,14 @@ def aa(board_line, index):
                     if not board1.can_move_left(vehicle):
                         break
                     board1 = board1.move_left(vehicle)
-                    board1.hn = board1.h1()
+                    board1.h1()
                     distance = distance + 1
                     board1.movement = (vehicle, "left", distance)
 
             if board.can_move_right(vehicle):
                 board2 = board.move_right(vehicle)
                 board2.gn = board.gn + 1
-                board2.hn = board2.h1()
+                board2.h1()
                 board2.fn = board2.gn + board2.hn
                 board2.parent = board
                 distance = 1
@@ -71,14 +71,14 @@ def aa(board_line, index):
                     if not board2.can_move_right(vehicle):
                         break
                     board2 = board2.move_right(vehicle)
-                    board2.hn = board2.h1()
+                    board2.h1()
                     distance = distance + 1
                     board2.movement = (vehicle, "right", distance)
 
             if board.can_move_up(vehicle):
                 board3 = board.move_up(vehicle)
                 board3.gn = board.gn + 1
-                board3.hn = board3.h1()
+                board3.h1()
                 board3.fn = board3.gn + board3.hn
                 board3.parent = board
                 distance = 1
@@ -100,7 +100,7 @@ def aa(board_line, index):
             if board.can_move_down(vehicle):
                 board4 = board.move_down(vehicle)
                 board4.gn = board.gn + 1
-                board4.hn = board4.h1()
+                board4.h1()
                 board4.fn = board4.gn + board4.hn
                 board4.parent = board
                 distance = 1
@@ -115,23 +115,24 @@ def aa(board_line, index):
                     if not board4.can_move_down(vehicle):
                         break
                     board4 = board4.move_down(vehicle)
-                    board4.hn = board4.h1()
+                    board4.h1()
                     distance = distance + 1
                     board4.movement = (vehicle, "down", distance)
 
             if board.can_remove(vehicle):
                 board5 = board.remove(vehicle)
-                board5.hn = board5.h1()
+                board5.h1()
                 board5.fn = board5.gn + board5.hn
                 try:
                     i = to_visit_boards.index(board5)
-                    if i and board5.hn < to_visit_boards[i].hn:
+                    if i and board5.fn < to_visit_boards[i].fn:
                         to_visit_boards[i] = board5
                 except ValueError:
                     to_visit_boards.append(board5)
 
-        to_visit_boards = deque(sorted(to_visit_boards, key=lambda x: x.hn))
+        to_visit_boards = deque(sorted(to_visit_boards, key=lambda x: x.fn))
     end = time.time()
+    print('aa:', end-start)
     # f.write("\nRuntime: " + str(end - start) + " seconds")
     #
     # if winning_board is not None:
