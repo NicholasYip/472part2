@@ -20,7 +20,6 @@ def greedy_best_first_search(board_line, index, h):
 
     while not to_visit_boards.empty():
         board = to_visit_boards.get()
-        print(board)
         if board in visited_boards:
             continue
 
@@ -37,7 +36,9 @@ def greedy_best_first_search(board_line, index, h):
                 board1 = board.move_left(vehicle)
                 board1.gn = new_cost
                 h_switch(board1, h)
-                board1.fn = board1.gn + board1.hn
+                #this is only done because in the Board class, __lt__ is implemented to compare f(n) to work for a*
+                #the true value of f(n) is h(n) + g(n)
+                board1.fn = board1.hn
                 board1.parent = board
                 distance = 1
                 board1.movement = (vehicle, "left", distance)
@@ -56,7 +57,7 @@ def greedy_best_first_search(board_line, index, h):
                 board2 = board.move_right(vehicle)
                 board2.gn = new_cost
                 h_switch(board2, h)
-                board2.fn = board2.gn + board2.hn
+                board2.fn = board2.hn
                 board2.parent = board
                 distance = 1
                 board2.movement = (vehicle, "right", distance)
@@ -74,7 +75,7 @@ def greedy_best_first_search(board_line, index, h):
                 board3 = board.move_up(vehicle)
                 board3.gn = new_cost
                 h_switch(board3, h)
-                board3.fn = board3.gn + board3.hn
+                board3.fn = board3.hn
                 board3.parent = board
                 distance = 1
                 board3.movement = (vehicle, "up", distance)
@@ -92,7 +93,7 @@ def greedy_best_first_search(board_line, index, h):
                 board4 = board.move_down(vehicle)
                 board4.gn = new_cost
                 h_switch(board4, h)
-                board4.fn = board4.gn + board4.hn
+                board4.fn = board4.hn
                 board4.parent = board
                 distance = 1
                 board4.movement = (vehicle, "down", distance)
@@ -109,7 +110,7 @@ def greedy_best_first_search(board_line, index, h):
             if board.can_remove(vehicle):
                 board5 = board.remove(vehicle)
                 h_switch(board5, h)
-                board5.fn = board5.gn + board5.hn
+                board5.fn = board5.hn
                 if board5 not in to_visit_boards.queue:
                     to_visit_boards.put(board4)
 
@@ -122,7 +123,7 @@ def greedy_best_first_search(board_line, index, h):
         for row in board.state:
             for char in row:
                 stringified_board = stringified_board + (str(char))
-        s.write("{} {} {} : {} \n".format(board.fn, board.gn, board.hn, stringified_board))
+        s.write("0 {} {} : {} \n".format(board.gn, board.hn, stringified_board))
 
     if winning_board is not None:
         f.write("\nSearch path length: " + str(len(visited_boards)))

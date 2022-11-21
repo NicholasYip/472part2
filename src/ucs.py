@@ -37,7 +37,6 @@ def uniform_cost_search(board_line, index):
             if board.can_move_left(vehicle):
                 board1 = board.move_left(vehicle)
                 board1.gn = new_cost
-                board1.fn = board1.gn
                 board1.parent = board
                 distance = 1
                 board1.movement = (vehicle, "left", distance)
@@ -57,7 +56,6 @@ def uniform_cost_search(board_line, index):
             if board.can_move_right(vehicle):
                 board2 = board.move_right(vehicle)
                 board2.gn = new_cost
-                board2.fn = board2.gn
                 board2.parent = board
                 distance = 1
                 board2.movement = (vehicle, "right", distance)
@@ -77,7 +75,6 @@ def uniform_cost_search(board_line, index):
             if board.can_move_up(vehicle):
                 board3 = board.move_up(vehicle)
                 board3.gn = new_cost
-                board3.fn = board3.gn
                 board3.parent = board
                 distance = 1
                 board3.movement = (vehicle, "up", distance)
@@ -97,7 +94,6 @@ def uniform_cost_search(board_line, index):
             if board.can_move_down(vehicle):
                 board4 = board.move_down(vehicle)
                 board4.gn = new_cost
-                board4.fn = board4.gn
                 board4.parent = board
                 distance = 1
                 board4.movement = (vehicle, "down", distance)
@@ -130,7 +126,7 @@ def uniform_cost_search(board_line, index):
         for row in board.state:
             for char in row:
                 stringified_board = stringified_board + (str(char))
-        s.write("{} {} {} : {} \n".format(board.fn, board.gn, board.hn, stringified_board))
+        s.write("0 {} 0 : {} \n".format(board.gn, stringified_board))
 
     if winning_board is not None:
         f.write("\nSearch path length: " + str(len(visited_boards)))

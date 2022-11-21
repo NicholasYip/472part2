@@ -1,6 +1,7 @@
+from queue import PriorityQueue
+
 import numpy as np
 import time
-from collections import deque
 from board import Board
 
 
@@ -13,13 +14,13 @@ def a_star(board_line, index, h):
     f.write(str(initial_board.state) + "\n\n")
     f.write("Car fuel available: " + str(initial_board.fuel) + "\n\n")
     visited_boards = []
-    to_visit_boards = deque([initial_board])
+    to_visit_boards = PriorityQueue()
+    to_visit_boards.put(initial_board)
     start = time.time()
     winning_board = None
 
-    while not len(to_visit_boards) == 0:
-        board = to_visit_boards.popleft()
-
+    while not to_visit_boards.empty():
+        board = to_visit_boards.get()
         if board in visited_boards:
             continue
 
@@ -43,11 +44,11 @@ def a_star(board_line, index, h):
 
                 while True:
                     try:
-                        i = to_visit_boards.index(board1)
-                        if i and board1.fn < to_visit_boards[i].fn:
-                            to_visit_boards[i] = board1
+                        i = to_visit_boards.queue.index(board1)
+                        if i and board1.fn < to_visit_boards.queue[i].fn:
+                            to_visit_boards.queue[i] = board1
                     except ValueError:
-                        to_visit_boards.append(board1)
+                        to_visit_boards.put(board1)
                     if not board1.can_move_left(vehicle):
                         break
                     board1 = board1.move_left(vehicle)
@@ -65,11 +66,11 @@ def a_star(board_line, index, h):
                 board2.movement = (vehicle, "right", distance)
                 while True:
                     try:
-                        i = to_visit_boards.index(board2)
-                        if i and board2.fn < to_visit_boards[i].fn:
-                            to_visit_boards[i] = board2
+                        i = to_visit_boards.queue.index(board2)
+                        if i and board2.fn < to_visit_boards.queue[i].fn:
+                            to_visit_boards.queue[i] = board2
                     except ValueError:
-                        to_visit_boards.append(board2)
+                        to_visit_boards.put(board2)
                     if not board2.can_move_right(vehicle):
                         break
                     board2 = board2.move_right(vehicle)
@@ -87,13 +88,13 @@ def a_star(board_line, index, h):
                 board3.movement = (vehicle, "up", distance)
                 while True:
                     try:
-                        i = to_visit_boards.index(board3)
-                        if i and board3.fn < to_visit_boards[i].fn:
-                            to_visit_boards[i] = board3
+                        i = to_visit_boards.queue.index(board3)
+                        if i and board3.fn < to_visit_boards.queue[i].fn:
+                            to_visit_boards.queue[i] = board3
                     except ValueError:
-                        to_visit_boards.append(board3)
+                        to_visit_boards.put(board3)
                     if not board3.can_move_up(vehicle):
-                        break;
+                        break
                     board3 = board3.move_up(vehicle)
                     h_switch(board3, h)
                     distance = distance + 1
@@ -109,11 +110,11 @@ def a_star(board_line, index, h):
                 board4.movement = (vehicle, "down", distance)
                 while True:
                     try:
-                        i = to_visit_boards.index(board4)
-                        if i and board4.fn < to_visit_boards[i].fn:
-                            to_visit_boards[i] = board4
+                        i = to_visit_boards.queue.index(board4)
+                        if i and board4.fn < to_visit_boards.queue[i].fn:
+                            to_visit_boards.queue[i] = board4
                     except ValueError:
-                        to_visit_boards.append(board4)
+                        to_visit_boards.put(board4)
                     if not board4.can_move_down(vehicle):
                         break
                     board4 = board4.move_down(vehicle)
@@ -126,13 +127,12 @@ def a_star(board_line, index, h):
                 h_switch(board5, h)
                 board5.fn = board5.gn + board5.hn
                 try:
-                    i = to_visit_boards.index(board5)
-                    if i and board5.fn < to_visit_boards[i].fn:
-                        to_visit_boards[i] = board5
+                    i = to_visit_boards.queue.index(board5)
+                    if i and board5.fn < to_visit_boards.queue[i].fn:
+                        to_visit_boards.queue[i] = board5
                 except ValueError:
-                    to_visit_boards.append(board5)
+                    to_visit_boards.put(board5)
 
-        to_visit_boards = deque(sorted(to_visit_boards, key=lambda x: x.fn))
     end = time.time()
     f.write("\nRuntime: " + str(end - start) + " seconds")
 

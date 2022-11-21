@@ -128,7 +128,7 @@ class Board:
         return np.array_equal(self.state, board.state)
 
     def __lt__(self, board):
-        return self.hn < board.hn
+        return self.fn < board.fn
 
     def h1(self):
         a_coords = self.vehicles['A']
