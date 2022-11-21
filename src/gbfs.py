@@ -4,9 +4,9 @@ from queue import PriorityQueue
 from board import Board
 
 
-def greedy_best_first_search(board_line, index):
-    f = open('../static/gbfs/gbfs-sol-{}.txt'.format(index), "w")
-    s = open('../static/gbfs/gbfs-search-{}.txt'.format(index), "w")
+def greedy_best_first_search(board_line, index, h):
+    f = open('../static/gbfs/gbfs-h{}-sol-{}.txt'.format(h, index), "w")
+    s = open('../static/gbfs/gbfs-h{}-search-{}.txt'.format(h, index), "w")
     board_fuel = board_line.strip().split(" ")
     initial_board = Board(list(board_fuel[0]), board_fuel[1:])
     f.write("Initial board configuration: " + board_line + "\n")
@@ -26,7 +26,7 @@ def greedy_best_first_search(board_line, index):
 
         visited_boards.append(board)
         vehicle_list = list(board.vehicles.keys())
-        board.h1()
+        h_switch(board, h)
         new_cost = board.gn + 1
         if board.is_winning_board():
             winning_board = board
@@ -36,7 +36,7 @@ def greedy_best_first_search(board_line, index):
             if board.can_move_left(vehicle):
                 board1 = board.move_left(vehicle)
                 board1.gn = new_cost
-                board1.h1()
+                h_switch(board1, h)
                 board1.fn = board1.gn + board1.hn
                 board1.parent = board
                 distance = 1
@@ -47,14 +47,14 @@ def greedy_best_first_search(board_line, index):
                     if not board1.can_move_left(vehicle):
                         break
                     board1 = board1.move_left(vehicle)
-                    board1.h1()
+                    h_switch(board1, h)
                     distance = distance + 1
                     board1.movement = (vehicle, "left", distance)
 
             if board.can_move_right(vehicle):
                 board2 = board.move_right(vehicle)
                 board2.gn = new_cost
-                board2.h1()
+                h_switch(board2, h)
                 board2.fn = board2.gn + board2.hn
                 board2.parent = board
                 distance = 1
@@ -64,14 +64,14 @@ def greedy_best_first_search(board_line, index):
                     if not board2.can_move_right(vehicle):
                         break
                     board2 = board2.move_right(vehicle)
-                    board2.h1()
+                    h_switch(board2, h)
                     distance = distance + 1
                     board2.movement = (vehicle, "right", distance)
 
             if board.can_move_up(vehicle):
                 board3 = board.move_up(vehicle)
                 board3.gn = new_cost
-                board3.h1()
+                h_switch(board3, h)
                 board3.fn = board3.gn + board3.hn
                 board3.parent = board
                 distance = 1
@@ -81,14 +81,14 @@ def greedy_best_first_search(board_line, index):
                     if not board3.can_move_up(vehicle):
                         break
                     board3 = board3.move_up(vehicle)
-                    board3.h1()
+                    h_switch(board3, h)
                     distance = distance + 1
                     board3.movement = (vehicle, "up", distance)
 
             if board.can_move_down(vehicle):
                 board4 = board.move_down(vehicle)
                 board4.gn = new_cost
-                board4.h1()
+                h_switch(board4, h)
                 board4.fn = board4.gn + board4.hn
                 board4.parent = board
                 distance = 1
@@ -98,13 +98,13 @@ def greedy_best_first_search(board_line, index):
                     if not board4.can_move_down(vehicle):
                         break
                     board4 = board4.move_down(vehicle)
-                    board4.h1()
+                    h_switch(board4, h)
                     distance = distance + 1
                     board4.movement = (vehicle, "down", distance)
 
             if board.can_remove(vehicle):
                 board5 = board.remove(vehicle)
-                board5.h1()
+                h_switch(board5, h)
                 board5.fn = board5.gn + board5.hn
                 to_visit_boards.put(board5)
 
@@ -150,3 +150,14 @@ def greedy_best_first_search(board_line, index):
         f.write("\n\nNo solution found GG WP ")
     f.close()
     s.close()
+
+
+def h_switch(board, h):
+    if h == 1:
+        board.h1()
+    elif h == 2:
+        board.h2()
+    elif h == 3:
+        board.h3()
+    elif h == 4:
+        board.h4()

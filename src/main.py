@@ -4,7 +4,6 @@ from ucs import uniform_cost_search
 import time
 from gbfs import greedy_best_first_search
 
-
 fileName = 'test.txt'
 file = open('../static/' + fileName, "r")
 
@@ -14,7 +13,7 @@ for line in file:
         continue
     i = i + 1
     uniform_cost_search(line, i)
-    greedy_best_first_search(line, i)
-    aa(line, i)
-
-
+    for h in range(1, 5):
+        greedy_best_first_search(line, i, h)
+    for h in range(1, 5):
+        aa(line, i, h)

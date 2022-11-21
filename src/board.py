@@ -154,7 +154,10 @@ class Board:
         self.hn = blocked_position
 
     def h3(self):
-        self.hn = 2 * self.h1()
+        # self.hn = 2 * self.h1()
+        self.h1()
+        self.hn = 2 * self.hn
+
 
     def h4(self):
         heuristic = 0
@@ -167,11 +170,11 @@ class Board:
                 continue
             is_vertical = a_coords[0][1] == a_coords[1][1]
             if is_vertical:
-                can_move = self.can_move_up(current_cell, 1) or self.can_move_down(current_cell, 1)
+                can_move = self.can_move_up(current_cell) or self.can_move_down(current_cell)
                 heuristic = heuristic + (1 if can_move else 2)
                 right_position = right_position + 1
             elif not is_vertical:
-                can_move = self.can_move_right(current_cell, 1) or self.can_remove_vehicle(current_cell)
+                can_move = self.can_move_right(current_cell) or self.can_remove(current_cell)
                 heuristic = heuristic + (1 if can_move else 2)
                 right_position = right_position + self.vehicle_length(current_cell)
         self.hn = heuristic
