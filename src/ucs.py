@@ -2,7 +2,7 @@ import numpy as np
 import time
 from collections import deque
 
-from src.board import Board
+from board import Board
 
 
 def uniform_cost_search(board_line, index):
@@ -13,14 +13,18 @@ def uniform_cost_search(board_line, index):
     f.write("Initial board configuration: " + board_line + "\n")
     f.write(str(initial_board.state) + "\n\n")
     f.write("Car fuel available: " + str(initial_board.fuel) + "\n\n")
-    visited_boards = set()
+    visited_boards = []
     to_visit_boards = deque([initial_board])
     start = time.time()
     winning_board = None
 
     while not len(to_visit_boards) == 0:
         board = to_visit_boards.popleft()
-        visited_boards.add(board)
+
+        if board in visited_boards:
+            continue
+
+        visited_boards.append(board)
         vehicle_list = list(board.vehicles.keys())
         new_cost = board.gn + 1
 
