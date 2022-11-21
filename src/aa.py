@@ -1,7 +1,7 @@
 import numpy as np
 import time
 from collections import deque
-from src.board import Board
+from board import Board
 
 
 def aa(board_line, index):

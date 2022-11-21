@@ -13,8 +13,8 @@ for line in file:
     if line[0] == '#' or line == "\n":
         continue
     i = i + 1
-    # uniform_cost_search(line, i)
-    # greedy_best_first_search(line, i)
+    uniform_cost_search(line, i)
+    greedy_best_first_search(line, i)
     aa(line, i)
 
 
