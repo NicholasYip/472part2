@@ -5,7 +5,7 @@ from collections import deque
 from board import Board
 
 
-def uniform_cost_search(board_line, index):
+def uniform_cost_search(board_line, index, ws):
     f = open('../static/ucs/ucs-sol-{}.txt'.format(index), "w")
     s = open('../static/ucs/ucs-search-{}.txt'.format(index), "w")
     board_fuel = board_line.strip().split(" ")
@@ -131,6 +131,7 @@ def uniform_cost_search(board_line, index):
     if winning_board is not None:
         f.write("\nSearch path length: " + str(len(visited_boards)))
         f.write("\nSolution path length: " + str(winning_board.gn))
+        ws.append([index, "UCS", "NA", str(winning_board.gn), str(len(visited_boards)), str(end - start)])
         path = [winning_board]
         temp = winning_board.parent
 

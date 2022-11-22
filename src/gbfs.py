@@ -4,7 +4,7 @@ from queue import PriorityQueue
 from board import Board
 
 
-def greedy_best_first_search(board_line, index, h):
+def greedy_best_first_search(board_line, index, h, ws):
     f = open('../static/gbfs/gbfs-h{}-sol-{}.txt'.format(h, index), "w")
     s = open('../static/gbfs/gbfs-h{}-search-{}.txt'.format(h, index), "w")
     board_fuel = board_line.strip().split(" ")
@@ -113,8 +113,6 @@ def greedy_best_first_search(board_line, index, h):
                 board5.fn = board5.hn
                 if board5 not in to_visit_boards.queue:
                     to_visit_boards.put(board4)
-
-
     end = time.time()
     f.write("\nRuntime: " + str(end - start) + " seconds")
 
@@ -127,7 +125,9 @@ def greedy_best_first_search(board_line, index, h):
 
     if winning_board is not None:
         f.write("\nSearch path length: " + str(len(visited_boards)))
-        f.write("\nSolution path length: " + str(board.gn))
+        f.write("\nSolution path length: " + str(winning_board.gn))
+        ws.append([index, "GBFS", "h{}".format(h), str(winning_board.gn), str(len(visited_boards)), str(end - start)])
+
         path = [winning_board]
         temp = winning_board.parent
         #

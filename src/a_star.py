@@ -5,7 +5,7 @@ import time
 from board import Board
 
 
-def a_star(board_line, index, h):
+def a_star(board_line, index, h, ws):
     f = open('../static/a_star/a_star-h{}-sol-{}.txt'.format(h, index), "w")
     s = open('../static/a_star/a_star-h{}-search-{}.txt'.format(h, index), "w")
     board_fuel = board_line.strip().split(" ")
@@ -146,6 +146,7 @@ def a_star(board_line, index, h):
     if winning_board is not None:
         f.write("\nSearch path length: " + str(len(visited_boards)))
         f.write("\nSolution path length: " + str(board.gn))
+        ws.append([index, "A*", "h{}".format(h), str(winning_board.gn), str(len(visited_boards)), str(end - start)])
         path = [winning_board]
         temp = winning_board.parent
 
