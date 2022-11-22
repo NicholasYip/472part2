@@ -25,7 +25,8 @@ class Board:
                         self.fuel[el] = 100
                         self.vehicles[el] = self.vehicle_location(el)
             for el in fuel:
-                vehicle, fuel_count = el
+                vehicle = el[0]
+                fuel_count = el[1:]
                 self.fuel[vehicle] = int(fuel_count)
 
     def __copy__(self):
