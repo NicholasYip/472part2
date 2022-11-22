@@ -1,0 +1,100 @@
+Initial board configuration: OOO.GIS...GIS.AAGIS.QW....QWTTUUUW..
+
+[['O' 'O' 'O' '.' 'G' 'I']
+ ['S' '.' '.' '.' 'G' 'I']
+ ['S' '.' 'A' 'A' 'G' 'I']
+ ['S' '.' 'Q' 'W' '.' '.']
+ ['.' '.' 'Q' 'W' 'T' 'T']
+ ['U' 'U' 'U' 'W' '.' '.']]
+
+Car fuel available: {'O': 100, 'G': 100, 'I': 100, 'S': 100, 'A': 100, 'Q': 100, 'W': 100, 'T': 100, 'U': 100}
+
+
+Runtime: 7.675093173980713 seconds
+Search path length: 548
+Solution path length: 76
+Solution path: O right 1 -> I down 1 -> A left 1 -> W up 2 -> U right 3 -> Q down 1 -> W down 1 -> S down 2 -> Q up 1 -> U left 2 -> W up 1 -> T left 1 -> U right 2 -> I down 1 -> G down 1 -> S up 2 -> Q down 1 -> O right 1 -> S up 1 -> I up 1 -> Q up 1 -> U left 3 -> T right 1 -> U right 2 -> S down 2 -> U right 1 -> O right 1 -> W down 1 -> S down 1 -> U left 1 -> S up 2 -> O left 3 -> U left 2 -> S down 1 -> I up 1 -> W up 2 -> T left 1 -> U right 3 -> S down 1 -> W down 1 -> Q down 1 -> G up 1 -> T right 1 -> O right 1 -> A left 1 -> G down 1 -> I down 1 -> W down 1 -> O right 2 -> Q up 4 -> U left 2 -> A right 1 -> W up 1 -> T left 3 -> W down 1 -> S up 2 -> U left 1 -> T left 1 -> W up 1 -> U right 1 -> I down 2 -> T right 3 -> S down 2 -> U right 1 -> T left 1 -> A left 1 -> T left 1 -> G down 1 -> U left 1 -> W down 1 -> A right 1 -> S up 1 -> U left 1 -> W down 1 -> G down 1 -> A right 3 -> 
+
+O	right	1 	 99 .OOOGIS...GIS.AAGIS.QW....QWTTUUUW.. 
+I	down	1 	 99 .OOOG.S...GIS.AAGIS.QW.I..QWTTUUUW.. 
+A	left	1 	 99 .OOOG.S...GISAA.GIS.QW.I..QWTTUUUW.. 
+W	up	2 	 98 .OOOG.S..WGISAAWGIS.QW.I..Q.TTUUU... 
+U	right	3 	 97 .OOOG.S..WGISAAWGIS.QW.I..Q.TT...UUU 
+Q	down	1 	 99 .OOOG.S..WGISAAWGIS..W.I..Q.TT..QUUU 
+W	down	1 	 97 .OOOG.S...GISAAWGIS..W.I..QWTT..QUUU 
+S	down	2 	 98 .OOOG.....GI.AAWGIS..W.IS.QWTTS.QUUU 
+Q	up	1 	 98 .OOOG.....GI.AAWGIS.QW.IS.QWTTS..UUU 
+U	left	2 	 95 .OOOG.....GI.AAWGIS.QW.IS.QWTTSUUU.. 
+W	up	1 	 96 .OOOG....WGI.AAWGIS.QW.IS.Q.TTSUUU.. 
+T	left	1 	 99 .OOOG....WGI.AAWGIS.QW.IS.QTT.SUUU.. 
+U	right	2 	 93 .OOOG....WGI.AAWGIS.QW.IS.QTT.S..UUU 
+I	down	1 	 98 .OOOG....WG..AAWGIS.QW.IS.QTTIS..UUU 
+G	down	1 	 99 .OOO.....WG..AAWGIS.QWGIS.QTTIS..UUU 
+S	up	2 	 96 .OOO..S..WG.SAAWGIS.QWGI..QTTI...UUU 
+Q	down	1 	 97 .OOO..S..WG.SAAWGIS..WGI..QTTI..QUUU 
+O	right	1 	 98 ..OOO.S..WG.SAAWGIS..WGI..QTTI..QUUU 
+S	up	1 	 95 S.OOO.S..WG.SAAWGI...WGI..QTTI..QUUU 
+I	up	1 	 97 S.OOO.S..WGISAAWGI...WGI..QTT...QUUU 
+Q	up	1 	 96 S.OOO.S..WGISAAWGI..QWGI..QTT....UUU 
+U	left	3 	 90 S.OOO.S..WGISAAWGI..QWGI..QTT.UUU... 
+T	right	1 	 98 S.OOO.S..WGISAAWGI..QWGI..Q.TTUUU... 
+U	right	2 	 88 S.OOO.S..WGISAAWGI..QWGI..Q.TT..UUU. 
+S	down	2 	 93 ..OOO....WGISAAWGIS.QWGIS.Q.TT..UUU. 
+U	right	1 	 87 ..OOO....WGISAAWGIS.QWGIS.Q.TT...UUU 
+O	right	1 	 97 ...OOO...WGISAAWGIS.QWGIS.Q.TT...UUU 
+W	down	1 	 95 ...OOO....GISAAWGIS.QWGIS.QWTT...UUU 
+S	down	1 	 92 ...OOO....GI.AAWGIS.QWGIS.QWTTS..UUU 
+U	left	1 	 86 ...OOO....GI.AAWGIS.QWGIS.QWTTS.UUU. 
+S	up	2 	 90 ...OOOS...GISAAWGIS.QWGI..QWTT..UUU. 
+O	left	3 	 94 OOO...S...GISAAWGIS.QWGI..QWTT..UUU. 
+U	left	2 	 84 OOO...S...GISAAWGIS.QWGI..QWTTUUU... 
+S	down	1 	 89 OOO.......GISAAWGIS.QWGIS.QWTTUUU... 
+I	up	1 	 96 OOO..I....GISAAWGIS.QWG.S.QWTTUUU... 
+W	up	2 	 93 OOOW.I...WGISAAWGIS.Q.G.S.Q.TTUUU... 
+T	left	1 	 97 OOOW.I...WGISAAWGIS.Q.G.S.QTT.UUU... 
+U	right	3 	 81 OOOW.I...WGISAAWGIS.Q.G.S.QTT....UUU 
+S	down	1 	 88 OOOW.I...WGI.AAWGIS.Q.G.S.QTT.S..UUU 
+W	down	1 	 92 OOO..I...WGI.AAWGIS.QWG.S.QTT.S..UUU 
+Q	down	1 	 95 OOO..I...WGI.AAWGIS..WG.S.QTT.S.QUUU 
+G	up	1 	 98 OOO.GI...WGI.AAWGIS..W..S.QTT.S.QUUU 
+T	right	1 	 96 OOO.GI...WGI.AAWGIS..W..S.Q.TTS.QUUU 
+O	right	1 	 93 .OOOGI...WGI.AAWGIS..W..S.Q.TTS.QUUU 
+A	left	1 	 98 .OOOGI...WGIAA.WGIS..W..S.Q.TTS.QUUU 
+G	down	1 	 97 .OOO.I...WGIAA.WGIS..WG.S.Q.TTS.QUUU 
+I	down	1 	 95 .OOO.....WGIAA.WGIS..WGIS.Q.TTS.QUUU 
+W	down	1 	 91 .OOO......GIAA.WGIS..WGIS.QWTTS.QUUU 
+O	right	2 	 91 ...OOO....GIAA.WGIS..WGIS.QWTTS.QUUU 
+Q	up	4 	 91 ..QOOO..Q.GIAA.WGIS..WGIS..WTTS..UUU 
+U	left	2 	 79 ..QOOO..Q.GIAA.WGIS..WGIS..WTTSUUU.. 
+A	right	1 	 97 ..QOOO..Q.GI.AAWGIS..WGIS..WTTSUUU.. 
+W	up	1 	 90 ..QOOO..QWGI.AAWGIS..WGIS...TTSUUU.. 
+T	left	3 	 93 ..QOOO..QWGI.AAWGIS..WGISTT...SUUU.. 
+W	down	1 	 89 ..QOOO..Q.GI.AAWGIS..WGISTTW..SUUU.. 
+S	up	2 	 86 ..QOOOS.Q.GISAAWGIS..WGI.TTW...UUU.. 
+U	left	1 	 78 ..QOOOS.Q.GISAAWGIS..WGI.TTW..UUU... 
+T	left	1 	 92 ..QOOOS.Q.GISAAWGIS..WGITT.W..UUU... 
+W	up	1 	 88 ..QOOOS.QWGISAAWGIS..WGITT....UUU... 
+U	right	1 	 77 ..QOOOS.QWGISAAWGIS..WGITT.....UUU.. 
+I	down	2 	 93 ..QOOOS.QWG.SAAWG.S..WGITT...I.UUU.I 
+T	right	3 	 89 ..QOOOS.QWG.SAAWG.S..WGI...TTI.UUU.I 
+S	down	2 	 84 ..QOOO..QWG..AAWG.S..WGIS..TTISUUU.I 
+U	right	1 	 76 ..QOOO..QWG..AAWG.S..WGIS..TTIS.UUUI 
+T	left	1 	 88 ..QOOO..QWG..AAWG.S..WGIS.TT.IS.UUUI 
+A	left	1 	 96 ..QOOO..QWG.AA.WG.S..WGIS.TT.IS.UUUI 
+T	left	1 	 87 ..QOOO..QWG.AA.WG.S..WGISTT..IS.UUUI 
+G	down	1 	 96 ..QOOO..QW..AA.WG.S..WGISTT.GIS.UUUI 
+U	left	1 	 75 ..QOOO..QW..AA.WG.S..WGISTT.GISUUU.I 
+W	down	1 	 87 ..QOOO..Q...AA.WG.S..WGISTTWGISUUU.I 
+A	right	1 	 95 ..QOOO..Q....AAWG.S..WGISTTWGISUUU.I 
+S	up	1 	 83 ..QOOO..Q...SAAWG.S..WGISTTWGI.UUU.I 
+U	left	1 	 74 ..QOOO..Q...SAAWG.S..WGISTTWGIUUU..I 
+W	down	1 	 86 ..QOOO..Q...SAA.G.S..WGISTTWGIUUUW.I 
+G	down	1 	 95 ..QOOO..Q...SAA...S..WGISTTWGIUUUWGI 
+A	right	3 	 92 ..QOOO..Q...S...AAS..WGISTTWGIUUUWGI 
+
+[['.' '.' 'Q' 'O' 'O' 'O']
+ ['.' '.' 'Q' '.' '.' '.']
+ ['S' '.' '.' '.' 'A' 'A']
+ ['S' '.' '.' 'W' 'G' 'I']
+ ['S' 'T' 'T' 'W' 'G' 'I']
+ ['U' 'U' 'U' 'W' 'G' 'I']]

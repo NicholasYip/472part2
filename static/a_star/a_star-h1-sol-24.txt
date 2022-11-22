@@ -1,0 +1,29 @@
+Initial board configuration: OOOR..LIIR..L..AAFLKK..F..G..F..GDDD O20 F20
+
+[['O' 'O' 'O' 'R' '.' '.']
+ ['L' 'I' 'I' 'R' '.' '.']
+ ['L' '.' '.' 'A' 'A' 'F']
+ ['L' 'K' 'K' '.' '.' 'F']
+ ['.' '.' 'G' '.' '.' 'F']
+ ['.' '.' 'G' 'D' 'D' 'D']]
+
+Car fuel available: {'O': 20, 'R': 100, 'L': 100, 'I': 100, 'A': 100, 'F': 20, 'K': 100, 'G': 100, 'D': 100}
+
+
+Runtime: 0.531278133392334 seconds
+Search path length: 152
+Solution path length: 5
+Solution path: K right 2 -> G up 2 -> D left 1 -> F down 1 -> A right 1 -> 
+
+K	right	2 	 98 OOOR..LIIR..L..AAFL..KKF..G..F..GDDD 
+G	up	2 	 98 OOOR..LIIR..L.GAAFL.GKKF.....F...DDD 
+D	left	1 	 99 OOOR..LIIR..L.GAAFL.GKKF.....F..DDD. 
+F	down	1 	 19 OOOR..LIIR..L.GAA.L.GKKF.....F..DDDF 
+A	right	1 	 99 OOOR..LIIR..L.G.AAL.GKKF.....F..DDDF 
+
+[['O' 'O' 'O' 'R' '.' '.']
+ ['L' 'I' 'I' 'R' '.' '.']
+ ['L' '.' 'G' '.' 'A' 'A']
+ ['L' '.' 'G' 'K' 'K' 'F']
+ ['.' '.' '.' '.' '.' 'F']
+ ['.' '.' 'D' 'D' 'D' 'F']]

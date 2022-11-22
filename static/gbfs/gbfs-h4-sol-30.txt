@@ -1,0 +1,72 @@
+Initial board configuration: .OOTT.YIIIP.YAA.P.MCCHH.MUUU.L.KKEEL K20 Y20 M20
+
+[['.' 'O' 'O' 'T' 'T' '.']
+ ['Y' 'I' 'I' 'I' 'P' '.']
+ ['Y' 'A' 'A' '.' 'P' '.']
+ ['M' 'C' 'C' 'H' 'H' '.']
+ ['M' 'U' 'U' 'U' '.' 'L']
+ ['.' 'K' 'K' 'E' 'E' 'L']]
+
+Car fuel available: {'O': 100, 'T': 100, 'Y': 20, 'I': 100, 'P': 100, 'A': 100, 'M': 20, 'C': 100, 'H': 100, 'U': 100, 'L': 100, 'K': 20, 'E': 100}
+
+
+Runtime: 6.66216778755188 seconds
+Search path length: 341
+Solution path length: 48
+Solution path: K left 1 -> E left 1 -> L up 4 -> E right 2 -> L down 3 -> Y up 1 -> L up 2 -> K right 2 -> H right 1 -> L up 1 -> U right 2 -> K left 1 -> E left 1 -> K left 1 -> M up 1 -> L down 1 -> K right 1 -> E right 1 -> K right 1 -> U left 3 -> K left 2 -> E left 2 -> H left 1 -> L down 3 -> H right 1 -> E right 1 -> K right 1 -> U right 2 -> C right 1 -> M down 2 -> C left 2 -> H left 2 -> L up 2 -> E right 1 -> K right 1 -> U right 1 -> A left 1 -> L up 2 -> K left 1 -> P down 1 -> E left 1 -> L down 2 -> U left 2 -> E right 1 -> K right 1 -> L down 1 -> P down 1 -> A right 4 -> 
+
+K	left	1 	 19 .OOTT.YIIIP.YAA.P.MCCHH.MUUU.LKK.EEL 
+E	left	1 	 99 .OOTT.YIIIP.YAA.P.MCCHH.MUUU.LKKEE.L 
+L	up	4 	 96 .OOTTLYIIIPLYAA.P.MCCHH.MUUU..KKEE.. 
+E	right	2 	 97 .OOTTLYIIIPLYAA.P.MCCHH.MUUU..KK..EE 
+L	down	3 	 93 .OOTT.YIIIP.YAA.P.MCCHHLMUUU.LKK..EE 
+Y	up	1 	 19 YOOTT.YIIIP..AA.P.MCCHHLMUUU.LKK..EE 
+L	up	2 	 91 YOOTT.YIIIPL.AA.PLMCCHH.MUUU..KK..EE 
+K	right	2 	 17 YOOTT.YIIIPL.AA.PLMCCHH.MUUU....KKEE 
+H	right	1 	 99 YOOTT.YIIIPL.AA.PLMCC.HHMUUU....KKEE 
+L	up	1 	 90 YOOTTLYIIIPL.AA.P.MCC.HHMUUU....KKEE 
+U	right	2 	 98 YOOTTLYIIIPL.AA.P.MCC.HHM..UUU..KKEE 
+K	left	1 	 16 YOOTTLYIIIPL.AA.P.MCC.HHM..UUU.KK.EE 
+E	left	1 	 96 YOOTTLYIIIPL.AA.P.MCC.HHM..UUU.KKEE. 
+K	left	1 	 15 YOOTTLYIIIPL.AA.P.MCC.HHM..UUUKK.EE. 
+M	up	1 	 19 YOOTTLYIIIPLMAA.P.MCC.HH...UUUKK.EE. 
+L	down	1 	 89 YOOTT.YIIIPLMAA.PLMCC.HH...UUUKK.EE. 
+K	right	1 	 14 YOOTT.YIIIPLMAA.PLMCC.HH...UUU.KKEE. 
+E	right	1 	 95 YOOTT.YIIIPLMAA.PLMCC.HH...UUU.KK.EE 
+K	right	1 	 13 YOOTT.YIIIPLMAA.PLMCC.HH...UUU..KKEE 
+U	left	3 	 95 YOOTT.YIIIPLMAA.PLMCC.HHUUU.....KKEE 
+K	left	2 	 11 YOOTT.YIIIPLMAA.PLMCC.HHUUU...KK..EE 
+E	left	2 	 93 YOOTT.YIIIPLMAA.PLMCC.HHUUU...KKEE.. 
+H	left	1 	 98 YOOTT.YIIIPLMAA.PLMCCHH.UUU...KKEE.. 
+L	down	3 	 86 YOOTT.YIIIP.MAA.P.MCCHH.UUU..LKKEE.L 
+H	right	1 	 97 YOOTT.YIIIP.MAA.P.MCC.HHUUU..LKKEE.L 
+E	right	1 	 92 YOOTT.YIIIP.MAA.P.MCC.HHUUU..LKK.EEL 
+K	right	1 	 10 YOOTT.YIIIP.MAA.P.MCC.HHUUU..L.KKEEL 
+U	right	2 	 93 YOOTT.YIIIP.MAA.P.MCC.HH..UUUL.KKEEL 
+C	right	1 	 99 YOOTT.YIIIP.MAA.P.M.CCHH..UUUL.KKEEL 
+M	down	2 	 17 YOOTT.YIIIP..AA.P...CCHHM.UUULMKKEEL 
+C	left	2 	 97 YOOTT.YIIIP..AA.P.CC..HHM.UUULMKKEEL 
+H	left	2 	 95 YOOTT.YIIIP..AA.P.CCHH..M.UUULMKKEEL 
+L	up	2 	 84 YOOTT.YIIIP..AA.PLCCHH.LM.UUU.MKKEE. 
+E	right	1 	 91 YOOTT.YIIIP..AA.PLCCHH.LM.UUU.MKK.EE 
+K	right	1 	 9 YOOTT.YIIIP..AA.PLCCHH.LM.UUU.M.KKEE 
+U	right	1 	 92 YOOTT.YIIIP..AA.PLCCHH.LM..UUUM.KKEE 
+A	left	1 	 99 YOOTT.YIIIP.AA..PLCCHH.LM..UUUM.KKEE 
+L	up	2 	 82 YOOTTLYIIIPLAA..P.CCHH..M..UUUM.KKEE 
+K	left	1 	 8 YOOTTLYIIIPLAA..P.CCHH..M..UUUMKK.EE 
+P	down	1 	 99 YOOTTLYIII.LAA..P.CCHHP.M..UUUMKK.EE 
+E	left	1 	 90 YOOTTLYIII.LAA..P.CCHHP.M..UUUMKKEE. 
+L	down	2 	 80 YOOTT.YIII..AA..PLCCHHPLM..UUUMKKEE. 
+U	left	2 	 90 YOOTT.YIII..AA..PLCCHHPLMUUU..MKKEE. 
+E	right	1 	 89 YOOTT.YIII..AA..PLCCHHPLMUUU..MKK.EE 
+K	right	1 	 7 YOOTT.YIII..AA..PLCCHHPLMUUU..M.KKEE 
+L	down	1 	 79 YOOTT.YIII..AA..P.CCHHPLMUUU.LM.KKEE 
+P	down	1 	 98 YOOTT.YIII..AA....CCHHPLMUUUPLM.KKEE 
+A	right	4 	 95 YOOTT.YIII......AACCHHPLMUUUPLM.KKEE 
+
+[['Y' 'O' 'O' 'T' 'T' '.']
+ ['Y' 'I' 'I' 'I' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['C' 'C' 'H' 'H' 'P' 'L']
+ ['M' 'U' 'U' 'U' 'P' 'L']
+ ['M' '.' 'K' 'K' 'E' 'E']]

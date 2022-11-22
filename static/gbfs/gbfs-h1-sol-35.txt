@@ -1,0 +1,62 @@
+Initial board configuration: .TLLLO.THHHOAAG.POBBGMP.C.GM..CDDM..
+
+[['.' 'T' 'L' 'L' 'L' 'O']
+ ['.' 'T' 'H' 'H' 'H' 'O']
+ ['A' 'A' 'G' '.' 'P' 'O']
+ ['B' 'B' 'G' 'M' 'P' '.']
+ ['C' '.' 'G' 'M' '.' '.']
+ ['C' 'D' 'D' 'M' '.' '.']]
+
+Car fuel available: {'T': 100, 'L': 100, 'O': 100, 'H': 100, 'A': 100, 'G': 100, 'P': 100, 'B': 100, 'M': 100, 'C': 100, 'D': 100}
+
+
+Runtime: 2.1548898220062256 seconds
+Search path length: 509
+Solution path length: 38
+Solution path: P down 2 -> O down 3 -> L right 1 -> H right 1 -> P up 1 -> M up 1 -> D right 2 -> G down 1 -> L left 1 -> A right 1 -> O up 1 -> D right 1 -> M down 1 -> A right 2 -> G up 1 -> L right 1 -> G up 2 -> B right 1 -> C up 3 -> B left 1 -> G down 2 -> C up 1 -> H left 1 -> G down 1 -> A left 3 -> M up 1 -> D left 1 -> O down 1 -> L left 1 -> H right 1 -> G up 2 -> D left 3 -> M down 1 -> G down 2 -> A right 3 -> L right 1 -> P down 1 -> A right 1 -> 
+
+P	down	2 	 98 .TLLLO.THHHOAAG..OBBGM..C.GMP.CDDMP. 
+O	down	3 	 97 .TLLL..THHH.AAG...BBGM.OC.GMPOCDDMPO 
+L	right	1 	 99 .T.LLL.THHH.AAG...BBGM.OC.GMPOCDDMPO 
+H	right	1 	 99 .T.LLL.T.HHHAAG...BBGM.OC.GMPOCDDMPO 
+P	up	1 	 97 .T.LLL.T.HHHAAG...BBGMPOC.GMPOCDDM.O 
+M	up	1 	 99 .T.LLL.T.HHHAAGM..BBGMPOC.GMPOCDD..O 
+D	right	2 	 98 .T.LLL.T.HHHAAGM..BBGMPOC.GMPOC..DDO 
+G	down	1 	 99 .T.LLL.T.HHHAA.M..BBGMPOC.GMPOC.GDDO 
+L	left	1 	 98 .TLLL..T.HHHAA.M..BBGMPOC.GMPOC.GDDO 
+A	right	1 	 99 .TLLL..T.HHH.AAM..BBGMPOC.GMPOC.GDDO 
+O	up	1 	 96 .TLLL..T.HHH.AAM.OBBGMPOC.GMPOC.GDD. 
+D	right	1 	 97 .TLLL..T.HHH.AAM.OBBGMPOC.GMPOC.G.DD 
+M	down	1 	 98 .TLLL..T.HHH.AA..OBBGMPOC.GMPOC.GMDD 
+A	right	2 	 97 .TLLL..T.HHH...AAOBBGMPOC.GMPOC.GMDD 
+G	up	1 	 98 .TLLL..T.HHH..GAAOBBGMPOC.GMPOC..MDD 
+L	right	1 	 97 .T.LLL.T.HHH..GAAOBBGMPOC.GMPOC..MDD 
+G	up	2 	 96 .TGLLL.TGHHH..GAAOBB.MPOC..MPOC..MDD 
+B	right	1 	 99 .TGLLL.TGHHH..GAAO.BBMPOC..MPOC..MDD 
+C	up	3 	 97 .TGLLLCTGHHHC.GAAO.BBMPO...MPO...MDD 
+B	left	1 	 98 .TGLLLCTGHHHC.GAAOBB.MPO...MPO...MDD 
+G	down	2 	 94 .T.LLLCT.HHHC.GAAOBBGMPO..GMPO...MDD 
+C	up	1 	 96 CT.LLLCT.HHH..GAAOBBGMPO..GMPO...MDD 
+H	left	1 	 98 CT.LLLCTHHH...GAAOBBGMPO..GMPO...MDD 
+G	down	1 	 93 CT.LLLCTHHH....AAOBBGMPO..GMPO..GMDD 
+A	left	3 	 94 CT.LLLCTHHH.AA...OBBGMPO..GMPO..GMDD 
+M	up	1 	 97 CT.LLLCTHHH.AA.M.OBBGMPO..GMPO..G.DD 
+D	left	1 	 96 CT.LLLCTHHH.AA.M.OBBGMPO..GMPO..GDD. 
+O	down	1 	 95 CT.LLLCTHHH.AA.M..BBGMPO..GMPO..GDDO 
+L	left	1 	 96 CTLLL.CTHHH.AA.M..BBGMPO..GMPO..GDDO 
+H	right	1 	 97 CTLLL.CT.HHHAA.M..BBGMPO..GMPO..GDDO 
+G	up	2 	 91 CTLLL.CTGHHHAAGM..BBGMPO...MPO...DDO 
+D	left	3 	 93 CTLLL.CTGHHHAAGM..BBGMPO...MPODD...O 
+M	down	1 	 96 CTLLL.CTGHHHAAG...BBGMPO...MPODD.M.O 
+G	down	2 	 89 CTLLL.CT.HHHAA....BBGMPO..GMPODDGM.O 
+A	right	3 	 91 CTLLL.CT.HHH...AA.BBGMPO..GMPODDGM.O 
+L	right	1 	 95 CT.LLLCT.HHH...AA.BBGMPO..GMPODDGM.O 
+P	down	1 	 96 CT.LLLCT.HHH...AA.BBGM.O..GMPODDGMPO 
+A	right	1 	 90 CT.LLLCT.HHH....AABBGM.O..GMPODDGMPO 
+
+[['C' 'T' '.' 'L' 'L' 'L']
+ ['C' 'T' '.' 'H' 'H' 'H']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['B' 'B' 'G' 'M' '.' 'O']
+ ['.' '.' 'G' 'M' 'P' 'O']
+ ['D' 'D' 'G' 'M' 'P' 'O']]

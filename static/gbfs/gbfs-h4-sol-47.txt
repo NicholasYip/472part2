@@ -1,0 +1,33 @@
+Initial board configuration: ..B.....B...AAB...CCC..D.....D.....D A20 B20 C20 D20
+
+[['.' '.' 'B' '.' '.' '.']
+ ['.' '.' 'B' '.' '.' '.']
+ ['A' 'A' 'B' '.' '.' '.']
+ ['C' 'C' 'C' '.' '.' 'D']
+ ['.' '.' '.' '.' '.' 'D']
+ ['.' '.' '.' '.' '.' 'D']]
+
+Car fuel available: {'B': 20, 'A': 20, 'C': 20, 'D': 20}
+
+
+Runtime: 0.0037717819213867188 seconds
+Search path length: 24
+Solution path length: 9
+Solution path: C right 2 -> D up 3 -> C right 1 -> B down 3 -> A right 3 -> B up 3 -> C left 3 -> D down 3 -> A right 1 -> 
+
+C	right	2 	 18 ..B.....B...AAB.....CCCD.....D.....D 
+D	up	3 	 17 ..B..D..B..DAAB..D..CCC............. 
+C	right	1 	 17 ..B..D..B..DAAB..D...CCC............ 
+B	down	3 	 17 .....D.....DAA...D..BCCC..B.....B... 
+A	right	3 	 17 .....D.....D...AAD..BCCC..B.....B... 
+B	up	3 	 14 ..B..D..B..D..BAAD...CCC............ 
+C	left	3 	 14 ..B..D..B..D..BAADCCC............... 
+D	down	3 	 14 ..B.....B.....BAA.CCC..D.....D.....D 
+A	right	1 	 16 ..B.....B.....B.AACCC..D.....D.....D 
+
+[['.' '.' 'B' '.' '.' '.']
+ ['.' '.' 'B' '.' '.' '.']
+ ['.' '.' 'B' '.' 'A' 'A']
+ ['C' 'C' 'C' '.' '.' 'D']
+ ['.' '.' '.' '.' '.' 'D']
+ ['.' '.' '.' '.' '.' 'D']]

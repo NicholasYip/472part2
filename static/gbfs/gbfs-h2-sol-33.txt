@@ -1,0 +1,40 @@
+Initial board configuration: FFFEEDU..RODUAAROJ..BBBJ...III......
+
+[['F' 'F' 'F' 'E' 'E' 'D']
+ ['U' '.' '.' 'R' 'O' 'D']
+ ['U' 'A' 'A' 'R' 'O' 'J']
+ ['.' '.' 'B' 'B' 'B' 'J']
+ ['.' '.' '.' 'I' 'I' 'I']
+ ['.' '.' '.' '.' '.' '.']]
+
+Car fuel available: {'F': 100, 'E': 100, 'D': 100, 'U': 100, 'R': 100, 'O': 100, 'A': 100, 'J': 100, 'B': 100, 'I': 100}
+
+
+Runtime: 0.4284842014312744 seconds
+Search path length: 118
+Solution path length: 16
+Solution path: I left 2 -> J down 2 -> U down 1 -> B left 1 -> U down 1 -> O down 3 -> U up 2 -> I left 1 -> B left 1 -> R down 2 -> A right 1 -> R down 1 -> B right 1 -> A left 1 -> O up 1 -> A right 3 -> 
+
+I	left	2 	 98 FFFEEDU..RODUAAROJ..BBBJ.III........ 
+J	down	2 	 98 FFFEEDU..RODUAARO...BBB..III.J.....J 
+U	down	1 	 99 FFFEED...RODUAARO.U.BBB..III.J.....J 
+B	left	1 	 99 FFFEED...RODUAARO.UBBB...III.J.....J 
+U	down	1 	 98 FFFEED...ROD.AARO.UBBB..UIII.J.....J 
+O	down	3 	 97 FFFEED...R.D.AAR..UBBB..UIIIOJ....OJ 
+U	up	2 	 96 FFFEEDU..R.DUAAR...BBB...IIIOJ....OJ 
+I	left	1 	 97 FFFEEDU..R.DUAAR...BBB..III.OJ....OJ 
+B	left	1 	 98 FFFEEDU..R.DUAAR..BBB...III.OJ....OJ 
+R	down	2 	 98 FFFEEDU....DUAA...BBBR..IIIROJ....OJ 
+A	right	1 	 99 FFFEEDU....DU.AA..BBBR..IIIROJ....OJ 
+R	down	1 	 97 FFFEEDU....DU.AA..BBB...IIIROJ...ROJ 
+B	right	1 	 97 FFFEEDU....DU.AA...BBB..IIIROJ...ROJ 
+A	left	1 	 98 FFFEEDU....DUAA....BBB..IIIROJ...ROJ 
+O	up	1 	 96 FFFEEDU....DUAA....BBBO.IIIROJ...R.J 
+A	right	3 	 95 FFFEEDU....DU...AA.BBBO.IIIROJ...R.J 
+
+[['F' 'F' 'F' 'E' 'E' 'D']
+ ['U' '.' '.' '.' '.' 'D']
+ ['U' '.' '.' '.' 'A' 'A']
+ ['.' 'B' 'B' 'B' 'O' '.']
+ ['I' 'I' 'I' 'R' 'O' 'J']
+ ['.' '.' '.' 'R' '.' 'J']]

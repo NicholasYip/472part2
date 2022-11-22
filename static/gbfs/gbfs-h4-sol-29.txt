@@ -1,0 +1,51 @@
+Initial board configuration: U.B..DU.BCCDAABT.DFW.TKKFWLLL..WOOO.
+
+[['U' '.' 'B' '.' '.' 'D']
+ ['U' '.' 'B' 'C' 'C' 'D']
+ ['A' 'A' 'B' 'T' '.' 'D']
+ ['F' 'W' '.' 'T' 'K' 'K']
+ ['F' 'W' 'L' 'L' 'L' '.']
+ ['.' 'W' 'O' 'O' 'O' '.']]
+
+Car fuel available: {'U': 100, 'B': 100, 'D': 100, 'C': 100, 'A': 100, 'T': 100, 'F': 100, 'W': 100, 'K': 100, 'L': 100, 'O': 100}
+
+
+Runtime: 0.22010111808776855 seconds
+Search path length: 127
+Solution path length: 27
+Solution path: L right 1 -> B down 2 -> O right 1 -> C left 2 -> T up 2 -> B down 1 -> A right 3 -> U down 1 -> B up 1 -> O left 1 -> W up 1 -> K left 1 -> D down 1 -> O left 2 -> U up 1 -> O right 3 -> W down 1 -> U down 1 -> F down 1 -> U down 1 -> C left 1 -> B up 2 -> L left 1 -> O left 1 -> K left 1 -> D down 2 -> A right 1 -> 
+
+L	right	1 	 99 U.B..DU.BCCDAABT.DFW.TKKFW.LLL.WOOO. 
+B	down	2 	 98 U....DU..CCDAABT.DFWBTKKFWBLLL.WOOO. 
+O	right	1 	 99 U....DU..CCDAABT.DFWBTKKFWBLLL.W.OOO 
+C	left	2 	 98 U....DUCC..DAABT.DFWBTKKFWBLLL.W.OOO 
+T	up	2 	 98 U..T.DUCCT.DAAB..DFWB.KKFWBLLL.W.OOO 
+B	down	1 	 97 U..T.DUCCT.DAA...DFWB.KKFWBLLL.WBOOO 
+A	right	3 	 97 U..T.DUCCT.D...AADFWB.KKFWBLLL.WBOOO 
+U	down	1 	 99 ...T.DUCCT.DU..AADFWB.KKFWBLLL.WBOOO 
+B	up	1 	 96 ...T.DUCCT.DU.BAADFWB.KKFWBLLL.W.OOO 
+O	left	1 	 98 ...T.DUCCT.DU.BAADFWB.KKFWBLLL.WOOO. 
+W	up	1 	 99 ...T.DUCCT.DUWBAADFWB.KKFWBLLL..OOO. 
+K	left	1 	 99 ...T.DUCCT.DUWBAADFWBKK.FWBLLL..OOO. 
+D	down	1 	 99 ...T..UCCT.DUWBAADFWBKKDFWBLLL..OOO. 
+O	left	2 	 96 ...T..UCCT.DUWBAADFWBKKDFWBLLLOOO... 
+U	up	1 	 98 U..T..UCCT.D.WBAADFWBKKDFWBLLLOOO... 
+O	right	3 	 93 U..T..UCCT.D.WBAADFWBKKDFWBLLL...OOO 
+W	down	1 	 98 U..T..UCCT.D..BAADFWBKKDFWBLLL.W.OOO 
+U	down	1 	 97 ...T..UCCT.DU.BAADFWBKKDFWBLLL.W.OOO 
+F	down	1 	 99 ...T..UCCT.DU.BAAD.WBKKDFWBLLLFW.OOO 
+U	down	1 	 96 ...T...CCT.DU.BAADUWBKKDFWBLLLFW.OOO 
+C	left	1 	 97 ...T..CC.T.DU.BAADUWBKKDFWBLLLFW.OOO 
+B	up	2 	 94 ..BT..CCBT.DU.BAADUW.KKDFW.LLLFW.OOO 
+L	left	1 	 98 ..BT..CCBT.DU.BAADUW.KKDFWLLL.FW.OOO 
+O	left	1 	 92 ..BT..CCBT.DU.BAADUW.KKDFWLLL.FWOOO. 
+K	left	1 	 98 ..BT..CCBT.DU.BAADUWKK.DFWLLL.FWOOO. 
+D	down	2 	 97 ..BT..CCBT..U.BAA.UWKK.DFWLLLDFWOOOD 
+A	right	1 	 96 ..BT..CCBT..U.B.AAUWKK.DFWLLLDFWOOOD 
+
+[['.' '.' 'B' 'T' '.' '.']
+ ['C' 'C' 'B' 'T' '.' '.']
+ ['U' '.' 'B' '.' 'A' 'A']
+ ['U' 'W' 'K' 'K' '.' 'D']
+ ['F' 'W' 'L' 'L' 'L' 'D']
+ ['F' 'W' 'O' 'O' 'O' 'D']]

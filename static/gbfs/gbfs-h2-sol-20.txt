@@ -1,0 +1,52 @@
+Initial board configuration: .CCBBBHH.FL..AAFLY...FLYG.DUU.G.DEE. A20 B20 C20 H20 F20 Y20 G20 D20
+
+[['.' 'C' 'C' 'B' 'B' 'B']
+ ['H' 'H' '.' 'F' 'L' '.']
+ ['.' 'A' 'A' 'F' 'L' 'Y']
+ ['.' '.' '.' 'F' 'L' 'Y']
+ ['G' '.' 'D' 'U' 'U' '.']
+ ['G' '.' 'D' 'E' 'E' '.']]
+
+Car fuel available: {'C': 20, 'B': 20, 'H': 20, 'F': 20, 'L': 100, 'A': 20, 'Y': 20, 'G': 20, 'D': 20, 'U': 100, 'E': 100}
+
+
+Runtime: 20.86832308769226 seconds
+Search path length: 873
+Solution path length: 28
+Solution path: Y down 1 -> H right 1 -> D up 1 -> A left 1 -> C left 1 -> D down 1 -> G up 1 -> H left 1 -> D up 4 -> E left 3 -> U left 2 -> E right 4 -> A right 1 -> E left 3 -> U right 1 -> G down 1 -> E right 2 -> G up 2 -> U left 1 -> L down 1 -> E right 1 -> U right 1 -> E left 3 -> L down 1 -> U left 2 -> E left 1 -> F down 2 -> A right 3 -> 
+
+Y	down	1 	 19 .CCBBBHH.FL..AAFL....FLYG.DUUYG.DEE. 
+H	right	1 	 19 .CCBBB.HHFL..AAFL....FLYG.DUUYG.DEE. 
+D	up	1 	 19 .CCBBB.HHFL..AAFL...DFLYG.DUUYG..EE. 
+A	left	1 	 19 .CCBBB.HHFL.AA.FL...DFLYG.DUUYG..EE. 
+C	left	1 	 19 CC.BBB.HHFL.AA.FL...DFLYG.DUUYG..EE. 
+D	down	1 	 18 CC.BBB.HHFL.AA.FL....FLYG.DUUYG.DEE. 
+G	up	1 	 19 CC.BBB.HHFL.AA.FL.G..FLYG.DUUY..DEE. 
+H	left	1 	 18 CC.BBBHH.FL.AA.FL.G..FLYG.DUUY..DEE. 
+D	up	4 	 14 CCDBBBHHDFL.AA.FL.G..FLYG..UUY...EE. 
+E	left	3 	 97 CCDBBBHHDFL.AA.FL.G..FLYG..UUYEE.... 
+U	left	2 	 98 CCDBBBHHDFL.AA.FL.G..FLYGUU..YEE.... 
+E	right	4 	 93 CCDBBBHHDFL.AA.FL.G..FLYGUU..Y....EE 
+A	right	1 	 18 CCDBBBHHDFL..AAFL.G..FLYGUU..Y....EE 
+E	left	3 	 90 CCDBBBHHDFL..AAFL.G..FLYGUU..Y.EE... 
+U	right	1 	 97 CCDBBBHHDFL..AAFL.G..FLYG.UU.Y.EE... 
+G	down	1 	 18 CCDBBBHHDFL..AAFL....FLYG.UU.YGEE... 
+E	right	2 	 88 CCDBBBHHDFL..AAFL....FLYG.UU.YG..EE. 
+G	up	2 	 16 CCDBBBHHDFL.GAAFL.G..FLY..UU.Y...EE. 
+U	left	1 	 96 CCDBBBHHDFL.GAAFL.G..FLY.UU..Y...EE. 
+L	down	1 	 99 CCDBBBHHDF..GAAFL.G..FLY.UU.LY...EE. 
+E	right	1 	 87 CCDBBBHHDF..GAAFL.G..FLY.UU.LY....EE 
+U	right	1 	 95 CCDBBBHHDF..GAAFL.G..FLY..UULY....EE 
+E	left	3 	 84 CCDBBBHHDF..GAAFL.G..FLY..UULY.EE... 
+L	down	1 	 98 CCDBBBHHDF..GAAF..G..FLY..UULY.EE.L. 
+U	left	2 	 93 CCDBBBHHDF..GAAF..G..FLYUU..LY.EE.L. 
+E	left	1 	 83 CCDBBBHHDF..GAAF..G..FLYUU..LYEE..L. 
+F	down	2 	 18 CCDBBBHHD...GAA...G..FLYUU.FLYEE.FL. 
+A	right	3 	 15 CCDBBBHHD...G...AAG..FLYUU.FLYEE.FL. 
+
+[['C' 'C' 'D' 'B' 'B' 'B']
+ ['H' 'H' 'D' '.' '.' '.']
+ ['G' '.' '.' '.' 'A' 'A']
+ ['G' '.' '.' 'F' 'L' 'Y']
+ ['U' 'U' '.' 'F' 'L' 'Y']
+ ['E' 'E' '.' 'F' 'L' '.']]

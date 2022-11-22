@@ -1,0 +1,61 @@
+Initial board configuration: ..STTTBBSJJUAASL.UNWWLK.NQQLK.MM.... T20 U20
+
+[['.' '.' 'S' 'T' 'T' 'T']
+ ['B' 'B' 'S' 'J' 'J' 'U']
+ ['A' 'A' 'S' 'L' '.' 'U']
+ ['N' 'W' 'W' 'L' 'K' '.']
+ ['N' 'Q' 'Q' 'L' 'K' '.']
+ ['M' 'M' '.' '.' '.' '.']]
+
+Car fuel available: {'S': 100, 'T': 20, 'B': 100, 'J': 100, 'U': 20, 'A': 100, 'L': 100, 'N': 100, 'W': 100, 'K': 100, 'Q': 100, 'M': 100}
+
+
+Runtime: 3.517587900161743 seconds
+Search path length: 350
+Solution path length: 37
+Solution path: U down 3 -> J right 1 -> K up 1 -> M right 2 -> N down 1 -> K down 2 -> L up 1 -> M left 1 -> Q right 1 -> W left 1 -> S down 1 -> T left 3 -> M right 1 -> Q left 1 -> K up 2 -> M right 1 -> Q right 2 -> M left 2 -> L up 1 -> M right 1 -> S down 1 -> M right 1 -> B right 1 -> L down 1 -> S down 1 -> U up 2 -> Q right 1 -> M right 1 -> L up 1 -> B left 1 -> L down 3 -> A right 1 -> J left 2 -> K up 2 -> A right 1 -> U up 2 -> A right 2 -> 
+
+U	down	3 	 17 ..STTTBBSJJ.AASL..NWWLK.NQQLKUMM...U 
+J	right	1 	 99 ..STTTBBS.JJAASL..NWWLK.NQQLKUMM...U 
+K	up	1 	 99 ..STTTBBS.JJAASLK.NWWLK.NQQL.UMM...U 
+M	right	2 	 98 ..STTTBBS.JJAASLK.NWWLK.NQQL.U..MM.U 
+N	down	1 	 99 ..STTTBBS.JJAASLK..WWLK.NQQL.UN.MM.U 
+K	down	2 	 97 ..STTTBBS.JJAASL...WWL..NQQLKUN.MMKU 
+L	up	1 	 99 ..STTTBBSLJJAASL...WWL..NQQ.KUN.MMKU 
+M	left	1 	 97 ..STTTBBSLJJAASL...WWL..NQQ.KUNMM.KU 
+Q	right	1 	 99 ..STTTBBSLJJAASL...WWL..N.QQKUNMM.KU 
+W	left	1 	 99 ..STTTBBSLJJAASL..WW.L..N.QQKUNMM.KU 
+S	down	1 	 99 ...TTTBBSLJJAASL..WWSL..N.QQKUNMM.KU 
+T	left	3 	 17 TTT...BBSLJJAASL..WWSL..N.QQKUNMM.KU 
+M	right	1 	 96 TTT...BBSLJJAASL..WWSL..N.QQKUN.MMKU 
+Q	left	1 	 98 TTT...BBSLJJAASL..WWSL..NQQ.KUN.MMKU 
+K	up	2 	 95 TTT...BBSLJJAASLK.WWSLK.NQQ..UN.MM.U 
+M	right	1 	 95 TTT...BBSLJJAASLK.WWSLK.NQQ..UN..MMU 
+Q	right	2 	 96 TTT...BBSLJJAASLK.WWSLK.N..QQUN..MMU 
+M	left	2 	 93 TTT...BBSLJJAASLK.WWSLK.N..QQUNMM..U 
+L	up	1 	 98 TTTL..BBSLJJAASLK.WWS.K.N..QQUNMM..U 
+M	right	1 	 92 TTTL..BBSLJJAASLK.WWS.K.N..QQUN.MM.U 
+S	down	1 	 98 TTTL..BB.LJJAASLK.WWS.K.N.SQQUN.MM.U 
+M	right	1 	 91 TTTL..BB.LJJAASLK.WWS.K.N.SQQUN..MMU 
+B	right	1 	 99 TTTL...BBLJJAASLK.WWS.K.N.SQQUN..MMU 
+L	down	1 	 97 TTT....BBLJJAASLK.WWSLK.N.SQQUN..MMU 
+S	down	1 	 97 TTT....BBLJJAA.LK.WWSLK.N.SQQUN.SMMU 
+U	up	2 	 15 TTT....BBLJJAA.LKUWWSLKUN.SQQ.N.SMM. 
+Q	right	1 	 95 TTT....BBLJJAA.LKUWWSLKUN.S.QQN.SMM. 
+M	right	1 	 90 TTT....BBLJJAA.LKUWWSLKUN.S.QQN.S.MM 
+L	up	1 	 96 TTTL...BBLJJAA.LKUWWS.KUN.S.QQN.S.MM 
+B	left	1 	 98 TTTL..BB.LJJAA.LKUWWS.KUN.S.QQN.S.MM 
+L	down	3 	 93 TTT...BB..JJAA..KUWWSLKUN.SLQQN.SLMM 
+A	right	1 	 99 TTT...BB..JJ.AA.KUWWSLKUN.SLQQN.SLMM 
+J	left	2 	 97 TTT...BBJJ...AA.KUWWSLKUN.SLQQN.SLMM 
+K	up	2 	 93 TTT.K.BBJJK..AA..UWWSL.UN.SLQQN.SLMM 
+A	right	1 	 98 TTT.K.BBJJK...AA.UWWSL.UN.SLQQN.SLMM 
+U	up	2 	 13 TTT.KUBBJJKU..AA..WWSL..N.SLQQN.SLMM 
+A	right	2 	 96 TTT.KUBBJJKU....AAWWSL..N.SLQQN.SLMM 
+
+[['T' 'T' 'T' '.' 'K' 'U']
+ ['B' 'B' 'J' 'J' 'K' 'U']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['W' 'W' 'S' 'L' '.' '.']
+ ['N' '.' 'S' 'L' 'Q' 'Q']
+ ['N' '.' 'S' 'L' 'M' 'M']]

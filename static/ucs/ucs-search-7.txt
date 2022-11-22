@@ -1,0 +1,6 @@
+0 0 0 : .HHHE.....E.AAYYL.....L.....L.WWOOO. 
+0 1 0 : HHH.E.....E.AAYYL.....L.....L.WWOOO. 
+0 1 0 : .HHHE.....E.AAYYL.....L.....L.WW.OOO 
+0 2 0 : HHH.E.....E.AAYYL.....L.....L.WW.OOO 
+0 2 0 : .HHHE.....E.AAYYL.....L.....L..WWOOO 
+0 3 0 : HHH.E.....E.AAYYL.....L.....L..WWOOO 

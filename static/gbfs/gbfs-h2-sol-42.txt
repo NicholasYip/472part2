@@ -1,0 +1,15 @@
+Initial board configuration: .GGNN.EEZZO.AALLO..CCCBB....J.WWW.J.
+
+[['.' 'G' 'G' 'N' 'N' '.']
+ ['E' 'E' 'Z' 'Z' 'O' '.']
+ ['A' 'A' 'L' 'L' 'O' '.']
+ ['.' 'C' 'C' 'C' 'B' 'B']
+ ['.' '.' '.' '.' 'J' '.']
+ ['W' 'W' 'W' '.' 'J' '.']]
+
+Car fuel available: {'G': 100, 'N': 100, 'E': 100, 'Z': 100, 'O': 100, 'A': 100, 'L': 100, 'C': 100, 'B': 100, 'J': 100, 'W': 100}
+
+
+Runtime: 0.04219174385070801 seconds
+
+No solution found GG WP 

@@ -1,0 +1,15 @@
+Initial board configuration: ....EZ.GGGEZAAN.E...NOOB..N..B...SSS
+
+[['.' '.' '.' '.' 'E' 'Z']
+ ['.' 'G' 'G' 'G' 'E' 'Z']
+ ['A' 'A' 'N' '.' 'E' '.']
+ ['.' '.' 'N' 'O' 'O' 'B']
+ ['.' '.' 'N' '.' '.' 'B']
+ ['.' '.' '.' 'S' 'S' 'S']]
+
+Car fuel available: {'E': 100, 'Z': 100, 'G': 100, 'A': 100, 'N': 100, 'O': 100, 'B': 100, 'S': 100}
+
+
+Runtime: 0.0371091365814209 seconds
+
+No solution found GG WP 

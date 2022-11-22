@@ -1,0 +1,27 @@
+Initial board configuration: ..DEEZ..D..ZAAD.....NN.S...UUS...TTS
+
+[['.' '.' 'D' 'E' 'E' 'Z']
+ ['.' '.' 'D' '.' '.' 'Z']
+ ['A' 'A' 'D' '.' '.' '.']
+ ['.' '.' 'N' 'N' '.' 'S']
+ ['.' '.' '.' 'U' 'U' 'S']
+ ['.' '.' '.' 'T' 'T' 'S']]
+
+Car fuel available: {'D': 100, 'E': 100, 'Z': 100, 'A': 100, 'N': 100, 'S': 100, 'U': 100, 'T': 100}
+
+
+Runtime: 0.5016829967498779 seconds
+Search path length: 147
+Solution path length: 3
+Solution path: N left 2 -> D down 3 -> A right 4 -> 
+
+N	left	2 	 98 ..DEEZ..D..ZAAD...NN...S...UUS...TTS 
+D	down	3 	 97 ...EEZ.....ZAA....NND..S..DUUS..DTTS 
+A	right	4 	 96 ...EEZ.....Z....AANND..S..DUUS..DTTS 
+
+[['.' '.' '.' 'E' 'E' 'Z']
+ ['.' '.' '.' '.' '.' 'Z']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['N' 'N' 'D' '.' '.' 'S']
+ ['.' '.' 'D' 'U' 'U' 'S']
+ ['.' '.' 'D' 'T' 'T' 'S']]

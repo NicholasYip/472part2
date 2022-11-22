@@ -1,0 +1,52 @@
+Initial board configuration: .B....SB.CDESAACDEHHHGDE..VG....VWW.
+
+[['.' 'B' '.' '.' '.' '.']
+ ['S' 'B' '.' 'C' 'D' 'E']
+ ['S' 'A' 'A' 'C' 'D' 'E']
+ ['H' 'H' 'H' 'G' 'D' 'E']
+ ['.' '.' 'V' 'G' '.' '.']
+ ['.' '.' 'V' 'W' 'W' '.']]
+
+Car fuel available: {'B': 100, 'S': 100, 'C': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'G': 100, 'V': 100, 'W': 100}
+
+
+Runtime: 3.0918149948120117 seconds
+Search path length: 318
+Solution path length: 28
+Solution path: C up 1 -> E up 1 -> W right 1 -> G down 1 -> H right 1 -> A right 1 -> D down 1 -> S down 1 -> A left 1 -> D up 2 -> H right 1 -> A right 1 -> B down 3 -> A left 1 -> H right 1 -> S down 2 -> A left 1 -> V up 4 -> A right 2 -> S up 4 -> B up 3 -> H left 3 -> G up 1 -> W left 4 -> A left 2 -> E down 3 -> D down 3 -> A right 4 -> 
+
+C	up	1 	 99 .B.C..SB.CDESAA.DEHHHGDE..VG....VWW. 
+E	up	1 	 99 .B.C.ESB.CDESAA.DEHHHGD...VG....VWW. 
+W	right	1 	 99 .B.C.ESB.CDESAA.DEHHHGD...VG....V.WW 
+G	down	1 	 99 .B.C.ESB.CDESAA.DEHHH.D...VG....VGWW 
+H	right	1 	 99 .B.C.ESB.CDESAA.DE.HHHD...VG....VGWW 
+A	right	1 	 99 .B.C.ESB.CDES.AADE.HHHD...VG....VGWW 
+D	down	1 	 99 .B.C.ESB.C.ES.AADE.HHHD...VGD...VGWW 
+S	down	1 	 99 .B.C.E.B.C.ES.AADESHHHD...VGD...VGWW 
+A	left	1 	 98 .B.C.E.B.C.ESAA.DESHHHD...VGD...VGWW 
+D	up	2 	 97 .B.CDE.B.CDESAA.DESHHH....VG....VGWW 
+H	right	1 	 98 .B.CDE.B.CDESAA.DES.HHH...VG....VGWW 
+A	right	1 	 97 .B.CDE.B.CDES.AADES.HHH...VG....VGWW 
+B	down	3 	 97 ...CDE...CDES.AADESBHHH..BVG....VGWW 
+A	left	1 	 96 ...CDE...CDESAA.DESBHHH..BVG....VGWW 
+H	right	1 	 97 ...CDE...CDESAA.DESB.HHH.BVG....VGWW 
+S	down	2 	 97 ...CDE...CDE.AA.DE.B.HHHSBVG..S.VGWW 
+A	left	1 	 95 ...CDE...CDEAA..DE.B.HHHSBVG..S.VGWW 
+V	up	4 	 96 ..VCDE..VCDEAA..DE.B.HHHSB.G..S..GWW 
+A	right	2 	 93 ..VCDE..VCDE..AADE.B.HHHSB.G..S..GWW 
+S	up	4 	 93 S.VCDES.VCDE..AADE.B.HHH.B.G.....GWW 
+B	up	3 	 94 SBVCDESBVCDE..AADE...HHH...G.....GWW 
+H	left	3 	 94 SBVCDESBVCDE..AADEHHH......G.....GWW 
+G	up	1 	 98 SBVCDESBVCDE..AADEHHHG.....G......WW 
+W	left	4 	 95 SBVCDESBVCDE..AADEHHHG.....G..WW.... 
+A	left	2 	 91 SBVCDESBVCDEAA..DEHHHG.....G..WW.... 
+E	down	3 	 96 SBVCD.SBVCD.AA..D.HHHG.E...G.EWW...E 
+D	down	3 	 94 SBVC..SBVC..AA....HHHGDE...GDEWW..DE 
+A	right	4 	 87 SBVC..SBVC......AAHHHGDE...GDEWW..DE 
+
+[['S' 'B' 'V' 'C' '.' '.']
+ ['S' 'B' 'V' 'C' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['H' 'H' 'H' 'G' 'D' 'E']
+ ['.' '.' '.' 'G' 'D' 'E']
+ ['W' 'W' '.' '.' 'D' 'E']]

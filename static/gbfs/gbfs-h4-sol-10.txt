@@ -1,0 +1,15 @@
+Initial board configuration: ..DEE.B.DKGHBAAKGHC..KFHC.LLF.CIIIF.
+
+[['.' '.' 'D' 'E' 'E' '.']
+ ['B' '.' 'D' 'K' 'G' 'H']
+ ['B' 'A' 'A' 'K' 'G' 'H']
+ ['C' '.' '.' 'K' 'F' 'H']
+ ['C' '.' 'L' 'L' 'F' '.']
+ ['C' 'I' 'I' 'I' 'F' '.']]
+
+Car fuel available: {'D': 100, 'E': 100, 'B': 100, 'K': 100, 'G': 100, 'H': 100, 'A': 100, 'C': 100, 'F': 100, 'L': 100, 'I': 100}
+
+
+Runtime: 1.9827849864959717 seconds
+
+No solution found GG WP 

@@ -1,0 +1,7 @@
+0 0 1 : ............AA.B..CC.BD..E..D..EFFD. 
+1 1 0 : ............AA....CC.BD..E.BD..EFFD. 
+2 1 0 : ...B.....B..AA....CC..D..E..D..EFFD. 
+2 2 0 : ............AA.....CCBD..E.BD..EFFD. 
+2 1 1 : .............AAB..CC.BD..E..D..EFFD. 
+2 1 1 : ............AA.B...CCBD..E..D..EFFD. 
+2 2 0 : ................AACC.BD..E.BD..EFFD. 

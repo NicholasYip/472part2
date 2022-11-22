@@ -1,0 +1,67 @@
+Initial board configuration: CHH..YC....YCFAADE.F..DE..RITTBBRIPP
+
+[['C' 'H' 'H' '.' '.' 'Y']
+ ['C' '.' '.' '.' '.' 'Y']
+ ['C' 'F' 'A' 'A' 'D' 'E']
+ ['.' 'F' '.' '.' 'D' 'E']
+ ['.' '.' 'R' 'I' 'T' 'T']
+ ['B' 'B' 'R' 'I' 'P' 'P']]
+
+Car fuel available: {'C': 100, 'H': 100, 'Y': 100, 'F': 100, 'A': 100, 'D': 100, 'E': 100, 'R': 100, 'I': 100, 'T': 100, 'B': 100, 'P': 100}
+
+
+Runtime: 7.07230806350708 seconds
+Search path length: 392
+Solution path length: 43
+Solution path: D up 1 -> R up 1 -> D up 1 -> H right 1 -> F down 1 -> A right 1 -> B right 1 -> I up 1 -> B right 1 -> F up 3 -> R up 2 -> B left 2 -> P left 2 -> R down 2 -> F down 2 -> R up 1 -> P right 2 -> R down 2 -> P left 1 -> H left 1 -> R up 3 -> P left 1 -> C down 2 -> F down 1 -> P right 2 -> H right 1 -> P left 1 -> C up 1 -> H left 2 -> P left 1 -> R up 1 -> P right 2 -> I down 1 -> B right 1 -> A left 2 -> I up 4 -> P left 1 -> T left 2 -> E down 1 -> T right 1 -> B left 1 -> P right 1 -> A right 3 -> 
+
+D	up	1 	 99 CHH..YC...DYCFAADE.F...E..RITTBBRIPP 
+R	up	1 	 99 CHH..YC...DYCFAADE.FR..E..RITTBB.IPP 
+D	up	1 	 98 CHH.DYC...DYCFAA.E.FR..E..RITTBB.IPP 
+H	right	1 	 99 C.HHDYC...DYCFAA.E.FR..E..RITTBB.IPP 
+F	down	1 	 99 C.HHDYC...DYC.AA.E.FR..E.FRITTBB.IPP 
+A	right	1 	 99 C.HHDYC...DYC..AAE.FR..E.FRITTBB.IPP 
+B	right	1 	 99 C.HHDYC...DYC..AAE.FR..E.FRITT.BBIPP 
+I	up	1 	 99 C.HHDYC...DYC..AAE.FRI.E.FRITT.BB.PP 
+B	right	1 	 98 C.HHDYC...DYC..AAE.FRI.E.FRITT..BBPP 
+F	up	3 	 96 CFHHDYCF..DYC..AAE..RI.E..RITT..BBPP 
+R	up	2 	 97 CFHHDYCFR.DYC.RAAE...I.E...ITT..BBPP 
+B	left	2 	 96 CFHHDYCFR.DYC.RAAE...I.E...ITTBB..PP 
+P	left	2 	 98 CFHHDYCFR.DYC.RAAE...I.E...ITTBBPP.. 
+R	down	2 	 95 CFHHDYCF..DYC..AAE..RI.E..RITTBBPP.. 
+F	down	2 	 94 C.HHDYC...DYCF.AAE.FRI.E..RITTBBPP.. 
+R	up	1 	 94 C.HHDYC...DYCFRAAE.FRI.E...ITTBBPP.. 
+P	right	2 	 96 C.HHDYC...DYCFRAAE.FRI.E...ITTBB..PP 
+R	down	2 	 92 C.HHDYC...DYCF.AAE.F.I.E..RITTBBR.PP 
+P	left	1 	 95 C.HHDYC...DYCF.AAE.F.I.E..RITTBBRPP. 
+H	left	1 	 98 CHH.DYC...DYCF.AAE.F.I.E..RITTBBRPP. 
+R	up	3 	 89 CHH.DYC.R.DYCFRAAE.F.I.E...ITTBB.PP. 
+P	left	1 	 94 CHH.DYC.R.DYCFRAAE.F.I.E...ITTBBPP.. 
+C	down	2 	 98 .HH.DY..R.DYCFRAAECF.I.EC..ITTBBPP.. 
+F	down	1 	 93 .HH.DY..R.DYC.RAAECF.I.ECF.ITTBBPP.. 
+P	right	2 	 92 .HH.DY..R.DYC.RAAECF.I.ECF.ITTBB..PP 
+H	right	1 	 97 ..HHDY..R.DYC.RAAECF.I.ECF.ITTBB..PP 
+P	left	1 	 91 ..HHDY..R.DYC.RAAECF.I.ECF.ITTBB.PP. 
+C	up	1 	 97 ..HHDYC.R.DYC.RAAECF.I.E.F.ITTBB.PP. 
+H	left	2 	 95 HH..DYC.R.DYC.RAAECF.I.E.F.ITTBB.PP. 
+P	left	1 	 90 HH..DYC.R.DYC.RAAECF.I.E.F.ITTBBPP.. 
+R	up	1 	 88 HHR.DYC.R.DYC..AAECF.I.E.F.ITTBBPP.. 
+P	right	2 	 88 HHR.DYC.R.DYC..AAECF.I.E.F.ITTBB..PP 
+I	down	1 	 98 HHR.DYC.R.DYC..AAECF...E.F.ITTBB.IPP 
+B	right	1 	 95 HHR.DYC.R.DYC..AAECF...E.F.ITT.BBIPP 
+A	left	2 	 97 HHR.DYC.R.DYCAA..ECF...E.F.ITT.BBIPP 
+I	up	4 	 94 HHRIDYC.RIDYCAA..ECF...E.F..TT.BB.PP 
+P	left	1 	 87 HHRIDYC.RIDYCAA..ECF...E.F..TT.BBPP. 
+T	left	2 	 98 HHRIDYC.RIDYCAA..ECF...E.FTT...BBPP. 
+E	down	1 	 99 HHRIDYC.RIDYCAA...CF...E.FTT.E.BBPP. 
+T	right	1 	 97 HHRIDYC.RIDYCAA...CF...E.F.TTE.BBPP. 
+B	left	1 	 94 HHRIDYC.RIDYCAA...CF...E.F.TTEBB.PP. 
+P	right	1 	 86 HHRIDYC.RIDYCAA...CF...E.F.TTEBB..PP 
+A	right	3 	 94 HHRIDYC.RIDYC...AACF...E.F.TTEBB..PP 
+
+[['H' 'H' 'R' 'I' 'D' 'Y']
+ ['C' '.' 'R' 'I' 'D' 'Y']
+ ['C' '.' '.' '.' 'A' 'A']
+ ['C' 'F' '.' '.' '.' 'E']
+ ['.' 'F' '.' 'T' 'T' 'E']
+ ['B' 'B' '.' '.' 'P' 'P']]

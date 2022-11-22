@@ -1,0 +1,15 @@
+Initial board configuration: LL..YYH....FHAAUUF..N..F..NTTT.RRRJJ
+
+[['L' 'L' '.' '.' 'Y' 'Y']
+ ['H' '.' '.' '.' '.' 'F']
+ ['H' 'A' 'A' 'U' 'U' 'F']
+ ['.' '.' 'N' '.' '.' 'F']
+ ['.' '.' 'N' 'T' 'T' 'T']
+ ['.' 'R' 'R' 'R' 'J' 'J']]
+
+Car fuel available: {'L': 100, 'Y': 100, 'H': 100, 'F': 100, 'A': 100, 'U': 100, 'N': 100, 'T': 100, 'R': 100, 'J': 100}
+
+
+Runtime: 7.440487861633301 seconds
+
+No solution found GG WP 

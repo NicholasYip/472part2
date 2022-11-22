@@ -1,0 +1,15 @@
+Initial board configuration: ..BC....BCDDAABC....EEEF.....F..GGGF A30 B30 C30 C30 E30 G30 F30
+
+[['.' '.' 'B' 'C' '.' '.']
+ ['.' '.' 'B' 'C' 'D' 'D']
+ ['A' 'A' 'B' 'C' '.' '.']
+ ['.' '.' 'E' 'E' 'E' 'F']
+ ['.' '.' '.' '.' '.' 'F']
+ ['.' '.' 'G' 'G' 'G' 'F']]
+
+Car fuel available: {'B': 30, 'C': 30, 'D': 100, 'A': 30, 'E': 30, 'F': 30, 'G': 30}
+
+
+Runtime: 0.025465011596679688 seconds
+
+No solution found GG WP 

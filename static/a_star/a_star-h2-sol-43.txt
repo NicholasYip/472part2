@@ -1,0 +1,33 @@
+Initial board configuration: CCDD.OE..U.OEAAU.OE..U..B...FFB.LLL. C20 D20 O20 E20 B20 F20
+
+[['C' 'C' 'D' 'D' '.' 'O']
+ ['E' '.' '.' 'U' '.' 'O']
+ ['E' 'A' 'A' 'U' '.' 'O']
+ ['E' '.' '.' 'U' '.' '.']
+ ['B' '.' '.' '.' 'F' 'F']
+ ['B' '.' 'L' 'L' 'L' '.']]
+
+Car fuel available: {'C': 20, 'D': 20, 'O': 20, 'E': 20, 'U': 100, 'A': 100, 'B': 20, 'F': 20, 'L': 100}
+
+
+Runtime: 2.63716721534729 seconds
+Search path length: 613
+Solution path length: 9
+Solution path: F left 3 -> O down 3 -> D right 2 -> C right 1 -> E up 1 -> B up 1 -> L left 2 -> U down 2 -> A right 3 -> 
+
+F	left	3 	 17 CCDD.OE..U.OEAAU.OE..U..BFF...B.LLL. 
+O	down	3 	 17 CCDD..E..U..EAAU..E..U.OBFF..OB.LLLO 
+D	right	2 	 18 CC..DDE..U..EAAU..E..U.OBFF..OB.LLLO 
+C	right	1 	 19 .CC.DDE..U..EAAU..E..U.OBFF..OB.LLLO 
+E	up	1 	 19 ECC.DDE..U..EAAU.....U.OBFF..OB.LLLO 
+B	up	1 	 19 ECC.DDE..U..EAAU..B..U.OBFF..O..LLLO 
+L	left	2 	 98 ECC.DDE..U..EAAU..B..U.OBFF..OLLL..O 
+U	down	2 	 98 ECC.DDE.....EAA...B..U.OBFFU.OLLLU.O 
+A	right	3 	 97 ECC.DDE.....E...AAB..U.OBFFU.OLLLU.O 
+
+[['E' 'C' 'C' '.' 'D' 'D']
+ ['E' '.' '.' '.' '.' '.']
+ ['E' '.' '.' '.' 'A' 'A']
+ ['B' '.' '.' 'U' '.' 'O']
+ ['B' 'F' 'F' 'U' '.' 'O']
+ ['L' 'L' 'L' 'U' '.' 'O']]

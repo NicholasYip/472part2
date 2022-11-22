@@ -1,0 +1,33 @@
+Initial board configuration: ..DEETR.DN.TRAAN..R..KK..G.FFF.GHHBB
+
+[['.' '.' 'D' 'E' 'E' 'T']
+ ['R' '.' 'D' 'N' '.' 'T']
+ ['R' 'A' 'A' 'N' '.' '.']
+ ['R' '.' '.' 'K' 'K' '.']
+ ['.' 'G' '.' 'F' 'F' 'F']
+ ['.' 'G' 'H' 'H' 'B' 'B']]
+
+Car fuel available: {'D': 100, 'E': 100, 'T': 100, 'R': 100, 'N': 100, 'A': 100, 'K': 100, 'G': 100, 'F': 100, 'H': 100, 'B': 100}
+
+
+Runtime: 1.7828590869903564 seconds
+Search path length: 264
+Solution path length: 9
+Solution path: K left 2 -> F left 1 -> N down 1 -> R down 2 -> A left 1 -> T down 3 -> E right 1 -> N up 2 -> A right 4 -> 
+
+K	left	2 	 98 ..DEETR.DN.TRAAN..RKK....G.FFF.GHHBB 
+F	left	1 	 99 ..DEETR.DN.TRAAN..RKK....GFFF..GHHBB 
+N	down	1 	 99 ..DEETR.D..TRAAN..RKKN...GFFF..GHHBB 
+R	down	2 	 98 ..DEET..D..T.AAN..RKKN..RGFFF.RGHHBB 
+A	left	1 	 99 ..DEET..D..TAA.N..RKKN..RGFFF.RGHHBB 
+T	down	3 	 97 ..DEE...D...AA.N..RKKN.TRGFFFTRGHHBB 
+E	right	1 	 99 ..D.EE..D...AA.N..RKKN.TRGFFFTRGHHBB 
+N	up	2 	 97 ..DNEE..DN..AA....RKK..TRGFFFTRGHHBB 
+A	right	4 	 95 ..DNEE..DN......AARKK..TRGFFFTRGHHBB 
+
+[['.' '.' 'D' 'N' 'E' 'E']
+ ['.' '.' 'D' 'N' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['R' 'K' 'K' '.' '.' 'T']
+ ['R' 'G' 'F' 'F' 'F' 'T']
+ ['R' 'G' 'H' 'H' 'B' 'B']]

@@ -1,0 +1,15 @@
+Initial board configuration: YY...PB..O.PBAAO.PB..O..C...EEC.DDFF
+
+[['Y' 'Y' '.' '.' '.' 'P']
+ ['B' '.' '.' 'O' '.' 'P']
+ ['B' 'A' 'A' 'O' '.' 'P']
+ ['B' '.' '.' 'O' '.' '.']
+ ['C' '.' '.' '.' 'E' 'E']
+ ['C' '.' 'D' 'D' 'F' 'F']]
+
+Car fuel available: {'Y': 100, 'P': 100, 'B': 100, 'O': 100, 'A': 100, 'C': 100, 'E': 100, 'D': 100, 'F': 100}
+
+
+Runtime: 9.826874017715454 seconds
+
+No solution found GG WP 

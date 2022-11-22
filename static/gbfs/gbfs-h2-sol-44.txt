@@ -1,0 +1,15 @@
+Initial board configuration: ..E..OWWE..OQAABBCQIIIHC.Z..HC.ZYYDD
+
+[['.' '.' 'E' '.' '.' 'O']
+ ['W' 'W' 'E' '.' '.' 'O']
+ ['Q' 'A' 'A' 'B' 'B' 'C']
+ ['Q' 'I' 'I' 'I' 'H' 'C']
+ ['.' 'Z' '.' '.' 'H' 'C']
+ ['.' 'Z' 'Y' 'Y' 'D' 'D']]
+
+Car fuel available: {'E': 100, 'O': 100, 'W': 100, 'Q': 100, 'A': 100, 'B': 100, 'C': 100, 'I': 100, 'H': 100, 'Z': 100, 'Y': 100, 'D': 100}
+
+
+Runtime: 0.1650559902191162 seconds
+
+No solution found GG WP 

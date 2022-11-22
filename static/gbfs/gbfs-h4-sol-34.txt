@@ -1,0 +1,51 @@
+Initial board configuration: .B....SB.CDESAACDEHHHGDE..VG....VWW.
+
+[['.' 'B' '.' '.' '.' '.']
+ ['S' 'B' '.' 'C' 'D' 'E']
+ ['S' 'A' 'A' 'C' 'D' 'E']
+ ['H' 'H' 'H' 'G' 'D' 'E']
+ ['.' '.' 'V' 'G' '.' '.']
+ ['.' '.' 'V' 'W' 'W' '.']]
+
+Car fuel available: {'B': 100, 'S': 100, 'C': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'G': 100, 'V': 100, 'W': 100}
+
+
+Runtime: 14.08069920539856 seconds
+Search path length: 842
+Solution path length: 27
+Solution path: C up 1 -> A right 1 -> W right 1 -> D up 1 -> G down 1 -> H right 2 -> B down 3 -> A left 1 -> E down 1 -> B down 1 -> E up 2 -> H right 1 -> S down 2 -> A left 1 -> V up 4 -> H left 2 -> E down 1 -> D down 2 -> A right 1 -> S up 3 -> H left 1 -> G up 1 -> W left 2 -> E down 2 -> S down 1 -> D down 1 -> A right 3 -> 
+
+C	up	1 	 99 .B.C..SB.CDESAA.DEHHHGDE..VG....VWW. 
+A	right	1 	 99 .B.C..SB.CDES.AADEHHHGDE..VG....VWW. 
+W	right	1 	 99 .B.C..SB.CDES.AADEHHHGDE..VG....V.WW 
+D	up	1 	 99 .B.CD.SB.CDES.AADEHHHG.E..VG....V.WW 
+G	down	1 	 99 .B.CD.SB.CDES.AADEHHH..E..VG....VGWW 
+H	right	2 	 98 .B.CD.SB.CDES.AADE..HHHE..VG....VGWW 
+B	down	3 	 97 ...CD.S..CDES.AADE.BHHHE.BVG....VGWW 
+A	left	1 	 98 ...CD.S..CDESAA.DE.BHHHE.BVG....VGWW 
+E	down	1 	 99 ...CD.S..CD.SAA.DE.BHHHE.BVG.E..VGWW 
+B	down	1 	 96 ...CD.S..CD.SAA.DE..HHHE.BVG.E.BVGWW 
+E	up	2 	 97 ...CDES..CDESAA.DE..HHH..BVG...BVGWW 
+H	right	1 	 97 ...CDES..CDESAA.DE...HHH.BVG...BVGWW 
+S	down	2 	 98 ...CDE...CDE.AA.DES..HHHSBVG...BVGWW 
+A	left	1 	 97 ...CDE...CDEAA..DES..HHHSBVG...BVGWW 
+V	up	4 	 96 ..VCDE..VCDEAA..DES..HHHSB.G...B.GWW 
+H	left	2 	 95 ..VCDE..VCDEAA..DESHHH..SB.G...B.GWW 
+E	down	1 	 96 ..VCD...VCDEAA..DESHHH.ESB.G...B.GWW 
+D	down	2 	 97 ..VC....VC.EAA..DESHHHDESB.GD..B.GWW 
+A	right	1 	 96 ..VC....VC.E.AA.DESHHHDESB.GD..B.GWW 
+S	up	3 	 95 S.VC..S.VC.E.AA.DE.HHHDE.B.GD..B.GWW 
+H	left	1 	 94 S.VC..S.VC.E.AA.DEHHH.DE.B.GD..B.GWW 
+G	up	1 	 98 S.VC..S.VC.E.AA.DEHHHGDE.B.GD..B..WW 
+W	left	2 	 97 S.VC..S.VC.E.AA.DEHHHGDE.B.GD..BWW.. 
+E	down	2 	 94 S.VC..S.VC...AA.D.HHHGDE.B.GDE.BWW.E 
+S	down	1 	 94 ..VC..S.VC..SAA.D.HHHGDE.B.GDE.BWW.E 
+D	down	1 	 96 ..VC..S.VC..SAA...HHHGDE.B.GDE.BWWDE 
+A	right	3 	 93 ..VC..S.VC..S...AAHHHGDE.B.GDE.BWWDE 
+
+[['.' '.' 'V' 'C' '.' '.']
+ ['S' '.' 'V' 'C' '.' '.']
+ ['S' '.' '.' '.' 'A' 'A']
+ ['H' 'H' 'H' 'G' 'D' 'E']
+ ['.' 'B' '.' 'G' 'D' 'E']
+ ['.' 'B' 'W' 'W' 'D' 'E']]

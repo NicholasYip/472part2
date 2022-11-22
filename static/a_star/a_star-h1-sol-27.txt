@@ -1,0 +1,41 @@
+Initial board configuration: OOO.GIS...GIS.AAGIS.QW....QWTTUUUW..
+
+[['O' 'O' 'O' '.' 'G' 'I']
+ ['S' '.' '.' '.' 'G' 'I']
+ ['S' '.' 'A' 'A' 'G' 'I']
+ ['S' '.' 'Q' 'W' '.' '.']
+ ['.' '.' 'Q' 'W' 'T' 'T']
+ ['U' 'U' 'U' 'W' '.' '.']]
+
+Car fuel available: {'O': 100, 'G': 100, 'I': 100, 'S': 100, 'A': 100, 'Q': 100, 'W': 100, 'T': 100, 'U': 100}
+
+
+Runtime: 43.3236870765686 seconds
+Search path length: 2782
+Solution path length: 17
+Solution path: A left 1 -> W up 3 -> U right 1 -> S down 2 -> A left 1 -> Q up 2 -> T left 3 -> G down 3 -> W down 2 -> I down 3 -> O right 3 -> Q up 1 -> A right 1 -> S up 3 -> U left 1 -> W down 1 -> A right 3 -> 
+
+A	left	1 	 99 OOO.GIS...GISAA.GIS.QW....QWTTUUUW.. 
+W	up	3 	 97 OOOWGIS..WGISAAWGIS.Q.....Q.TTUUU... 
+U	right	1 	 99 OOOWGIS..WGISAAWGIS.Q.....Q.TT.UUU.. 
+S	down	2 	 98 OOOWGI...WGI.AAWGIS.Q...S.Q.TTSUUU.. 
+A	left	1 	 98 OOOWGI...WGIAA.WGIS.Q...S.Q.TTSUUU.. 
+Q	up	2 	 98 OOOWGI..QWGIAAQWGIS.....S...TTSUUU.. 
+T	left	3 	 97 OOOWGI..QWGIAAQWGIS.....STT...SUUU.. 
+G	down	3 	 97 OOOW.I..QW.IAAQW.IS...G.STT.G.SUUUG. 
+W	down	2 	 95 OOO..I..Q..IAAQW.IS..WG.STTWG.SUUUG. 
+I	down	3 	 97 OOO.....Q...AAQW..S..WGISTTWGISUUUGI 
+O	right	3 	 97 ...OOO..Q...AAQW..S..WGISTTWGISUUUGI 
+Q	up	1 	 97 ..QOOO..Q...AA.W..S..WGISTTWGISUUUGI 
+A	right	1 	 97 ..QOOO..Q....AAW..S..WGISTTWGISUUUGI 
+S	up	3 	 95 S.QOOOS.Q...SAAW.....WGI.TTWGI.UUUGI 
+U	left	1 	 98 S.QOOOS.Q...SAAW.....WGI.TTWGIUUU.GI 
+W	down	1 	 94 S.QOOOS.Q...SAA......WGI.TTWGIUUUWGI 
+A	right	3 	 94 S.QOOOS.Q...S...AA...WGI.TTWGIUUUWGI 
+
+[['S' '.' 'Q' 'O' 'O' 'O']
+ ['S' '.' 'Q' '.' '.' '.']
+ ['S' '.' '.' '.' 'A' 'A']
+ ['.' '.' '.' 'W' 'G' 'I']
+ ['.' 'T' 'T' 'W' 'G' 'I']
+ ['U' 'U' 'U' 'W' 'G' 'I']]

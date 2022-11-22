@@ -1,0 +1,15 @@
+Initial board configuration: ..GGOR..DFORAADFO.T.DF..TVKKJJ.VIII. G20 O20 R20 D20 A20 R20
+
+[['.' '.' 'G' 'G' 'O' 'R']
+ ['.' '.' 'D' 'F' 'O' 'R']
+ ['A' 'A' 'D' 'F' 'O' '.']
+ ['T' '.' 'D' 'F' '.' '.']
+ ['T' 'V' 'K' 'K' 'J' 'J']
+ ['.' 'V' 'I' 'I' 'I' '.']]
+
+Car fuel available: {'G': 20, 'O': 20, 'R': 20, 'D': 20, 'F': 100, 'A': 20, 'T': 100, 'V': 100, 'K': 100, 'J': 100, 'I': 100}
+
+
+Runtime: 3.631990909576416 seconds
+
+No solution found GG WP 

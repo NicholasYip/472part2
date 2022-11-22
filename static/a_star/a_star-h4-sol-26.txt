@@ -1,0 +1,33 @@
+Initial board configuration: LL..YYH....FHAAUUF..N..F..NTTT.RRRJJ
+
+[['L' 'L' '.' '.' 'Y' 'Y']
+ ['H' '.' '.' '.' '.' 'F']
+ ['H' 'A' 'A' 'U' 'U' 'F']
+ ['.' '.' 'N' '.' '.' 'F']
+ ['.' '.' 'N' 'T' 'T' 'T']
+ ['.' 'R' 'R' 'R' 'J' 'J']]
+
+Car fuel available: {'L': 100, 'Y': 100, 'H': 100, 'F': 100, 'A': 100, 'U': 100, 'N': 100, 'T': 100, 'R': 100, 'J': 100}
+
+
+Runtime: 2.5006039142608643 seconds
+Search path length: 585
+Solution path length: 10
+Solution path: H down 2 -> A left 1 -> N up 3 -> U left 1 -> T left 1 -> R left 1 -> J left 1 -> F down 2 -> A right 4 -> 
+
+H	down	2 	 98 LL..YY.....F.AAUUFH.N..FH.NTTT.RRRJJ 
+A	left	1 	 99 LL..YY.....FAA.UUFH.N..FH.NTTT.RRRJJ 
+N	up	3 	 97 LLN.YY..N..FAA.UUFH....FH..TTT.RRRJJ 
+U	left	1 	 99 LLN.YY..N..FAAUU.FH....FH..TTT.RRRJJ 
+T	left	1 	 99 LLN.YY..N..FAAUU.FH....FH.TTT..RRRJJ 
+R	left	1 	 99 LLN.YY..N..FAAUU.FH....FH.TTT.RRR.JJ 
+J	left	1 	 99 LLN.YY..N..FAAUU.FH....FH.TTT.RRRJJ. 
+F	down	2 	 98 LLN.YY..N...AAUU..H....FH.TTTFRRRJJF 
+A	right	4 	 95 LLN.YY..N.......AAH....FH.TTTFRRRJJF 
+
+[['L' 'L' 'N' '.' 'Y' 'Y']
+ ['.' '.' 'N' '.' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['H' '.' '.' '.' '.' 'F']
+ ['H' '.' 'T' 'T' 'T' 'F']
+ ['R' 'R' 'R' 'J' 'J' 'F']]

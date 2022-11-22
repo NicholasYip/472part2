@@ -1,0 +1,46 @@
+Initial board configuration: .CYYYI.CZZZIAAL.VIBBLOV.W.LO..WPPO.. Y20 Z20 B20 W20 P20 A20 C20
+
+[['.' 'C' 'Y' 'Y' 'Y' 'I']
+ ['.' 'C' 'Z' 'Z' 'Z' 'I']
+ ['A' 'A' 'L' '.' 'V' 'I']
+ ['B' 'B' 'L' 'O' 'V' '.']
+ ['W' '.' 'L' 'O' '.' '.']
+ ['W' 'P' 'P' 'O' '.' '.']]
+
+Car fuel available: {'C': 20, 'Y': 20, 'I': 100, 'Z': 20, 'A': 20, 'L': 100, 'V': 100, 'B': 20, 'O': 100, 'W': 20, 'P': 20}
+
+
+Runtime: 4.883971214294434 seconds
+Search path length: 1252
+Solution path length: 22
+Solution path: I down 2 -> Y right 1 -> Z right 1 -> V down 1 -> O up 1 -> P right 3 -> L down 1 -> O down 1 -> A right 3 -> L up 3 -> B right 1 -> W up 4 -> B left 1 -> L down 3 -> A left 3 -> L up 1 -> O up 1 -> P left 4 -> I down 1 -> L down 1 -> O down 1 -> A right 4 -> 
+
+I	down	2 	 98 .CYYY..CZZZ.AAL.VIBBLOVIW.LO.IWPPO.. 
+Y	right	1 	 19 .C.YYY.CZZZ.AAL.VIBBLOVIW.LO.IWPPO.. 
+Z	right	1 	 19 .C.YYY.C.ZZZAAL.VIBBLOVIW.LO.IWPPO.. 
+V	down	1 	 99 .C.YYY.C.ZZZAAL..IBBLOVIW.LOVIWPPO.. 
+O	up	1 	 99 .C.YYY.C.ZZZAALO.IBBLOVIW.LOVIWPP... 
+P	right	3 	 17 .C.YYY.C.ZZZAALO.IBBLOVIW.LOVIW...PP 
+L	down	1 	 99 .C.YYY.C.ZZZAA.O.IBBLOVIW.LOVIW.L.PP 
+O	down	1 	 98 .C.YYY.C.ZZZAA...IBBLOVIW.LOVIW.LOPP 
+A	right	3 	 17 .C.YYY.C.ZZZ...AAIBBLOVIW.LOVIW.LOPP 
+L	up	3 	 96 .CLYYY.CLZZZ..LAAIBB.OVIW..OVIW..OPP 
+B	right	1 	 19 .CLYYY.CLZZZ..LAAI.BBOVIW..OVIW..OPP 
+W	up	4 	 16 WCLYYYWCLZZZ..LAAI.BBOVI...OVI...OPP 
+B	left	1 	 18 WCLYYYWCLZZZ..LAAIBB.OVI...OVI...OPP 
+L	down	3 	 93 WC.YYYWC.ZZZ...AAIBBLOVI..LOVI..LOPP 
+A	left	3 	 14 WC.YYYWC.ZZZAA...IBBLOVI..LOVI..LOPP 
+L	up	1 	 92 WC.YYYWC.ZZZAAL..IBBLOVI..LOVI...OPP 
+O	up	1 	 97 WC.YYYWC.ZZZAALO.IBBLOVI..LOVI....PP 
+P	left	4 	 13 WC.YYYWC.ZZZAALO.IBBLOVI..LOVIPP.... 
+I	down	1 	 97 WC.YYYWC.ZZZAALO..BBLOVI..LOVIPP...I 
+L	down	1 	 91 WC.YYYWC.ZZZAA.O..BBLOVI..LOVIPPL..I 
+O	down	1 	 96 WC.YYYWC.ZZZAA....BBLOVI..LOVIPPLO.I 
+A	right	4 	 10 WC.YYYWC.ZZZ....AABBLOVI..LOVIPPLO.I 
+
+[['W' 'C' '.' 'Y' 'Y' 'Y']
+ ['W' 'C' '.' 'Z' 'Z' 'Z']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['B' 'B' 'L' 'O' 'V' 'I']
+ ['.' '.' 'L' 'O' 'V' 'I']
+ ['P' 'P' 'L' 'O' '.' 'I']]

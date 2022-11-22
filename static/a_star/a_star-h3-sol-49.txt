@@ -1,0 +1,36 @@
+Initial board configuration: ..B.....B...AAB.......C..DEEC..D..C.
+
+[['.' '.' 'B' '.' '.' '.']
+ ['.' '.' 'B' '.' '.' '.']
+ ['A' 'A' 'B' '.' '.' '.']
+ ['.' '.' '.' '.' 'C' '.']
+ ['.' 'D' 'E' 'E' 'C' '.']
+ ['.' 'D' '.' '.' 'C' '.']]
+
+Car fuel available: {'B': 100, 'A': 100, 'C': 100, 'D': 100, 'E': 100}
+
+
+Runtime: 0.07509994506835938 seconds
+Search path length: 116
+Solution path length: 12
+Solution path: C up 3 -> E right 1 -> B down 3 -> A right 2 -> D up 4 -> A left 2 -> B up 2 -> E left 2 -> C down 3 -> E left 1 -> B down 2 -> A right 4 -> 
+
+C	up	3 	 97 ..B.C...B.C.AAB.C........DEE...D.... 
+E	right	1 	 99 ..B.C...B.C.AAB.C........D.EE..D.... 
+B	down	3 	 97 ....C.....C.AA..C...B....DBEE..DB... 
+A	right	2 	 98 ....C.....C...AAC...B....DBEE..DB... 
+D	up	4 	 96 .D..C..D..C...AAC...B.....BEE...B... 
+A	left	2 	 96 .D..C..D..C.AA..C...B.....BEE...B... 
+B	up	2 	 95 .D..C..DB.C.AAB.C...B......EE....... 
+E	left	2 	 97 .D..C..DB.C.AAB.C...B....EE......... 
+C	down	3 	 94 .D.....DB...AAB.....B.C..EE.C.....C. 
+E	left	1 	 96 .D.....DB...AAB.....B.C.EE..C.....C. 
+B	down	2 	 93 .D.....D....AA......B.C.EEB.C...B.C. 
+A	right	4 	 92 .D.....D........AA..B.C.EEB.C...B.C. 
+
+[['.' 'D' '.' '.' '.' '.']
+ ['.' 'D' '.' '.' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['.' '.' 'B' '.' 'C' '.']
+ ['E' 'E' 'B' '.' 'C' '.']
+ ['.' '.' 'B' '.' 'C' '.']]

@@ -1,0 +1,33 @@
+Initial board configuration: .CCBBBHH.FL..AAFLY...FLYG.DUU.G.DEE. A20 B20 C20 H20 F20 Y20 G20 D20
+
+[['.' 'C' 'C' 'B' 'B' 'B']
+ ['H' 'H' '.' 'F' 'L' '.']
+ ['.' 'A' 'A' 'F' 'L' 'Y']
+ ['.' '.' '.' 'F' 'L' 'Y']
+ ['G' '.' 'D' 'U' 'U' '.']
+ ['G' '.' 'D' 'E' 'E' '.']]
+
+Car fuel available: {'C': 20, 'B': 20, 'H': 20, 'F': 20, 'L': 100, 'A': 20, 'Y': 20, 'G': 20, 'D': 20, 'U': 100, 'E': 100}
+
+
+Runtime: 519.1072409152985 seconds
+Search path length: 8731
+Solution path length: 9
+Solution path: C left 1 -> A left 1 -> Y down 1 -> D up 4 -> U left 2 -> E left 2 -> F down 2 -> L down 2 -> A right 4 -> 
+
+C	left	1 	 19 CC.BBBHH.FL..AAFLY...FLYG.DUU.G.DEE. 
+A	left	1 	 19 CC.BBBHH.FL.AA.FLY...FLYG.DUU.G.DEE. 
+Y	down	1 	 19 CC.BBBHH.FL.AA.FL....FLYG.DUUYG.DEE. 
+D	up	4 	 16 CCDBBBHHDFL.AA.FL....FLYG..UUYG..EE. 
+U	left	2 	 98 CCDBBBHHDFL.AA.FL....FLYGUU..YG..EE. 
+E	left	2 	 98 CCDBBBHHDFL.AA.FL....FLYGUU..YGEE... 
+F	down	2 	 18 CCDBBBHHD.L.AA..L....FLYGUUF.YGEEF.. 
+L	down	2 	 98 CCDBBBHHD...AA.......FLYGUUFLYGEEFL. 
+A	right	4 	 15 CCDBBBHHD.......AA...FLYGUUFLYGEEFL. 
+
+[['C' 'C' 'D' 'B' 'B' 'B']
+ ['H' 'H' 'D' '.' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['.' '.' '.' 'F' 'L' 'Y']
+ ['G' 'U' 'U' 'F' 'L' 'Y']
+ ['G' 'E' 'E' 'F' 'L' '.']]
