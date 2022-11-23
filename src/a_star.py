@@ -1,5 +1,4 @@
 from queue import PriorityQueue
-
 import numpy as np
 import time
 from board import Board
@@ -46,7 +45,8 @@ def a_star(board_line, index, h, ws):
                     try:
                         i = to_visit_boards.queue.index(board1)
                         if i and board1.fn < to_visit_boards.queue[i].fn:
-                            to_visit_boards.queue[i] = board1
+                            to_visit_boards.queue.pop(i)
+                            to_visit_boards.put(board1)
                     except ValueError:
                         to_visit_boards.put(board1)
                     if not board1.can_move_left(vehicle):
@@ -68,7 +68,8 @@ def a_star(board_line, index, h, ws):
                     try:
                         i = to_visit_boards.queue.index(board2)
                         if i and board2.fn < to_visit_boards.queue[i].fn:
-                            to_visit_boards.queue[i] = board2
+                            to_visit_boards.queue.pop(i)
+                            to_visit_boards.put(board2)
                     except ValueError:
                         to_visit_boards.put(board2)
                     if not board2.can_move_right(vehicle):
@@ -90,7 +91,8 @@ def a_star(board_line, index, h, ws):
                     try:
                         i = to_visit_boards.queue.index(board3)
                         if i and board3.fn < to_visit_boards.queue[i].fn:
-                            to_visit_boards.queue[i] = board3
+                            to_visit_boards.queue.pop(i)
+                            to_visit_boards.put(board3)
                     except ValueError:
                         to_visit_boards.put(board3)
                     if not board3.can_move_up(vehicle):
@@ -112,7 +114,8 @@ def a_star(board_line, index, h, ws):
                     try:
                         i = to_visit_boards.queue.index(board4)
                         if i and board4.fn < to_visit_boards.queue[i].fn:
-                            to_visit_boards.queue[i] = board4
+                            to_visit_boards.queue.pop(i)
+                            to_visit_boards.put(board4)
                     except ValueError:
                         to_visit_boards.put(board4)
                     if not board4.can_move_down(vehicle):
@@ -129,7 +132,8 @@ def a_star(board_line, index, h, ws):
                 try:
                     i = to_visit_boards.queue.index(board5)
                     if i and board5.fn < to_visit_boards.queue[i].fn:
-                        to_visit_boards.queue[i] = board5
+                        to_visit_boards.queue.pop(i)
+                        to_visit_boards.put(board5)
                 except ValueError:
                     to_visit_boards.put(board5)
 
@@ -177,6 +181,7 @@ def a_star(board_line, index, h, ws):
         f.write("\n{}".format(np.array(list(winning_board.state)).reshape((6, 6))))
     else:
         f.write("\n\nNo solution found GG WP ")
+        ws.append([index, "A*", "h{}".format(h), "No solution", str(len(visited_boards)), str(end - start)])
     f.close()
     s.close()
 

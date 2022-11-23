@@ -161,5 +161,6 @@ def uniform_cost_search(board_line, index, ws):
         f.write("\n{}".format(np.array(list(winning_board.state)).reshape((6, 6))))
     else:
         f.write("\n\nNo solution found GG WP ")
+        ws.append([index, "UCS", "NA", "No solution", str(len(visited_boards)), str(end - start)])
     s.close()
     f.close()

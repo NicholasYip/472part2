@@ -155,6 +155,7 @@ def greedy_best_first_search(board_line, index, h, ws):
         f.write("\n{}".format(np.array(list(winning_board.state)).reshape((6, 6))))
     else:
         f.write("\n\nNo solution found GG WP ")
+        ws.append([index, "GBFS", "NA", "No solution", str(len(visited_boards)), str(end - start)])
     f.close()
     s.close()
 
