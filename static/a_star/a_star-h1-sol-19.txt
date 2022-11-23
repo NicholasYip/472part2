@@ -10,17 +10,17 @@ Initial board configuration: ...BYYGGGBS..AACS.F..C..F..CPPF.DDOO
 Car fuel available: {'B': 100, 'Y': 100, 'G': 100, 'S': 100, 'A': 100, 'C': 100, 'F': 100, 'P': 100, 'D': 100, 'O': 100}
 
 
-Runtime: 0.02532505989074707 seconds
+Runtime: 0.026401996612548828 seconds
 Search path length: 58
 Solution path length: 7
-Solution path: D left 1 -> C down 1 -> B down 1 -> Y left 3 -> B up 1 -> S up 1 -> A right 3 -> 
+Solution path: D left 1 -> C down 1 -> B down 1 -> Y left 3 -> S up 1 -> B up 1 -> A right 3 -> 
 
 D	left	1 	 99 ...BYYGGGBS..AACS.F..C..F..CPPFDD.OO 
 C	down	1 	 99 ...BYYGGGBS..AA.S.F..C..F..CPPFDDCOO 
 B	down	1 	 99 ....YYGGGBS..AABS.F..C..F..CPPFDDCOO 
 Y	left	3 	 97 .YY...GGGBS..AABS.F..C..F..CPPFDDCOO 
-B	up	1 	 98 .YYB..GGGBS..AA.S.F..C..F..CPPFDDCOO 
-S	up	1 	 99 .YYBS.GGGBS..AA...F..C..F..CPPFDDCOO 
+S	up	1 	 99 .YY.S.GGGBS..AAB..F..C..F..CPPFDDCOO 
+B	up	1 	 98 .YYBS.GGGBS..AA...F..C..F..CPPFDDCOO 
 A	right	3 	 97 .YYBS.GGGBS.....AAF..C..F..CPPFDDCOO 
 
 [['.' 'Y' 'Y' 'B' 'S' '.']

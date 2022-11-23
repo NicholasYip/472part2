@@ -9,3 +9,23 @@ Initial board configuration: ..GGGD..E..DAAE..DH.....H.BBCCZZ..FF
 
 Car fuel available: {'G': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'B': 100, 'C': 100, 'Z': 100, 'F': 100}
 
+
+Runtime: 6.352303743362427 seconds
+Search path length: 920
+Solution path length: 7
+Solution path: B left 1 -> C left 1 -> F left 1 -> D down 3 -> G right 1 -> E up 1 -> A right 4 -> 
+
+B	left	1 	 99 ..GGGD..E..DAAE..DH.....HBB.CCZZ..FF 
+C	left	1 	 99 ..GGGD..E..DAAE..DH.....HBBCC.ZZ..FF 
+F	left	1 	 99 ..GGGD..E..DAAE..DH.....HBBCC.ZZ.FF. 
+D	down	3 	 97 ..GGG...E...AAE...H....DHBBCCDZZ.FFD 
+G	right	1 	 99 ...GGG..E...AAE...H....DHBBCCDZZ.FFD 
+E	up	1 	 99 ..EGGG..E...AA....H....DHBBCCDZZ.FFD 
+A	right	4 	 96 ..EGGG..E.......AAH....DHBBCCDZZ.FFD 
+
+[['.' '.' 'E' 'G' 'G' 'G']
+ ['.' '.' 'E' '.' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['H' '.' '.' '.' '.' 'D']
+ ['H' 'B' 'B' 'C' 'C' 'D']
+ ['Z' 'Z' '.' 'F' 'F' 'D']]

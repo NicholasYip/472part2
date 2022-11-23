@@ -10,7 +10,7 @@ Initial board configuration: CCD.EEBBD.F.V.AAF.VHHHFIV..Y.IQQ.YLL
 Car fuel available: {'C': 100, 'D': 100, 'E': 100, 'B': 100, 'F': 100, 'V': 100, 'A': 100, 'H': 100, 'I': 100, 'Y': 100, 'Q': 100, 'L': 100}
 
 
-Runtime: 43.11292505264282 seconds
+Runtime: 42.947187185287476 seconds
 Search path length: 2131
 Solution path length: 97
 Solution path: Q right 1 -> I up 2 -> V down 1 -> A left 2 -> E left 1 -> D down 1 -> E left 1 -> I down 2 -> F up 1 -> I up 3 -> H right 2 -> I down 1 -> D down 2 -> A right 1 -> V up 1 -> I up 1 -> B right 1 -> Q left 1 -> D down 1 -> H left 2 -> I down 1 -> F down 1 -> I down 2 -> E right 2 -> I up 1 -> A right 1 -> C right 2 -> I up 1 -> V up 2 -> H left 1 -> C left 1 -> I down 1 -> F down 1 -> I down 1 -> B right 2 -> A left 1 -> B right 1 -> Y up 4 -> L left 1 -> Y down 2 -> B left 3 -> L right 1 -> F up 1 -> Y up 1 -> H right 1 -> L left 1 -> V down 2 -> B left 1 -> I down 1 -> F down 1 -> C left 1 -> Y up 1 -> I up 3 -> L right 1 -> I down 1 -> B right 1 -> L left 1 -> I down 1 -> V up 1 -> L right 1 -> I up 2 -> F up 1 -> L left 1 -> I down 3 -> Y down 1 -> E left 1 -> I up 4 -> L right 1 -> V down 1 -> B left 1 -> L left 1 -> E left 1 -> F up 1 -> H right 2 -> B right 1 -> D up 1 -> Q right 1 -> V down 1 -> A left 1 -> B left 1 -> D up 1 -> I down 1 -> D up 1 -> H left 2 -> I down 2 -> L right 1 -> F down 2 -> E right 2 -> D up 1 -> Y up 1 -> L left 1 -> A right 1 -> V up 1 -> Q left 1 -> L left 1 -> F down 1 -> A right 3 -> 

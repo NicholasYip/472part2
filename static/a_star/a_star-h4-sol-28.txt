@@ -10,29 +10,29 @@ Initial board configuration: ..STTTBBSJJUAASL.UNWWLK.NQQLK.MM.... T20 U20
 Car fuel available: {'S': 100, 'T': 20, 'B': 100, 'J': 100, 'U': 20, 'A': 100, 'L': 100, 'N': 100, 'W': 100, 'K': 100, 'Q': 100, 'M': 100}
 
 
-Runtime: 22.58591604232788 seconds
-Search path length: 2126
+Runtime: 24.09852886199951 seconds
+Search path length: 2056
 Solution path length: 16
-Solution path: U down 1 -> M right 4 -> J right 1 -> L up 1 -> K up 1 -> N down 1 -> Q right 3 -> W left 1 -> S down 3 -> L down 1 -> T left 3 -> J left 2 -> U up 2 -> K up 2 -> L down 1 -> A right 4 -> 
+Solution path: M right 4 -> N down 1 -> U down 1 -> J right 1 -> W left 1 -> K up 1 -> L up 1 -> Q right 3 -> S down 3 -> L down 1 -> J left 2 -> T left 2 -> K up 2 -> U up 2 -> L down 1 -> A right 4 -> 
 
-U	down	1 	 19 ..STTTBBSJJ.AASL.UNWWLKUNQQLK.MM.... 
-M	right	4 	 96 ..STTTBBSJJ.AASL.UNWWLKUNQQLK.....MM 
-J	right	1 	 99 ..STTTBBS.JJAASL.UNWWLKUNQQLK.....MM 
-L	up	1 	 99 ..STTTBBSLJJAASL.UNWWLKUNQQ.K.....MM 
-K	up	1 	 99 ..STTTBBSLJJAASLKUNWWLKUNQQ.......MM 
-N	down	1 	 99 ..STTTBBSLJJAASLKU.WWLKUNQQ...N...MM 
-Q	right	3 	 97 ..STTTBBSLJJAASLKU.WWLKUN...QQN...MM 
-W	left	1 	 99 ..STTTBBSLJJAASLKUWW.LKUN...QQN...MM 
+M	right	4 	 96 ..STTTBBSJJUAASL.UNWWLK.NQQLK.....MM 
+N	down	1 	 99 ..STTTBBSJJUAASL.U.WWLK.NQQLK.N...MM 
+U	down	1 	 19 ..STTTBBSJJ.AASL.U.WWLKUNQQLK.N...MM 
+J	right	1 	 99 ..STTTBBS.JJAASL.U.WWLKUNQQLK.N...MM 
+W	left	1 	 99 ..STTTBBS.JJAASL.UWW.LKUNQQLK.N...MM 
+K	up	1 	 99 ..STTTBBS.JJAASLKUWW.LKUNQQL..N...MM 
+L	up	1 	 99 ..STTTBBSLJJAASLKUWW.LKUNQQ...N...MM 
+Q	right	3 	 97 ..STTTBBSLJJAASLKUWW.LKUN...QQN...MM 
 S	down	3 	 97 ...TTTBB.LJJAA.LKUWWSLKUN.S.QQN.S.MM 
 L	down	1 	 98 ...TTTBB..JJAA.LKUWWSLKUN.SLQQN.S.MM 
-T	left	3 	 17 TTT...BB..JJAA.LKUWWSLKUN.SLQQN.S.MM 
-J	left	2 	 97 TTT...BBJJ..AA.LKUWWSLKUN.SLQQN.S.MM 
-U	up	2 	 17 TTT..UBBJJ.UAA.LK.WWSLK.N.SLQQN.S.MM 
-K	up	2 	 97 TTT.KUBBJJKUAA.L..WWSL..N.SLQQN.S.MM 
-L	down	1 	 97 TTT.KUBBJJKUAA....WWSL..N.SLQQN.SLMM 
-A	right	4 	 96 TTT.KUBBJJKU....AAWWSL..N.SLQQN.SLMM 
+J	left	2 	 97 ...TTTBBJJ..AA.LKUWWSLKUN.SLQQN.S.MM 
+T	left	2 	 18 .TTT..BBJJ..AA.LKUWWSLKUN.SLQQN.S.MM 
+K	up	2 	 97 .TTTK.BBJJK.AA.L.UWWSL.UN.SLQQN.S.MM 
+U	up	2 	 17 .TTTKUBBJJKUAA.L..WWSL..N.SLQQN.S.MM 
+L	down	1 	 97 .TTTKUBBJJKUAA....WWSL..N.SLQQN.SLMM 
+A	right	4 	 96 .TTTKUBBJJKU....AAWWSL..N.SLQQN.SLMM 
 
-[['T' 'T' 'T' '.' 'K' 'U']
+[['.' 'T' 'T' 'T' 'K' 'U']
  ['B' 'B' 'J' 'J' 'K' 'U']
  ['.' '.' '.' '.' 'A' 'A']
  ['W' 'W' 'S' 'L' '.' '.']

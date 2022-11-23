@@ -10,7 +10,7 @@ Initial board configuration: .CYYYI.CZZZIAAL.VIBBLOV.W.LO..WPPO.. Y20 Z20 B20 W2
 Car fuel available: {'C': 20, 'Y': 20, 'I': 100, 'Z': 20, 'A': 20, 'L': 100, 'V': 100, 'B': 20, 'O': 100, 'W': 20, 'P': 20}
 
 
-Runtime: 4.883971214294434 seconds
+Runtime: 4.910201072692871 seconds
 Search path length: 1252
 Solution path length: 22
 Solution path: I down 2 -> Y right 1 -> Z right 1 -> V down 1 -> O up 1 -> P right 3 -> L down 1 -> O down 1 -> A right 3 -> L up 3 -> B right 1 -> W up 4 -> B left 1 -> L down 3 -> A left 3 -> L up 1 -> O up 1 -> P left 4 -> I down 1 -> L down 1 -> O down 1 -> A right 4 -> 

@@ -10,20 +10,20 @@ Initial board configuration: .CYYYI.CZZZIAAL.VIBBLOV.W.LO..WPPO.. Y20 Z20 B20 W2
 Car fuel available: {'C': 20, 'Y': 20, 'I': 100, 'Z': 20, 'A': 20, 'L': 100, 'V': 100, 'B': 20, 'O': 100, 'W': 20, 'P': 20}
 
 
-Runtime: 2.678220748901367 seconds
-Search path length: 823
+Runtime: 2.775026798248291 seconds
+Search path length: 822
 Solution path length: 22
-Solution path: O up 1 -> P right 3 -> L down 1 -> O down 1 -> V down 1 -> I down 2 -> Y right 1 -> A right 3 -> Z right 1 -> L up 3 -> B right 1 -> W up 4 -> B left 1 -> L down 3 -> A left 3 -> O up 1 -> L up 1 -> P left 4 -> L down 1 -> O down 1 -> I down 1 -> A right 4 -> 
+Solution path: O up 1 -> P right 3 -> I down 2 -> L down 1 -> Z right 1 -> Y right 1 -> O down 1 -> V down 1 -> A right 3 -> L up 3 -> B right 1 -> W up 4 -> B left 1 -> L down 3 -> A left 3 -> O up 1 -> L up 1 -> P left 4 -> L down 1 -> O down 1 -> I down 1 -> A right 4 -> 
 
 O	up	1 	 99 .CYYYI.CZZZIAALOVIBBLOV.W.LO..WPP... 
 P	right	3 	 17 .CYYYI.CZZZIAALOVIBBLOV.W.LO..W...PP 
-L	down	1 	 99 .CYYYI.CZZZIAA.OVIBBLOV.W.LO..W.L.PP 
-O	down	1 	 98 .CYYYI.CZZZIAA..VIBBLOV.W.LO..W.LOPP 
-V	down	1 	 99 .CYYYI.CZZZIAA...IBBLOV.W.LOV.W.LOPP 
-I	down	2 	 98 .CYYY..CZZZ.AA...IBBLOVIW.LOVIW.LOPP 
-Y	right	1 	 19 .C.YYY.CZZZ.AA...IBBLOVIW.LOVIW.LOPP 
-A	right	3 	 17 .C.YYY.CZZZ....AAIBBLOVIW.LOVIW.LOPP 
-Z	right	1 	 19 .C.YYY.C.ZZZ...AAIBBLOVIW.LOVIW.LOPP 
+I	down	2 	 98 .CYYY..CZZZ.AALOVIBBLOVIW.LO.IW...PP 
+L	down	1 	 99 .CYYY..CZZZ.AA.OVIBBLOVIW.LO.IW.L.PP 
+Z	right	1 	 19 .CYYY..C.ZZZAA.OVIBBLOVIW.LO.IW.L.PP 
+Y	right	1 	 19 .C.YYY.C.ZZZAA.OVIBBLOVIW.LO.IW.L.PP 
+O	down	1 	 98 .C.YYY.C.ZZZAA..VIBBLOVIW.LO.IW.LOPP 
+V	down	1 	 99 .C.YYY.C.ZZZAA...IBBLOVIW.LOVIW.LOPP 
+A	right	3 	 17 .C.YYY.C.ZZZ...AAIBBLOVIW.LOVIW.LOPP 
 L	up	3 	 96 .CLYYY.CLZZZ..LAAIBB.OVIW..OVIW..OPP 
 B	right	1 	 19 .CLYYY.CLZZZ..LAAI.BBOVIW..OVIW..OPP 
 W	up	4 	 16 WCLYYYWCLZZZ..LAAI.BBOVI...OVI...OPP 

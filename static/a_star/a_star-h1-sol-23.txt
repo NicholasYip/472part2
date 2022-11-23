@@ -10,17 +10,17 @@ Initial board configuration: ...O..LLKOYPAAKOYPDDD.BB.RRR.V..JJJV
 Car fuel available: {'O': 100, 'L': 100, 'K': 100, 'Y': 100, 'P': 100, 'A': 100, 'D': 100, 'B': 100, 'R': 100, 'V': 100, 'J': 100}
 
 
-Runtime: 3.536835193634033 seconds
-Search path length: 591
+Runtime: 1.3231420516967773 seconds
+Search path length: 285
 Solution path length: 7
-Solution path: K up 1 -> J left 2 -> R left 1 -> O down 3 -> P up 1 -> Y up 1 -> A right 4 -> 
+Solution path: J left 2 -> R left 1 -> O down 3 -> K up 1 -> Y up 1 -> P up 1 -> A right 4 -> 
 
-K	up	1 	 99 ..KO..LLKOYPAA.OYPDDD.BB.RRR.V..JJJV 
-J	left	2 	 98 ..KO..LLKOYPAA.OYPDDD.BB.RRR.VJJJ..V 
-R	left	1 	 99 ..KO..LLKOYPAA.OYPDDD.BBRRR..VJJJ..V 
-O	down	3 	 97 ..K...LLK.YPAA..YPDDDOBBRRRO.VJJJO.V 
-P	up	1 	 99 ..K..PLLK.YPAA..Y.DDDOBBRRRO.VJJJO.V 
-Y	up	1 	 99 ..K.YPLLK.YPAA....DDDOBBRRRO.VJJJO.V 
+J	left	2 	 98 ...O..LLKOYPAAKOYPDDD.BB.RRR.VJJJ..V 
+R	left	1 	 99 ...O..LLKOYPAAKOYPDDD.BBRRR..VJJJ..V 
+O	down	3 	 97 ......LLK.YPAAK.YPDDDOBBRRRO.VJJJO.V 
+K	up	1 	 99 ..K...LLK.YPAA..YPDDDOBBRRRO.VJJJO.V 
+Y	up	1 	 99 ..K.Y.LLK.YPAA...PDDDOBBRRRO.VJJJO.V 
+P	up	1 	 99 ..K.YPLLK.YPAA....DDDOBBRRRO.VJJJO.V 
 A	right	4 	 96 ..K.YPLLK.YP....AADDDOBBRRRO.VJJJO.V 
 
 [['.' '.' 'K' '.' 'Y' 'P']

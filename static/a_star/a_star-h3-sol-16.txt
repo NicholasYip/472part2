@@ -10,31 +10,32 @@ Initial board configuration: SGG.T.S...T.SCAAT..CEDFF.CEDBB.PPP..
 Car fuel available: {'S': 100, 'G': 100, 'T': 100, 'C': 100, 'A': 100, 'E': 100, 'D': 100, 'F': 100, 'B': 100, 'P': 100}
 
 
-Runtime: 21.2546968460083 seconds
-Search path length: 2011
-Solution path length: 16
-Solution path: P right 1 -> C down 1 -> S down 3 -> A left 2 -> G left 1 -> E up 3 -> A right 1 -> D up 3 -> B left 2 -> A right 1 -> C up 1 -> P left 1 -> F left 2 -> T down 2 -> T down 1 -> A right 2 -> 
+Runtime: 26.132463932037354 seconds
+Search path length: 2216
+Solution path length: 17
+Solution path: S down 3 -> P right 2 -> C down 1 -> A left 2 -> D up 2 -> D up 1 -> G left 1 -> E down 1 -> E up 4 -> A right 2 -> C up 2 -> B left 2 -> P left 2 -> F left 2 -> T down 2 -> T down 1 -> A right 2 -> 
 
-P	right	1 	 99 SGG.T.S...T.SCAAT..CEDFF.CEDBB..PPP. 
-C	down	1 	 99 SGG.T.S...T.S.AAT..CEDFF.CEDBB.CPPP. 
-S	down	3 	 97 .GG.T.....T...AAT.SCEDFFSCEDBBSCPPP. 
-A	left	2 	 98 .GG.T.....T.AA..T.SCEDFFSCEDBBSCPPP. 
-G	left	1 	 99 GG..T.....T.AA..T.SCEDFFSCEDBBSCPPP. 
-E	up	3 	 97 GGE.T...E.T.AA..T.SC.DFFSC.DBBSCPPP. 
-A	right	1 	 97 GGE.T...E.T..AA.T.SC.DFFSC.DBBSCPPP. 
-D	up	3 	 97 GGEDT...EDT..AA.T.SC..FFSC..BBSCPPP. 
-B	left	2 	 98 GGEDT...EDT..AA.T.SC..FFSCBB..SCPPP. 
-A	right	1 	 96 GGEDT...EDT...AAT.SC..FFSCBB..SCPPP. 
-C	up	1 	 98 GGEDT...EDT..CAAT.SC..FFSCBB..S.PPP. 
-P	left	1 	 98 GGEDT...EDT..CAAT.SC..FFSCBB..SPPP.. 
-F	left	2 	 98 GGEDT...EDT..CAAT.SCFF..SCBB..SPPP.. 
-T	down	2 	 98 GGED....ED...CAAT.SCFFT.SCBBT.SPPP.. 
-T	down	1 	 97 GGED....ED...CAA..SCFFT.SCBBT.SPPPT. 
-A	right	2 	 94 GGED....ED...C..AASCFFT.SCBBT.SPPPT. 
+S	down	3 	 97 .GG.T.....T..CAAT.SCEDFFSCEDBBSPPP.. 
+P	right	2 	 98 .GG.T.....T..CAAT.SCEDFFSCEDBBS..PPP 
+C	down	1 	 99 .GG.T.....T...AAT.SCEDFFSCEDBBSC.PPP 
+A	left	2 	 98 .GG.T.....T.AA..T.SCEDFFSCEDBBSC.PPP 
+D	up	2 	 98 .GG.T....DT.AA.DT.SCE.FFSCE.BBSC.PPP 
+D	up	1 	 97 .GGDT....DT.AA..T.SCE.FFSCE.BBSC.PPP 
+G	left	1 	 99 GG.DT....DT.AA..T.SCE.FFSCE.BBSC.PPP 
+E	down	1 	 99 GG.DT....DT.AA..T.SC..FFSCE.BBSCEPPP 
+E	up	4 	 95 GGEDT...EDT.AA..T.SC..FFSC..BBSC.PPP 
+A	right	2 	 96 GGEDT...EDT...AAT.SC..FFSC..BBSC.PPP 
+C	up	2 	 97 GGEDT..CEDT..CAAT.SC..FFS...BBS..PPP 
+B	left	2 	 98 GGEDT..CEDT..CAAT.SC..FFS.BB..S..PPP 
+P	left	2 	 96 GGEDT..CEDT..CAAT.SC..FFS.BB..SPPP.. 
+F	left	2 	 98 GGEDT..CEDT..CAAT.SCFF..S.BB..SPPP.. 
+T	down	2 	 98 GGED...CED...CAAT.SCFFT.S.BBT.SPPP.. 
+T	down	1 	 97 GGED...CED...CAA..SCFFT.S.BBT.SPPPT. 
+A	right	2 	 94 GGED...CED...C..AASCFFT.S.BBT.SPPPT. 
 
 [['G' 'G' 'E' 'D' '.' '.']
- ['.' '.' 'E' 'D' '.' '.']
+ ['.' 'C' 'E' 'D' '.' '.']
  ['.' 'C' '.' '.' 'A' 'A']
  ['S' 'C' 'F' 'F' 'T' '.']
- ['S' 'C' 'B' 'B' 'T' '.']
+ ['S' '.' 'B' 'B' 'T' '.']
  ['S' 'P' 'P' 'P' 'T' '.']]

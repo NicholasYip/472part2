@@ -10,7 +10,7 @@ Initial board configuration: ...BYYGGGBS..AACS.F..C..F..CPPF.DDOO
 Car fuel available: {'B': 100, 'Y': 100, 'G': 100, 'S': 100, 'A': 100, 'C': 100, 'F': 100, 'P': 100, 'D': 100, 'O': 100}
 
 
-Runtime: 0.013119935989379883 seconds
+Runtime: 0.012902021408081055 seconds
 Search path length: 32
 Solution path length: 10
 Solution path: D left 1 -> C down 1 -> S down 1 -> B down 1 -> Y left 4 -> B up 1 -> S up 2 -> A right 1 -> Y right 1 -> A right 2 -> 

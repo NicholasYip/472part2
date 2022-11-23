@@ -10,16 +10,16 @@ Initial board configuration: LL..YYH....FHAAUUF..N..F..NTTT.RRRJJ
 Car fuel available: {'L': 100, 'Y': 100, 'H': 100, 'F': 100, 'A': 100, 'U': 100, 'N': 100, 'T': 100, 'R': 100, 'J': 100}
 
 
-Runtime: 2.4623749256134033 seconds
-Search path length: 587
+Runtime: 1.880612850189209 seconds
+Search path length: 494
 Solution path length: 9
-Solution path: H down 2 -> A left 1 -> N up 3 -> R left 1 -> T left 2 -> J left 1 -> F down 2 -> A right 4 -> 
+Solution path: H down 2 -> A left 1 -> N up 3 -> T left 2 -> R left 1 -> J left 1 -> F down 2 -> A right 4 -> 
 
 H	down	2 	 98 LL..YY.....F.AAUUFH.N..FH.NTTT.RRRJJ 
 A	left	1 	 99 LL..YY.....FAA.UUFH.N..FH.NTTT.RRRJJ 
 N	up	3 	 97 LLN.YY..N..FAA.UUFH....FH..TTT.RRRJJ 
-R	left	1 	 99 LLN.YY..N..FAA.UUFH....FH..TTTRRR.JJ 
-T	left	2 	 98 LLN.YY..N..FAA.UUFH....FHTTT..RRR.JJ 
+T	left	2 	 98 LLN.YY..N..FAA.UUFH....FHTTT...RRRJJ 
+R	left	1 	 99 LLN.YY..N..FAA.UUFH....FHTTT..RRR.JJ 
 J	left	1 	 99 LLN.YY..N..FAA.UUFH....FHTTT..RRRJJ. 
 F	down	2 	 98 LLN.YY..N...AA.UU.H....FHTTT.FRRRJJF 
 A	right	4 	 95 LLN.YY..N.......AAH....FHTTT.FRRRJJF 

@@ -10,7 +10,7 @@ Initial board configuration: .SUPP..SU..EAAU.DE..CCDZ...KKZ.OONNN
 Car fuel available: {'S': 100, 'U': 100, 'P': 100, 'E': 100, 'A': 100, 'D': 100, 'C': 100, 'Z': 100, 'K': 100, 'O': 100, 'N': 100}
 
 
-Runtime: 0.6053669452667236 seconds
+Runtime: 0.6000359058380127 seconds
 Search path length: 129
 Solution path length: 18
 Solution path: E up 1 -> C left 2 -> O left 1 -> D up 1 -> K left 1 -> N left 1 -> U down 1 -> Z down 1 -> K right 1 -> D down 1 -> K left 3 -> D down 1 -> P left 1 -> U down 1 -> Z up 1 -> N right 1 -> U down 1 -> A right 4 -> 

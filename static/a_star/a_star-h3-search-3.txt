@@ -11,7 +11,7 @@
 7 3 4 : F.....F....BAACCCBHGGEZBH..EZ.H...DD 
 7 3 4 : F....BF....BAACCCBHGGEZ.H..EZ.HDD... 
 8 4 4 : F.....F.....AACCCBHGGEZBH..EZBHDD... 
-8 4 4 : F....BF....BAACCCBHGGE..H..EZ.H.DDZ. 
+7 5 2 : F.....F.....AACCC.HGGEZBH..EZBHDD..B 
 8 4 4 : F....BF....BAACCCBHGG.Z.H..EZ.HDDE.. 
 8 4 4 : F....BF....BAACCCBHGGE..H..EZ.HDD.Z. 
 8 4 2 : F.....F.....AACCC.HGGEZBH..EZBH.DD.B 
@@ -19,8 +19,8 @@
 5 5 0 : F.....F.....AA....HGGEZBH..EZBH.DD.B 
 6 6 0 : F.....F......AA...HGGEZBH..EZBH.DD.B 
 6 6 0 : F.....F.......AA..HGGEZBH..EZBH.DD.B 
-6 6 0 : F.....F.....AA....HGGE.BH..EZBH.DDZB 
 6 6 0 : F.....F.....AA....HGGEZBH..EZBHDD..B 
 6 6 0 : F.....F.....AA....HGGEZBH..EZBH..DDB 
 6 6 0 : F.....F........AA.HGGEZBH..EZBH.DD.B 
+6 6 0 : F.....F.....AA....HGGE.BH..EZBH.DDZB 
 6 6 0 : F.....F.........AAHGGEZBH..EZBH.DD.B 

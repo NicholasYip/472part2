@@ -10,18 +10,18 @@ Initial board configuration: .CCBBBHH.FL..AAFLY...FLYG.DUU.G.DEE. A20 B20 C20 H2
 Car fuel available: {'C': 20, 'B': 20, 'H': 20, 'F': 20, 'L': 100, 'A': 20, 'Y': 20, 'G': 20, 'D': 20, 'U': 100, 'E': 100}
 
 
-Runtime: 138.84041500091553 seconds
-Search path length: 3289
+Runtime: 169.10767269134521 seconds
+Search path length: 3550
 Solution path length: 9
-Solution path: Y down 2 -> A left 1 -> C left 1 -> D up 4 -> E left 2 -> U left 2 -> L down 2 -> F down 2 -> A right 4 -> 
+Solution path: A left 1 -> C left 1 -> D up 4 -> U left 2 -> E left 2 -> L down 2 -> Y down 2 -> F down 2 -> A right 4 -> 
 
-Y	down	2 	 18 .CCBBBHH.FL..AAFL....FL.G.DUUYG.DEEY 
-A	left	1 	 19 .CCBBBHH.FL.AA.FL....FL.G.DUUYG.DEEY 
-C	left	1 	 19 CC.BBBHH.FL.AA.FL....FL.G.DUUYG.DEEY 
-D	up	4 	 16 CCDBBBHHDFL.AA.FL....FL.G..UUYG..EEY 
-E	left	2 	 98 CCDBBBHHDFL.AA.FL....FL.G..UUYGEE..Y 
-U	left	2 	 98 CCDBBBHHDFL.AA.FL....FL.GUU..YGEE..Y 
-L	down	2 	 98 CCDBBBHHDF..AA.F.....FL.GUU.LYGEE.LY 
+A	left	1 	 19 .CCBBBHH.FL.AA.FLY...FLYG.DUU.G.DEE. 
+C	left	1 	 19 CC.BBBHH.FL.AA.FLY...FLYG.DUU.G.DEE. 
+D	up	4 	 16 CCDBBBHHDFL.AA.FLY...FLYG..UU.G..EE. 
+U	left	2 	 98 CCDBBBHHDFL.AA.FLY...FLYGUU...G..EE. 
+E	left	2 	 98 CCDBBBHHDFL.AA.FLY...FLYGUU...GEE... 
+L	down	2 	 98 CCDBBBHHDF..AA.F.Y...FLYGUU.L.GEE.L. 
+Y	down	2 	 18 CCDBBBHHDF..AA.F.....FL.GUU.LYGEE.LY 
 F	down	2 	 18 CCDBBBHHD...AA.......FL.GUUFLYGEEFLY 
 A	right	4 	 15 CCDBBBHHD.......AA...FL.GUUFLYGEEFLY 
 

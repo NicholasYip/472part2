@@ -10,10 +10,10 @@ Initial board configuration: SGG.T.S...T.SCAAT..CEDFF.CEDBB.PPP..
 Car fuel available: {'S': 100, 'G': 100, 'T': 100, 'C': 100, 'A': 100, 'E': 100, 'D': 100, 'F': 100, 'B': 100, 'P': 100}
 
 
-Runtime: 21.58521294593811 seconds
-Search path length: 2103
+Runtime: 23.230774879455566 seconds
+Search path length: 2162
 Solution path length: 15
-Solution path: P right 1 -> C down 1 -> S down 3 -> A left 2 -> G left 1 -> E up 3 -> D up 3 -> F left 2 -> A right 2 -> C up 1 -> P left 1 -> B left 2 -> T down 2 -> T down 1 -> A right 2 -> 
+Solution path: P right 1 -> C down 1 -> S down 3 -> A left 2 -> G left 1 -> E up 3 -> D up 3 -> A right 2 -> C up 1 -> B left 2 -> F left 2 -> T down 2 -> P left 1 -> T down 1 -> A right 2 -> 
 
 P	right	1 	 99 SGG.T.S...T.SCAAT..CEDFF.CEDBB..PPP. 
 C	down	1 	 99 SGG.T.S...T.S.AAT..CEDFF.CEDBB.CPPP. 
@@ -22,12 +22,12 @@ A	left	2 	 98 .GG.T.....T.AA..T.SCEDFFSCEDBBSCPPP.
 G	left	1 	 99 GG..T.....T.AA..T.SCEDFFSCEDBBSCPPP. 
 E	up	3 	 97 GGE.T...E.T.AA..T.SC.DFFSC.DBBSCPPP. 
 D	up	3 	 97 GGEDT...EDT.AA..T.SC..FFSC..BBSCPPP. 
-F	left	2 	 98 GGEDT...EDT.AA..T.SCFF..SC..BBSCPPP. 
-A	right	2 	 96 GGEDT...EDT...AAT.SCFF..SC..BBSCPPP. 
-C	up	1 	 98 GGEDT...EDT..CAAT.SCFF..SC..BBS.PPP. 
-P	left	1 	 98 GGEDT...EDT..CAAT.SCFF..SC..BBSPPP.. 
-B	left	2 	 98 GGEDT...EDT..CAAT.SCFF..SCBB..SPPP.. 
-T	down	2 	 98 GGED....ED...CAAT.SCFFT.SCBBT.SPPP.. 
+A	right	2 	 96 GGEDT...EDT...AAT.SC..FFSC..BBSCPPP. 
+C	up	1 	 98 GGEDT...EDT..CAAT.SC..FFSC..BBS.PPP. 
+B	left	2 	 98 GGEDT...EDT..CAAT.SC..FFSCBB..S.PPP. 
+F	left	2 	 98 GGEDT...EDT..CAAT.SCFF..SCBB..S.PPP. 
+T	down	2 	 98 GGED....ED...CAAT.SCFFT.SCBBT.S.PPP. 
+P	left	1 	 98 GGED....ED...CAAT.SCFFT.SCBBT.SPPP.. 
 T	down	1 	 97 GGED....ED...CAA..SCFFT.SCBBT.SPPPT. 
 A	right	2 	 94 GGED....ED...C..AASCFFT.SCBBT.SPPPT. 
 

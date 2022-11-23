@@ -10,10 +10,10 @@ Initial board configuration: U.B..DU.BCCDAABT.DFW.TKKFWLLL..WOOO.
 Car fuel available: {'U': 100, 'B': 100, 'D': 100, 'C': 100, 'A': 100, 'T': 100, 'F': 100, 'W': 100, 'K': 100, 'L': 100, 'O': 100}
 
 
-Runtime: 0.7223730087280273 seconds
-Search path length: 403
+Runtime: 0.7156751155853271 seconds
+Search path length: 411
 Solution path length: 15
-Solution path: L right 1 -> O right 1 -> B down 3 -> C left 2 -> T up 2 -> A right 3 -> F down 1 -> U down 2 -> C left 1 -> B up 3 -> L left 1 -> O left 1 -> K left 2 -> D down 3 -> A right 1 -> 
+Solution path: L right 1 -> O right 1 -> B down 3 -> C left 2 -> T up 2 -> A right 3 -> F down 1 -> U down 2 -> C left 1 -> B up 3 -> O left 1 -> L left 1 -> K left 1 -> D down 3 -> A right 1 -> 
 
 L	right	1 	 99 U.B..DU.BCCDAABT.DFW.TKKFW.LLL.WOOO. 
 O	right	1 	 99 U.B..DU.BCCDAABT.DFW.TKKFW.LLL.W.OOO 
@@ -25,15 +25,15 @@ F	down	1 	 99 U..T.DUCCT.D...AAD.WB.KKFWBLLLFWBOOO
 U	down	2 	 98 ...T.D.CCT.DU..AADUWB.KKFWBLLLFWBOOO 
 C	left	1 	 97 ...T.DCC.T.DU..AADUWB.KKFWBLLLFWBOOO 
 B	up	3 	 94 ..BT.DCCBT.DU.BAADUW..KKFW.LLLFW.OOO 
-L	left	1 	 98 ..BT.DCCBT.DU.BAADUW..KKFWLLL.FW.OOO 
-O	left	1 	 98 ..BT.DCCBT.DU.BAADUW..KKFWLLL.FWOOO. 
-K	left	2 	 98 ..BT.DCCBT.DU.BAADUWKK..FWLLL.FWOOO. 
-D	down	3 	 97 ..BT..CCBT..U.BAA.UWKK.DFWLLLDFWOOOD 
-A	right	1 	 96 ..BT..CCBT..U.B.AAUWKK.DFWLLLDFWOOOD 
+O	left	1 	 98 ..BT.DCCBT.DU.BAADUW..KKFW.LLLFWOOO. 
+L	left	1 	 98 ..BT.DCCBT.DU.BAADUW..KKFWLLL.FWOOO. 
+K	left	1 	 99 ..BT.DCCBT.DU.BAADUW.KK.FWLLL.FWOOO. 
+D	down	3 	 97 ..BT..CCBT..U.BAA.UW.KKDFWLLLDFWOOOD 
+A	right	1 	 96 ..BT..CCBT..U.B.AAUW.KKDFWLLLDFWOOOD 
 
 [['.' '.' 'B' 'T' '.' '.']
  ['C' 'C' 'B' 'T' '.' '.']
  ['U' '.' 'B' '.' 'A' 'A']
- ['U' 'W' 'K' 'K' '.' 'D']
+ ['U' 'W' '.' 'K' 'K' 'D']
  ['F' 'W' 'L' 'L' 'L' 'D']
  ['F' 'W' 'O' 'O' 'O' 'D']]

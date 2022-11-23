@@ -10,7 +10,7 @@ Initial board configuration: FFFTTT....YOAAGHYO..GH........DDDJJJ
 Car fuel available: {'F': 100, 'T': 100, 'Y': 100, 'O': 100, 'A': 100, 'G': 100, 'H': 100, 'D': 100, 'J': 100}
 
 
-Runtime: 0.014624834060668945 seconds
+Runtime: 0.014883041381835938 seconds
 Search path length: 23
 Solution path length: 7
 Solution path: H down 1 -> G down 1 -> A right 2 -> O down 1 -> Y down 2 -> O down 1 -> A right 2 -> 

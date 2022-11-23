@@ -10,16 +10,16 @@ Initial board configuration: FFFEEDU..RODUAAROJ..BBBJ...III......
 Car fuel available: {'F': 100, 'E': 100, 'D': 100, 'U': 100, 'R': 100, 'O': 100, 'A': 100, 'J': 100, 'B': 100, 'I': 100}
 
 
-Runtime: 0.27573513984680176 seconds
-Search path length: 107
+Runtime: 0.5639920234680176 seconds
+Search path length: 154
 Solution path length: 6
-Solution path: I left 3 -> J down 2 -> B left 2 -> R down 2 -> O down 2 -> A right 3 -> 
+Solution path: I left 3 -> J down 2 -> B left 2 -> O down 2 -> R down 2 -> A right 3 -> 
 
 I	left	3 	 97 FFFEEDU..RODUAAROJ..BBBJIII......... 
 J	down	2 	 98 FFFEEDU..RODUAARO...BBB.III..J.....J 
 B	left	2 	 98 FFFEEDU..RODUAARO.BBB...III..J.....J 
-R	down	2 	 98 FFFEEDU...ODUAA.O.BBBR..IIIR.J.....J 
-O	down	2 	 98 FFFEEDU....DUAA...BBBRO.IIIROJ.....J 
+O	down	2 	 98 FFFEEDU..R.DUAAR..BBB.O.III.OJ.....J 
+R	down	2 	 98 FFFEEDU....DUAA...BBBRO.IIIROJ.....J 
 A	right	3 	 97 FFFEEDU....DU...AABBBRO.IIIROJ.....J 
 
 [['F' 'F' 'F' 'E' 'E' 'D']

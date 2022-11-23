@@ -10,21 +10,20 @@ Initial board configuration: ..DEETR.DN.TRAAN..R..KK..G.FFF.GHHBB
 Car fuel available: {'D': 100, 'E': 100, 'T': 100, 'R': 100, 'N': 100, 'A': 100, 'K': 100, 'G': 100, 'F': 100, 'H': 100, 'B': 100}
 
 
-Runtime: 0.6095101833343506 seconds
-Search path length: 149
-Solution path length: 6
-Solution path: F left 1 -> T down 3 -> E right 1 -> R down 1 -> N up 1 -> A right 3 -> 
+Runtime: 0.5148460865020752 seconds
+Search path length: 139
+Solution path length: 5
+Solution path: F left 1 -> T down 3 -> E right 1 -> N up 1 -> A right 3 -> 
 
 F	left	1 	 99 ..DEETR.DN.TRAAN..R..KK..GFFF..GHHBB 
 T	down	3 	 97 ..DEE.R.DN..RAAN..R..KKT.GFFFT.GHHBB 
 E	right	1 	 99 ..D.EER.DN..RAAN..R..KKT.GFFFT.GHHBB 
-R	down	1 	 99 ..D.EE..DN..RAAN..R..KKTRGFFFT.GHHBB 
-N	up	1 	 99 ..DNEE..DN..RAA...R..KKTRGFFFT.GHHBB 
-A	right	3 	 97 ..DNEE..DN..R...AAR..KKTRGFFFT.GHHBB 
+N	up	1 	 99 ..DNEER.DN..RAA...R..KKT.GFFFT.GHHBB 
+A	right	3 	 97 ..DNEER.DN..R...AAR..KKT.GFFFT.GHHBB 
 
 [['.' '.' 'D' 'N' 'E' 'E']
- ['.' '.' 'D' 'N' '.' '.']
+ ['R' '.' 'D' 'N' '.' '.']
  ['R' '.' '.' '.' 'A' 'A']
  ['R' '.' '.' 'K' 'K' 'T']
- ['R' 'G' 'F' 'F' 'F' 'T']
+ ['.' 'G' 'F' 'F' 'F' 'T']
  ['.' 'G' 'H' 'H' 'B' 'B']]

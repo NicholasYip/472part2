@@ -10,7 +10,7 @@ Initial board configuration: ..DII...DCLLAABC.OJ.B.POJFFFPOJ.....
 Car fuel available: {'D': 100, 'I': 100, 'C': 100, 'L': 100, 'A': 100, 'B': 100, 'O': 100, 'J': 100, 'P': 100, 'F': 100}
 
 
-Runtime: 0.5442020893096924 seconds
+Runtime: 0.535865068435669 seconds
 Search path length: 213
 Solution path length: 36
 Solution path: O down 1 -> C down 1 -> L left 1 -> P down 1 -> I right 1 -> P up 2 -> O up 2 -> F right 2 -> B down 2 -> D down 1 -> I left 3 -> O up 1 -> I right 1 -> D down 1 -> L left 1 -> P up 1 -> I left 2 -> L left 2 -> C up 2 -> O down 1 -> I right 1 -> D up 1 -> B up 1 -> P up 1 -> I left 1 -> D up 1 -> A right 1 -> P down 1 -> O up 1 -> J up 1 -> P up 1 -> A right 2 -> B up 1 -> F left 2 -> O down 3 -> A right 1 -> 

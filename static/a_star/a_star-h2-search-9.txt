@@ -86,5 +86,4 @@
 4 3 1 : .GFFF..G.C..BAAC..B..C.SB.DD.SSSHH.. 
 4 3 1 : BG.FFFBG.C..BAAC.....C.SDD...SSS..HH 
 4 4 0 : .G.FFF.G....B..AA.B..C.SBDDC.SSS.CHH 
-4 4 0 : .G.FFF.S....BAA...B..C.SBDDC.SS..CHH 
 4 4 0 : .G.FFF.G....B...AAB..C.SBDDC.SSS.CHH 

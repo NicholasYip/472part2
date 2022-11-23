@@ -10,22 +10,22 @@ Initial board configuration: ..GGGD..E..DAAE..DH.....H.BBCCZZ..FF
 Car fuel available: {'G': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'B': 100, 'C': 100, 'Z': 100, 'F': 100}
 
 
-Runtime: 2.26867413520813 seconds
-Search path length: 432
+Runtime: 1.8961570262908936 seconds
+Search path length: 386
 Solution path length: 7
-Solution path: F left 2 -> B left 1 -> C left 1 -> D down 3 -> G right 1 -> E up 1 -> A right 4 -> 
+Solution path: B left 1 -> F left 1 -> C left 1 -> D down 3 -> G right 1 -> E up 1 -> A right 4 -> 
 
-F	left	2 	 98 ..GGGD..E..DAAE..DH.....H.BBCCZZFF.. 
-B	left	1 	 99 ..GGGD..E..DAAE..DH.....HBB.CCZZFF.. 
-C	left	1 	 99 ..GGGD..E..DAAE..DH.....HBBCC.ZZFF.. 
-D	down	3 	 97 ..GGG...E...AAE...H....DHBBCCDZZFF.D 
-G	right	1 	 99 ...GGG..E...AAE...H....DHBBCCDZZFF.D 
-E	up	1 	 99 ..EGGG..E...AA....H....DHBBCCDZZFF.D 
-A	right	4 	 96 ..EGGG..E.......AAH....DHBBCCDZZFF.D 
+B	left	1 	 99 ..GGGD..E..DAAE..DH.....HBB.CCZZ..FF 
+F	left	1 	 99 ..GGGD..E..DAAE..DH.....HBB.CCZZ.FF. 
+C	left	1 	 99 ..GGGD..E..DAAE..DH.....HBBCC.ZZ.FF. 
+D	down	3 	 97 ..GGG...E...AAE...H....DHBBCCDZZ.FFD 
+G	right	1 	 99 ...GGG..E...AAE...H....DHBBCCDZZ.FFD 
+E	up	1 	 99 ..EGGG..E...AA....H....DHBBCCDZZ.FFD 
+A	right	4 	 96 ..EGGG..E.......AAH....DHBBCCDZZ.FFD 
 
 [['.' '.' 'E' 'G' 'G' 'G']
  ['.' '.' 'E' '.' '.' '.']
  ['.' '.' '.' '.' 'A' 'A']
  ['H' '.' '.' '.' '.' 'D']
  ['H' 'B' 'B' 'C' 'C' 'D']
- ['Z' 'Z' 'F' 'F' '.' 'D']]
+ ['Z' 'Z' '.' 'F' 'F' 'D']]

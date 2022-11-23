@@ -10,23 +10,23 @@ Initial board configuration: CCDD.OE..U.OEAAU.OE..U..B...FFB.LLL. C20 D20 O20 E2
 Car fuel available: {'C': 20, 'D': 20, 'O': 20, 'E': 20, 'U': 100, 'A': 100, 'B': 20, 'F': 20, 'L': 100}
 
 
-Runtime: 2.7754759788513184 seconds
-Search path length: 596
+Runtime: 2.739996910095215 seconds
+Search path length: 597
 Solution path length: 10
-Solution path: F left 2 -> O down 3 -> D right 2 -> C right 2 -> E up 1 -> B up 1 -> L left 2 -> F left 1 -> U down 2 -> A right 3 -> 
+Solution path: F left 2 -> O down 3 -> D right 2 -> C right 1 -> E up 1 -> B up 1 -> L left 2 -> F left 1 -> U down 2 -> A right 3 -> 
 
 F	left	2 	 18 CCDD.OE..U.OEAAU.OE..U..B.FF..B.LLL. 
 O	down	3 	 17 CCDD..E..U..EAAU..E..U.OB.FF.OB.LLLO 
 D	right	2 	 18 CC..DDE..U..EAAU..E..U.OB.FF.OB.LLLO 
-C	right	2 	 18 ..CCDDE..U..EAAU..E..U.OB.FF.OB.LLLO 
-E	up	1 	 19 E.CCDDE..U..EAAU.....U.OB.FF.OB.LLLO 
-B	up	1 	 19 E.CCDDE..U..EAAU..B..U.OB.FF.O..LLLO 
-L	left	2 	 98 E.CCDDE..U..EAAU..B..U.OB.FF.OLLL..O 
-F	left	1 	 17 E.CCDDE..U..EAAU..B..U.OBFF..OLLL..O 
-U	down	2 	 98 E.CCDDE.....EAA...B..U.OBFFU.OLLLU.O 
-A	right	3 	 97 E.CCDDE.....E...AAB..U.OBFFU.OLLLU.O 
+C	right	1 	 19 .CC.DDE..U..EAAU..E..U.OB.FF.OB.LLLO 
+E	up	1 	 19 ECC.DDE..U..EAAU.....U.OB.FF.OB.LLLO 
+B	up	1 	 19 ECC.DDE..U..EAAU..B..U.OB.FF.O..LLLO 
+L	left	2 	 98 ECC.DDE..U..EAAU..B..U.OB.FF.OLLL..O 
+F	left	1 	 17 ECC.DDE..U..EAAU..B..U.OBFF..OLLL..O 
+U	down	2 	 98 ECC.DDE.....EAA...B..U.OBFFU.OLLLU.O 
+A	right	3 	 97 ECC.DDE.....E...AAB..U.OBFFU.OLLLU.O 
 
-[['E' '.' 'C' 'C' 'D' 'D']
+[['E' 'C' 'C' '.' 'D' 'D']
  ['E' '.' '.' '.' '.' '.']
  ['E' '.' '.' '.' 'A' 'A']
  ['B' '.' '.' 'U' '.' 'O']

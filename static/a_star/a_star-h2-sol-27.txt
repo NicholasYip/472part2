@@ -10,32 +10,31 @@ Initial board configuration: OOO.GIS...GIS.AAGIS.QW....QWTTUUUW..
 Car fuel available: {'O': 100, 'G': 100, 'I': 100, 'S': 100, 'A': 100, 'Q': 100, 'W': 100, 'T': 100, 'U': 100}
 
 
-Runtime: 43.36627197265625 seconds
-Search path length: 2782
-Solution path length: 17
-Solution path: A left 1 -> W up 3 -> U right 1 -> S down 2 -> A left 1 -> Q up 2 -> T left 3 -> G down 3 -> W down 2 -> I down 3 -> O right 3 -> Q up 1 -> A right 1 -> S up 3 -> U left 1 -> W down 1 -> A right 3 -> 
+Runtime: 45.27570915222168 seconds
+Search path length: 2666
+Solution path length: 16
+Solution path: A left 1 -> W up 2 -> U right 1 -> S down 2 -> A left 1 -> Q up 1 -> T left 3 -> I down 3 -> G down 3 -> O right 3 -> Q up 2 -> A right 1 -> S up 2 -> U left 1 -> W down 2 -> A right 3 -> 
 
 A	left	1 	 99 OOO.GIS...GISAA.GIS.QW....QWTTUUUW.. 
-W	up	3 	 97 OOOWGIS..WGISAAWGIS.Q.....Q.TTUUU... 
-U	right	1 	 99 OOOWGIS..WGISAAWGIS.Q.....Q.TT.UUU.. 
-S	down	2 	 98 OOOWGI...WGI.AAWGIS.Q...S.Q.TTSUUU.. 
-A	left	1 	 98 OOOWGI...WGIAA.WGIS.Q...S.Q.TTSUUU.. 
-Q	up	2 	 98 OOOWGI..QWGIAAQWGIS.....S...TTSUUU.. 
-T	left	3 	 97 OOOWGI..QWGIAAQWGIS.....STT...SUUU.. 
-G	down	3 	 97 OOOW.I..QW.IAAQW.IS...G.STT.G.SUUUG. 
-W	down	2 	 95 OOO..I..Q..IAAQW.IS..WG.STTWG.SUUUG. 
-I	down	3 	 97 OOO.....Q...AAQW..S..WGISTTWGISUUUGI 
-O	right	3 	 97 ...OOO..Q...AAQW..S..WGISTTWGISUUUGI 
-Q	up	1 	 97 ..QOOO..Q...AA.W..S..WGISTTWGISUUUGI 
-A	right	1 	 97 ..QOOO..Q....AAW..S..WGISTTWGISUUUGI 
-S	up	3 	 95 S.QOOOS.Q...SAAW.....WGI.TTWGI.UUUGI 
-U	left	1 	 98 S.QOOOS.Q...SAAW.....WGI.TTWGIUUU.GI 
-W	down	1 	 94 S.QOOOS.Q...SAA......WGI.TTWGIUUUWGI 
-A	right	3 	 94 S.QOOOS.Q...S...AA...WGI.TTWGIUUUWGI 
+W	up	2 	 98 OOO.GIS..WGISAAWGIS.QW....Q.TTUUU... 
+U	right	1 	 99 OOO.GIS..WGISAAWGIS.QW....Q.TT.UUU.. 
+S	down	2 	 98 OOO.GI...WGI.AAWGIS.QW..S.Q.TTSUUU.. 
+A	left	1 	 98 OOO.GI...WGIAA.WGIS.QW..S.Q.TTSUUU.. 
+Q	up	1 	 99 OOO.GI...WGIAAQWGIS.QW..S...TTSUUU.. 
+T	left	3 	 97 OOO.GI...WGIAAQWGIS.QW..STT...SUUU.. 
+I	down	3 	 97 OOO.G....WG.AAQWG.S.QW.ISTT..ISUUU.I 
+G	down	3 	 97 OOO......W..AAQW..S.QWGISTT.GISUUUGI 
+O	right	3 	 97 ...OOO...W..AAQW..S.QWGISTT.GISUUUGI 
+Q	up	2 	 97 ..QOOO..QW..AA.W..S..WGISTT.GISUUUGI 
+A	right	1 	 97 ..QOOO..QW...AAW..S..WGISTT.GISUUUGI 
+S	up	2 	 96 ..QOOOS.QW..SAAW..S..WGI.TT.GI.UUUGI 
+U	left	1 	 98 ..QOOOS.QW..SAAW..S..WGI.TT.GIUUU.GI 
+W	down	2 	 96 ..QOOOS.Q...SAA...S..WGI.TTWGIUUUWGI 
+A	right	3 	 94 ..QOOOS.Q...S...AAS..WGI.TTWGIUUUWGI 
 
-[['S' '.' 'Q' 'O' 'O' 'O']
+[['.' '.' 'Q' 'O' 'O' 'O']
  ['S' '.' 'Q' '.' '.' '.']
  ['S' '.' '.' '.' 'A' 'A']
- ['.' '.' '.' 'W' 'G' 'I']
+ ['S' '.' '.' 'W' 'G' 'I']
  ['.' 'T' 'T' 'W' 'G' 'I']
  ['U' 'U' 'U' 'W' 'G' 'I']]

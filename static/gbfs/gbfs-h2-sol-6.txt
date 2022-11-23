@@ -10,7 +10,7 @@ Initial board configuration: ..DEEZ..D..ZAAD.....NN.S...UUS...TTS
 Car fuel available: {'D': 100, 'E': 100, 'Z': 100, 'A': 100, 'N': 100, 'S': 100, 'U': 100, 'T': 100}
 
 
-Runtime: 0.0709071159362793 seconds
+Runtime: 0.060137271881103516 seconds
 Search path length: 33
 Solution path length: 7
 Solution path: U left 2 -> N right 1 -> D down 1 -> U right 2 -> D down 2 -> E left 3 -> A right 4 -> 
