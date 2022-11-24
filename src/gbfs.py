@@ -112,7 +112,7 @@ def greedy_best_first_search(board_line, index, h, ws):
                 h_switch(board5, h)
                 board5.fn = board5.hn
                 if board5 not in to_visit_boards.queue:
-                    to_visit_boards.put(board4)
+                    to_visit_boards.put(board5)
     end = time.time()
     f.write("\nRuntime: " + str(end - start) + " seconds")
 
