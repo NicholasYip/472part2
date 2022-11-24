@@ -10,6 +10,28 @@ Initial board configuration: LL..YYH....FHAAUUF..N..F..NTTT.RRRJJ
 Car fuel available: {'L': 100, 'Y': 100, 'H': 100, 'F': 100, 'A': 100, 'U': 100, 'N': 100, 'T': 100, 'R': 100, 'J': 100}
 
 
-Runtime: 7.3715291023254395 seconds
+Runtime: 0.5346617698669434 seconds
+Search path length: 239
+Solution path length: 14
+Solution path: R left 1 -> J left 1 -> H down 2 -> A left 1 -> J right 1 -> N up 3 -> T left 2 -> J left 1 -> Y left 1 -> A right 1 -> F down 2 -> H up 1 -> A right 3 -> 
 
-No solution found GG WP 
+R	left	1 	 99 LL..YYH....FHAAUUF..N..F..NTTTRRR.JJ 
+J	left	1 	 99 LL..YYH....FHAAUUF..N..F..NTTTRRRJJ. 
+H	down	2 	 98 LL..YY.....F.AAUUFH.N..FH.NTTTRRRJJ. 
+A	left	1 	 99 LL..YY.....FAA.UUFH.N..FH.NTTTRRRJJ. 
+J	right	1 	 98 LL..YY.....FAA.UUFH.N..FH.NTTTRRR.JJ 
+N	up	3 	 97 LLN.YY..N..FAA.UUFH....FH..TTTRRR.JJ 
+T	left	2 	 98 LLN.YY..N..FAA.UUFH....FHTTT..RRR.JJ 
+J	left	1 	 97 LLN.YY..N..FAA.UUFH....FHTTT..RRRJJ. 
+Y	left	1 	 99 LLNYY...N..FAA.UUFH....FHTTT..RRRJJ. 
+A	right	1 	 98 LLNYY...N..F.AAUUFH....FHTTT..RRRJJ. 
+F	down	2 	 98 LLNYY...N....AAUU.H....FHTTT.FRRRJJF 
+H	up	1 	 97 LLNYY...N...HAA...H....F.TTT.FRRRJJF 
+A	right	3 	 95 LLNYY...N...H...AAH....F.TTT.FRRRJJF 
+
+[['L' 'L' 'N' 'Y' 'Y' '.']
+ ['.' '.' 'N' '.' '.' '.']
+ ['H' '.' '.' '.' 'A' 'A']
+ ['H' '.' '.' '.' '.' 'F']
+ ['.' 'T' 'T' 'T' '.' 'F']
+ ['R' 'R' 'R' 'J' 'J' 'F']]

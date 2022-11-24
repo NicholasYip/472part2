@@ -10,6 +10,24 @@ Initial board configuration: F....BF....BAACCCBH.GGZ.H..EZ.H..EDD
 Car fuel available: {'F': 100, 'B': 100, 'A': 100, 'C': 100, 'H': 100, 'G': 100, 'Z': 100, 'E': 100, 'D': 100}
 
 
-Runtime: 0.07375788688659668 seconds
+Runtime: 0.033705949783325195 seconds
+Search path length: 30
+Solution path length: 10
+Solution path: B down 1 -> G left 1 -> E up 1 -> D left 2 -> Z down 1 -> B down 2 -> A right 2 -> Z up 1 -> A right 2 -> 
 
-No solution found GG WP 
+B	down	1 	 99 F.....F....BAACCCBH.GGZBH..EZ.H..EDD 
+G	left	1 	 99 F.....F....BAACCCBHGG.ZBH..EZ.H..EDD 
+E	up	1 	 99 F.....F....BAACCCBHGGEZBH..EZ.H...DD 
+D	left	2 	 98 F.....F....BAACCCBHGGEZBH..EZ.H.DD.. 
+Z	down	1 	 99 F.....F....BAACCCBHGGE.BH..EZ.H.DDZ. 
+B	down	2 	 97 F.....F.....AACCC.HGGE.BH..EZBH.DDZB 
+A	right	2 	 98 F.....F.......AA..HGGE.BH..EZBH.DDZB 
+Z	up	1 	 98 F.....F.......AA..HGGEZBH..EZBH.DD.B 
+A	right	2 	 96 F.....F.........AAHGGEZBH..EZBH.DD.B 
+
+[['F' '.' '.' '.' '.' '.']
+ ['F' '.' '.' '.' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
+ ['H' 'G' 'G' 'E' 'Z' 'B']
+ ['H' '.' '.' 'E' 'Z' 'B']
+ ['H' '.' 'D' 'D' '.' 'B']]

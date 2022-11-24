@@ -10,7 +10,7 @@ Initial board configuration: ..STTTBBSJJUAASL.UNWWLK.NQQLK.MM.... T20 U20
 Car fuel available: {'S': 100, 'T': 20, 'B': 100, 'J': 100, 'U': 20, 'A': 100, 'L': 100, 'N': 100, 'W': 100, 'K': 100, 'Q': 100, 'M': 100}
 
 
-Runtime: 21.498493194580078 seconds
+Runtime: 21.78641104698181 seconds
 Search path length: 1957
 Solution path length: 16
 Solution path: M right 4 -> U down 1 -> J right 1 -> L up 1 -> K up 1 -> Q right 3 -> N down 1 -> W left 1 -> S down 3 -> L down 1 -> T left 2 -> J left 2 -> K up 2 -> U up 2 -> L down 1 -> A right 4 -> 

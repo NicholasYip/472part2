@@ -10,7 +10,7 @@ Initial board configuration: OOOR..LIIR..L..AAFLKK..F..G..F..GDDD O20 F20
 Car fuel available: {'O': 20, 'R': 100, 'L': 100, 'I': 100, 'A': 100, 'F': 20, 'K': 100, 'G': 100, 'D': 100}
 
 
-Runtime: 0.014417886734008789 seconds
+Runtime: 0.014340877532958984 seconds
 Search path length: 18
 Solution path length: 5
 Solution path: K right 2 -> G up 2 -> D left 3 -> F down 1 -> A right 1 -> 

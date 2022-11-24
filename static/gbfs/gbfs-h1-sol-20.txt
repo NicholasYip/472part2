@@ -10,7 +10,7 @@ Initial board configuration: .CCBBBHH.FL..AAFLY...FLYG.DUU.G.DEE. A20 B20 C20 H2
 Car fuel available: {'C': 20, 'B': 20, 'H': 20, 'F': 20, 'L': 100, 'A': 20, 'Y': 20, 'G': 20, 'D': 20, 'U': 100, 'E': 100}
 
 
-Runtime: 20.909942865371704 seconds
+Runtime: 20.77878975868225 seconds
 Search path length: 873
 Solution path length: 28
 Solution path: Y down 1 -> H right 1 -> D up 1 -> A left 1 -> C left 1 -> D down 1 -> G up 1 -> H left 1 -> D up 4 -> E left 3 -> U left 2 -> E right 4 -> A right 1 -> E left 3 -> U right 1 -> G down 1 -> E right 2 -> G up 2 -> U left 1 -> L down 1 -> E right 1 -> U right 1 -> E left 3 -> L down 1 -> U left 2 -> E left 1 -> F down 2 -> A right 3 -> 

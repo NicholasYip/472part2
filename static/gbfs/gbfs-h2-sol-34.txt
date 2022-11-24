@@ -10,7 +10,7 @@ Initial board configuration: .B....SB.CDESAACDEHHHGDE..VG....VWW.
 Car fuel available: {'B': 100, 'S': 100, 'C': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'G': 100, 'V': 100, 'W': 100}
 
 
-Runtime: 3.055387020111084 seconds
+Runtime: 3.1043970584869385 seconds
 Search path length: 318
 Solution path length: 28
 Solution path: C up 1 -> E up 1 -> W right 1 -> G down 1 -> H right 1 -> A right 1 -> D down 1 -> S down 1 -> A left 1 -> D up 2 -> H right 1 -> A right 1 -> B down 3 -> A left 1 -> H right 1 -> S down 2 -> A left 1 -> V up 4 -> A right 2 -> S up 4 -> B up 3 -> H left 3 -> G up 1 -> W left 4 -> A left 2 -> E down 3 -> D down 3 -> A right 4 -> 

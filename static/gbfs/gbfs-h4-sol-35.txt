@@ -10,7 +10,7 @@ Initial board configuration: .TLLLO.THHHOAAG.POBBGMP.C.GM..CDDM..
 Car fuel available: {'T': 100, 'L': 100, 'O': 100, 'H': 100, 'A': 100, 'G': 100, 'P': 100, 'B': 100, 'M': 100, 'C': 100, 'D': 100}
 
 
-Runtime: 1.4592478275299072 seconds
+Runtime: 1.4483342170715332 seconds
 Search path length: 344
 Solution path length: 50
 Solution path: O down 3 -> M up 1 -> D right 2 -> L right 1 -> G down 1 -> P down 1 -> O up 2 -> A right 1 -> D right 1 -> O down 1 -> M down 1 -> L left 1 -> A right 2 -> G up 1 -> H right 1 -> G up 1 -> L right 1 -> G up 1 -> T down 1 -> B right 1 -> C up 3 -> B left 1 -> G down 2 -> L left 2 -> H left 1 -> G down 1 -> A left 1 -> C up 1 -> P up 1 -> L right 1 -> T up 1 -> C down 1 -> P down 1 -> O up 1 -> A left 1 -> M up 1 -> D left 1 -> C up 1 -> O down 2 -> P up 1 -> A left 1 -> G up 1 -> D left 3 -> M down 1 -> D right 1 -> P down 1 -> H right 1 -> D left 1 -> G down 1 -> A right 4 -> 

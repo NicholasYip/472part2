@@ -10,7 +10,7 @@ Initial board configuration: U.B..DU.BCCDAABT.DFW.TKKFWLLL..WOOO.
 Car fuel available: {'U': 100, 'B': 100, 'D': 100, 'C': 100, 'A': 100, 'T': 100, 'F': 100, 'W': 100, 'K': 100, 'L': 100, 'O': 100}
 
 
-Runtime: 0.7779660224914551 seconds
+Runtime: 0.7704529762268066 seconds
 Search path length: 394
 Solution path length: 15
 Solution path: L right 1 -> O right 1 -> B down 3 -> C left 2 -> T up 2 -> A right 3 -> F down 1 -> U down 2 -> C left 1 -> B up 3 -> K left 2 -> O left 1 -> L left 1 -> D down 3 -> A right 1 -> 

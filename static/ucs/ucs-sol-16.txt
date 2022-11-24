@@ -10,7 +10,7 @@ Initial board configuration: SGG.T.S...T.SCAAT..CEDFF.CEDBB.PPP..
 Car fuel available: {'S': 100, 'G': 100, 'T': 100, 'C': 100, 'A': 100, 'E': 100, 'D': 100, 'F': 100, 'B': 100, 'P': 100}
 
 
-Runtime: 20.136868000030518 seconds
+Runtime: 20.035068035125732 seconds
 Search path length: 2318
 Solution path length: 14
 Solution path: S down 3 -> G left 1 -> P right 1 -> C down 1 -> A left 2 -> E up 3 -> D up 3 -> A right 2 -> C up 1 -> F left 2 -> B left 2 -> P left 1 -> T down 3 -> A right 2 -> 

@@ -10,6 +10,6 @@ Initial board configuration: .HHHE.....E.AAYYL.....L.....L.WWOOO.
 Car fuel available: {'H': 100, 'E': 100, 'A': 100, 'Y': 100, 'L': 100, 'W': 100, 'O': 100}
 
 
-Runtime: 0.0004050731658935547 seconds
+Runtime: 0.0003960132598876953 seconds
 
 No solution found GG WP 

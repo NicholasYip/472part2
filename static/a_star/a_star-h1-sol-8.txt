@@ -10,7 +10,7 @@ Initial board configuration: ..SSSS..UEEYAAUR.Y...RGG...RIO....IO
 Car fuel available: {'S': 100, 'U': 100, 'E': 100, 'Y': 100, 'A': 100, 'R': 100, 'G': 100, 'I': 100, 'O': 100}
 
 
-Runtime: 0.13819193840026855 seconds
+Runtime: 0.1362159252166748 seconds
 Search path length: 74
 Solution path length: 5
 Solution path: R down 1 -> U down 3 -> S left 1 -> Y up 1 -> A right 4 -> 

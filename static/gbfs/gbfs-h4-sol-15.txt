@@ -10,7 +10,7 @@ Initial board configuration: ..DEETR.DN.TRAAN..R..KK..G.FFF.GHHBB
 Car fuel available: {'D': 100, 'E': 100, 'T': 100, 'R': 100, 'N': 100, 'A': 100, 'K': 100, 'G': 100, 'F': 100, 'H': 100, 'B': 100}
 
 
-Runtime: 0.659188985824585 seconds
+Runtime: 0.7146179676055908 seconds
 Search path length: 127
 Solution path length: 16
 Solution path: K left 2 -> F left 1 -> N down 1 -> R down 2 -> A left 1 -> N up 1 -> K right 3 -> G up 1 -> N down 1 -> D down 2 -> E left 2 -> G down 1 -> N up 2 -> F right 1 -> D down 1 -> A right 4 -> 

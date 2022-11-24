@@ -10,7 +10,7 @@ Initial board configuration: FFFEEDU..RODUAAROJ..BBBJ...III......
 Car fuel available: {'F': 100, 'E': 100, 'D': 100, 'U': 100, 'R': 100, 'O': 100, 'A': 100, 'J': 100, 'B': 100, 'I': 100}
 
 
-Runtime: 1.064661979675293 seconds
+Runtime: 1.0397050380706787 seconds
 Search path length: 235
 Solution path length: 6
 Solution path: I left 3 -> J down 2 -> B left 2 -> R down 3 -> O down 3 -> A right 3 -> 
