@@ -10,21 +10,21 @@ Initial board configuration: FFFEEDU..RODUAAROJ..BBBJ...III......
 Car fuel available: {'F': 100, 'E': 100, 'D': 100, 'U': 100, 'R': 100, 'O': 100, 'A': 100, 'J': 100, 'B': 100, 'I': 100}
 
 
-Runtime: 1.0397050380706787 seconds
-Search path length: 235
+Runtime: 0.19696307182312012 seconds
+Search path length: 71
 Solution path length: 6
-Solution path: I left 3 -> J down 2 -> B left 2 -> R down 3 -> O down 3 -> A right 3 -> 
+Solution path: B left 2 -> I left 3 -> J down 2 -> R down 2 -> O down 3 -> A right 3 -> 
 
-I	left	3 	 97 FFFEEDU..RODUAAROJ..BBBJIII......... 
-J	down	2 	 98 FFFEEDU..RODUAARO...BBB.III..J.....J 
-B	left	2 	 98 FFFEEDU..RODUAARO.BBB...III..J.....J 
-R	down	3 	 97 FFFEEDU...ODUAA.O.BBB...IIIR.J...R.J 
-O	down	3 	 97 FFFEEDU....DUAA...BBB...IIIROJ...ROJ 
-A	right	3 	 97 FFFEEDU....DU...AABBB...IIIROJ...ROJ 
+B	left	2 	 98 FFFEEDU..RODUAAROJBBB..J...III...... 
+I	left	3 	 97 FFFEEDU..RODUAAROJBBB..JIII......... 
+J	down	2 	 98 FFFEEDU..RODUAARO.BBB...III..J.....J 
+R	down	2 	 98 FFFEEDU...ODUAA.O.BBBR..IIIR.J.....J 
+O	down	3 	 97 FFFEEDU....DUAA...BBBR..IIIROJ....OJ 
+A	right	3 	 97 FFFEEDU....DU...AABBBR..IIIROJ....OJ 
 
 [['F' 'F' 'F' 'E' 'E' 'D']
  ['U' '.' '.' '.' '.' 'D']
  ['U' '.' '.' '.' 'A' 'A']
- ['B' 'B' 'B' '.' '.' '.']
+ ['B' 'B' 'B' 'R' '.' '.']
  ['I' 'I' 'I' 'R' 'O' 'J']
- ['.' '.' '.' 'R' 'O' 'J']]
+ ['.' '.' '.' '.' 'O' 'J']]

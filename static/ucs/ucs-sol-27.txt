@@ -10,7 +10,7 @@ Initial board configuration: OOO.GIS...GIS.AAGIS.QW....QWTTUUUW..
 Car fuel available: {'O': 100, 'G': 100, 'I': 100, 'S': 100, 'A': 100, 'Q': 100, 'W': 100, 'T': 100, 'U': 100}
 
 
-Runtime: 36.723448038101196 seconds
+Runtime: 36.65868902206421 seconds
 Search path length: 3004
 Solution path length: 16
 Solution path: A left 1 -> W up 2 -> U right 1 -> S down 2 -> A left 1 -> Q up 1 -> T left 3 -> G down 3 -> I down 3 -> O right 3 -> Q up 2 -> A right 1 -> S up 1 -> U left 1 -> W down 2 -> A right 3 -> 

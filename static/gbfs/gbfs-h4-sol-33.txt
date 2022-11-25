@@ -10,25 +10,27 @@ Initial board configuration: FFFEEDU..RODUAAROJ..BBBJ...III......
 Car fuel available: {'F': 100, 'E': 100, 'D': 100, 'U': 100, 'R': 100, 'O': 100, 'A': 100, 'J': 100, 'B': 100, 'I': 100}
 
 
-Runtime: 0.8012559413909912 seconds
-Search path length: 172
-Solution path length: 10
-Solution path: I left 2 -> J down 1 -> I left 1 -> B left 2 -> R down 3 -> D down 1 -> O down 2 -> A right 1 -> D up 1 -> A right 2 -> 
+Runtime: 0.037301063537597656 seconds
+Search path length: 26
+Solution path length: 12
+Solution path: B left 1 -> I left 1 -> J down 1 -> B left 1 -> J down 1 -> I left 1 -> O down 3 -> J up 1 -> I left 1 -> R down 2 -> O up 1 -> A right 3 -> 
 
-I	left	2 	 98 FFFEEDU..RODUAAROJ..BBBJ.III........ 
-J	down	1 	 99 FFFEEDU..RODUAARO...BBBJ.III.J...... 
-I	left	1 	 97 FFFEEDU..RODUAARO...BBBJIII..J...... 
-B	left	2 	 98 FFFEEDU..RODUAARO.BBB..JIII..J...... 
-R	down	3 	 97 FFFEEDU...ODUAA.O.BBB..JIIIR.J...R.. 
-D	down	1 	 99 FFFEE.U...ODUAA.ODBBB..JIIIR.J...R.. 
-O	down	2 	 98 FFFEE.U....DUAA..DBBB.OJIIIROJ...R.. 
-A	right	1 	 99 FFFEE.U....DU.AA.DBBB.OJIIIROJ...R.. 
-D	up	1 	 98 FFFEEDU....DU.AA..BBB.OJIIIROJ...R.. 
-A	right	2 	 97 FFFEEDU....DU...AABBB.OJIIIROJ...R.. 
+B	left	1 	 99 FFFEEDU..RODUAAROJ.BBB.J...III...... 
+I	left	1 	 99 FFFEEDU..RODUAAROJ.BBB.J..III....... 
+J	down	1 	 99 FFFEEDU..RODUAARO..BBB.J..IIIJ...... 
+B	left	1 	 98 FFFEEDU..RODUAARO.BBB..J..IIIJ...... 
+J	down	1 	 98 FFFEEDU..RODUAARO.BBB.....IIIJ.....J 
+I	left	1 	 98 FFFEEDU..RODUAARO.BBB....III.J.....J 
+O	down	3 	 97 FFFEEDU..R.DUAAR..BBB....IIIOJ....OJ 
+J	up	1 	 97 FFFEEDU..R.DUAAR..BBB..J.IIIOJ....O. 
+I	left	1 	 97 FFFEEDU..R.DUAAR..BBB..JIII.OJ....O. 
+R	down	2 	 98 FFFEEDU....DUAA...BBBR.JIIIROJ....O. 
+O	up	1 	 96 FFFEEDU....DUAA...BBBROJIIIROJ...... 
+A	right	3 	 97 FFFEEDU....DU...AABBBROJIIIROJ...... 
 
 [['F' 'F' 'F' 'E' 'E' 'D']
  ['U' '.' '.' '.' '.' 'D']
  ['U' '.' '.' '.' 'A' 'A']
- ['B' 'B' 'B' '.' 'O' 'J']
+ ['B' 'B' 'B' 'R' 'O' 'J']
  ['I' 'I' 'I' 'R' 'O' 'J']
- ['.' '.' '.' 'R' '.' '.']]
+ ['.' '.' '.' '.' '.' '.']]

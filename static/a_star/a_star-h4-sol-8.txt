@@ -10,20 +10,20 @@ Initial board configuration: ..SSSS..UEEYAAUR.Y...RGG...RIO....IO
 Car fuel available: {'S': 100, 'U': 100, 'E': 100, 'Y': 100, 'A': 100, 'R': 100, 'G': 100, 'I': 100, 'O': 100}
 
 
-Runtime: 0.049317121505737305 seconds
-Search path length: 35
+Runtime: 0.011357307434082031 seconds
+Search path length: 17
 Solution path length: 5
-Solution path: S left 1 -> Y up 1 -> U down 2 -> R down 1 -> A right 4 -> 
+Solution path: S left 1 -> Y up 1 -> R down 1 -> U down 3 -> A right 4 -> 
 
 S	left	1 	 99 .SSSS...UEEYAAUR.Y...RGG...RIO....IO 
 Y	up	1 	 99 .SSSSY..UEEYAAUR.....RGG...RIO....IO 
-U	down	2 	 98 .SSSSY...EEYAA.R....URGG..URIO....IO 
-R	down	1 	 99 .SSSSY...EEYAA......URGG..URIO...RIO 
-A	right	4 	 96 .SSSSY...EEY....AA..URGG..URIO...RIO 
+R	down	1 	 99 .SSSSY..UEEYAAU......RGG...RIO...RIO 
+U	down	3 	 97 .SSSSY...EEYAA.......RGG..URIO..URIO 
+A	right	4 	 96 .SSSSY...EEY....AA...RGG..URIO..URIO 
 
 [['.' 'S' 'S' 'S' 'S' 'Y']
  ['.' '.' '.' 'E' 'E' 'Y']
  ['.' '.' '.' '.' 'A' 'A']
- ['.' '.' 'U' 'R' 'G' 'G']
+ ['.' '.' '.' 'R' 'G' 'G']
  ['.' '.' 'U' 'R' 'I' 'O']
- ['.' '.' '.' 'R' 'I' 'O']]
+ ['.' '.' 'U' 'R' 'I' 'O']]

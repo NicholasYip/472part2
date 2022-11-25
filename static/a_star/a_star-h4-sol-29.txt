@@ -10,32 +10,30 @@ Initial board configuration: U.B..DU.BCCDAABT.DFW.TKKFWLLL..WOOO.
 Car fuel available: {'U': 100, 'B': 100, 'D': 100, 'C': 100, 'A': 100, 'T': 100, 'F': 100, 'W': 100, 'K': 100, 'L': 100, 'O': 100}
 
 
-Runtime: 0.7318711280822754 seconds
-Search path length: 393
-Solution path length: 17
-Solution path: L right 1 -> B down 2 -> C left 2 -> O right 1 -> T up 2 -> B down 1 -> F down 1 -> A right 3 -> U down 2 -> C left 1 -> B up 3 -> O left 1 -> L left 1 -> K left 1 -> D down 2 -> D down 1 -> A right 1 -> 
+Runtime: 0.793219804763794 seconds
+Search path length: 406
+Solution path length: 15
+Solution path: L right 1 -> O right 1 -> B down 3 -> C left 2 -> T up 2 -> K left 1 -> A right 3 -> F down 1 -> U down 2 -> C left 1 -> B up 2 -> L left 1 -> O left 1 -> D down 3 -> A right 1 -> 
 
 L	right	1 	 99 U.B..DU.BCCDAABT.DFW.TKKFW.LLL.WOOO. 
-B	down	2 	 98 U....DU..CCDAABT.DFWBTKKFWBLLL.WOOO. 
-C	left	2 	 98 U....DUCC..DAABT.DFWBTKKFWBLLL.WOOO. 
-O	right	1 	 99 U....DUCC..DAABT.DFWBTKKFWBLLL.W.OOO 
-T	up	2 	 98 U..T.DUCCT.DAAB..DFWB.KKFWBLLL.W.OOO 
-B	down	1 	 97 U..T.DUCCT.DAA...DFWB.KKFWBLLL.WBOOO 
-F	down	1 	 99 U..T.DUCCT.DAA...D.WB.KKFWBLLLFWBOOO 
-A	right	3 	 97 U..T.DUCCT.D...AAD.WB.KKFWBLLLFWBOOO 
-U	down	2 	 98 ...T.D.CCT.DU..AADUWB.KKFWBLLLFWBOOO 
-C	left	1 	 97 ...T.DCC.T.DU..AADUWB.KKFWBLLLFWBOOO 
-B	up	3 	 94 ..BT.DCCBT.DU.BAADUW..KKFW.LLLFW.OOO 
-O	left	1 	 98 ..BT.DCCBT.DU.BAADUW..KKFW.LLLFWOOO. 
-L	left	1 	 98 ..BT.DCCBT.DU.BAADUW..KKFWLLL.FWOOO. 
-K	left	1 	 99 ..BT.DCCBT.DU.BAADUW.KK.FWLLL.FWOOO. 
-D	down	2 	 98 ..BT..CCBT..U.BAADUW.KKDFWLLLDFWOOO. 
-D	down	1 	 97 ..BT..CCBT..U.BAA.UW.KKDFWLLLDFWOOOD 
-A	right	1 	 96 ..BT..CCBT..U.B.AAUW.KKDFWLLLDFWOOOD 
+O	right	1 	 99 U.B..DU.BCCDAABT.DFW.TKKFW.LLL.W.OOO 
+B	down	3 	 97 U....DU..CCDAA.T.DFWBTKKFWBLLL.WBOOO 
+C	left	2 	 98 U....DUCC..DAA.T.DFWBTKKFWBLLL.WBOOO 
+T	up	2 	 98 U..T.DUCCT.DAA...DFWB.KKFWBLLL.WBOOO 
+K	left	1 	 99 U..T.DUCCT.DAA...DFWBKK.FWBLLL.WBOOO 
+A	right	3 	 97 U..T.DUCCT.D...AADFWBKK.FWBLLL.WBOOO 
+F	down	1 	 99 U..T.DUCCT.D...AAD.WBKK.FWBLLLFWBOOO 
+U	down	2 	 98 ...T.D.CCT.DU..AADUWBKK.FWBLLLFWBOOO 
+C	left	1 	 97 ...T.DCC.T.DU..AADUWBKK.FWBLLLFWBOOO 
+B	up	2 	 95 ...T.DCCBT.DU.BAADUWBKK.FW.LLLFW.OOO 
+L	left	1 	 98 ...T.DCCBT.DU.BAADUWBKK.FWLLL.FW.OOO 
+O	left	1 	 98 ...T.DCCBT.DU.BAADUWBKK.FWLLL.FWOOO. 
+D	down	3 	 97 ...T..CCBT..U.BAA.UWBKKDFWLLLDFWOOOD 
+A	right	1 	 96 ...T..CCBT..U.B.AAUWBKKDFWLLLDFWOOOD 
 
-[['.' '.' 'B' 'T' '.' '.']
+[['.' '.' '.' 'T' '.' '.']
  ['C' 'C' 'B' 'T' '.' '.']
  ['U' '.' 'B' '.' 'A' 'A']
- ['U' 'W' '.' 'K' 'K' 'D']
+ ['U' 'W' 'B' 'K' 'K' 'D']
  ['F' 'W' 'L' 'L' 'L' 'D']
  ['F' 'W' 'O' 'O' 'O' 'D']]

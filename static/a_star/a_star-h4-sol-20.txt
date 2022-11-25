@@ -10,25 +10,25 @@ Initial board configuration: .CCBBBHH.FL..AAFLY...FLYG.DUU.G.DEE. A20 B20 C20 H2
 Car fuel available: {'C': 20, 'B': 20, 'H': 20, 'F': 20, 'L': 100, 'A': 20, 'Y': 20, 'G': 20, 'D': 20, 'U': 100, 'E': 100}
 
 
-Runtime: 242.9168848991394 seconds
-Search path length: 4517
+Runtime: 102.98254609107971 seconds
+Search path length: 2358
 Solution path length: 10
-Solution path: C left 1 -> A left 1 -> D up 4 -> E left 2 -> U left 2 -> F down 2 -> A right 1 -> L down 2 -> Y down 2 -> A right 3 -> 
+Solution path: A left 1 -> D up 2 -> U left 2 -> E left 2 -> L down 2 -> F down 2 -> C left 1 -> D up 2 -> Y down 1 -> A right 4 -> 
 
-C	left	1 	 19 CC.BBBHH.FL..AAFLY...FLYG.DUU.G.DEE. 
-A	left	1 	 19 CC.BBBHH.FL.AA.FLY...FLYG.DUU.G.DEE. 
-D	up	4 	 16 CCDBBBHHDFL.AA.FLY...FLYG..UU.G..EE. 
-E	left	2 	 98 CCDBBBHHDFL.AA.FLY...FLYG..UU.GEE... 
-U	left	2 	 98 CCDBBBHHDFL.AA.FLY...FLYGUU...GEE... 
-F	down	2 	 18 CCDBBBHHD.L.AA..LY...FLYGUUF..GEEF.. 
-A	right	1 	 18 CCDBBBHHD.L..AA.LY...FLYGUUF..GEEF.. 
-L	down	2 	 98 CCDBBBHHD....AA..Y...FLYGUUFL.GEEFL. 
-Y	down	2 	 18 CCDBBBHHD....AA......FL.GUUFLYGEEFLY 
-A	right	3 	 15 CCDBBBHHD.......AA...FL.GUUFLYGEEFLY 
+A	left	1 	 19 .CCBBBHH.FL.AA.FLY...FLYG.DUU.G.DEE. 
+D	up	2 	 18 .CCBBBHH.FL.AADFLY..DFLYG..UU.G..EE. 
+U	left	2 	 98 .CCBBBHH.FL.AADFLY..DFLYGUU...G..EE. 
+E	left	2 	 98 .CCBBBHH.FL.AADFLY..DFLYGUU...GEE... 
+L	down	2 	 98 .CCBBBHH.F..AADF.Y..DFLYGUU.L.GEE.L. 
+F	down	2 	 18 .CCBBBHH....AAD..Y..DFLYGUUFL.GEEFL. 
+C	left	1 	 19 CC.BBBHH....AAD..Y..DFLYGUUFL.GEEFL. 
+D	up	2 	 16 CCDBBBHHD...AA...Y...FLYGUUFL.GEEFL. 
+Y	down	1 	 19 CCDBBBHHD...AA.......FLYGUUFLYGEEFL. 
+A	right	4 	 15 CCDBBBHHD.......AA...FLYGUUFLYGEEFL. 
 
 [['C' 'C' 'D' 'B' 'B' 'B']
  ['H' 'H' 'D' '.' '.' '.']
  ['.' '.' '.' '.' 'A' 'A']
- ['.' '.' '.' 'F' 'L' '.']
+ ['.' '.' '.' 'F' 'L' 'Y']
  ['G' 'U' 'U' 'F' 'L' 'Y']
- ['G' 'E' 'E' 'F' 'L' 'Y']]
+ ['G' 'E' 'E' 'F' 'L' '.']]

@@ -10,15 +10,14 @@ Initial board configuration: .G.FFF.G.C..BAAC..B..C.SB..DDSSS.HH.
 Car fuel available: {'G': 100, 'F': 100, 'C': 100, 'B': 100, 'A': 100, 'S': 100, 'D': 100, 'H': 100}
 
 
-Runtime: 0.07014799118041992 seconds
-Search path length: 64
-Solution path length: 5
-Solution path: D left 2 -> C down 1 -> H right 1 -> C down 1 -> A right 3 -> 
+Runtime: 0.05361294746398926 seconds
+Search path length: 47
+Solution path length: 4
+Solution path: D left 2 -> H right 1 -> C down 2 -> A right 3 -> 
 
 D	left	2 	 98 .G.FFF.G.C..BAAC..B..C.SBDD..SSS.HH. 
-C	down	1 	 99 .G.FFF.G....BAAC..B..C.SBDDC.SSS.HH. 
-H	right	1 	 99 .G.FFF.G....BAAC..B..C.SBDDC.SSS..HH 
-C	down	1 	 98 .G.FFF.G....BAA...B..C.SBDDC.SSS.CHH 
+H	right	1 	 99 .G.FFF.G.C..BAAC..B..C.SBDD..SSS..HH 
+C	down	2 	 98 .G.FFF.G....BAA...B..C.SBDDC.SSS.CHH 
 A	right	3 	 97 .G.FFF.G....B...AAB..C.SBDDC.SSS.CHH 
 
 [['.' 'G' '.' 'F' 'F' 'F']

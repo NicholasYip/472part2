@@ -10,23 +10,22 @@ Initial board configuration: ...BYYGGGBS..AACS.F..C..F..CPPF.DDOO
 Car fuel available: {'B': 100, 'Y': 100, 'G': 100, 'S': 100, 'A': 100, 'C': 100, 'F': 100, 'P': 100, 'D': 100, 'O': 100}
 
 
-Runtime: 0.013934850692749023 seconds
-Search path length: 32
-Solution path length: 8
-Solution path: F up 1 -> D left 2 -> C down 1 -> B down 1 -> Y left 3 -> S up 1 -> B up 1 -> A right 3 -> 
+Runtime: 0.024824857711791992 seconds
+Search path length: 42
+Solution path length: 7
+Solution path: D left 1 -> C down 1 -> B down 1 -> Y left 4 -> B up 1 -> S up 1 -> A right 3 -> 
 
-F	up	1 	 99 ...BYYGGGBS.FAACS.F..C..F..CPP..DDOO 
-D	left	2 	 98 ...BYYGGGBS.FAACS.F..C..F..CPPDD..OO 
-C	down	1 	 99 ...BYYGGGBS.FAA.S.F..C..F..CPPDD.COO 
-B	down	1 	 99 ....YYGGGBS.FAABS.F..C..F..CPPDD.COO 
-Y	left	3 	 97 .YY...GGGBS.FAABS.F..C..F..CPPDD.COO 
-S	up	1 	 99 .YY.S.GGGBS.FAAB..F..C..F..CPPDD.COO 
-B	up	1 	 98 .YYBS.GGGBS.FAA...F..C..F..CPPDD.COO 
-A	right	3 	 97 .YYBS.GGGBS.F...AAF..C..F..CPPDD.COO 
+D	left	1 	 99 ...BYYGGGBS..AACS.F..C..F..CPPFDD.OO 
+C	down	1 	 99 ...BYYGGGBS..AA.S.F..C..F..CPPFDDCOO 
+B	down	1 	 99 ....YYGGGBS..AABS.F..C..F..CPPFDDCOO 
+Y	left	4 	 96 YY....GGGBS..AABS.F..C..F..CPPFDDCOO 
+B	up	1 	 98 YY.B..GGGBS..AA.S.F..C..F..CPPFDDCOO 
+S	up	1 	 99 YY.BS.GGGBS..AA...F..C..F..CPPFDDCOO 
+A	right	3 	 97 YY.BS.GGGBS.....AAF..C..F..CPPFDDCOO 
 
-[['.' 'Y' 'Y' 'B' 'S' '.']
+[['Y' 'Y' '.' 'B' 'S' '.']
  ['G' 'G' 'G' 'B' 'S' '.']
- ['F' '.' '.' '.' 'A' 'A']
+ ['.' '.' '.' '.' 'A' 'A']
  ['F' '.' '.' 'C' '.' '.']
  ['F' '.' '.' 'C' 'P' 'P']
- ['D' 'D' '.' 'C' 'O' 'O']]
+ ['F' 'D' 'D' 'C' 'O' 'O']]

@@ -10,23 +10,19 @@ Initial board configuration: .GGNN.EEZZO.AALLO..CCCBB....J.WWW.J. W20 Z20 G20 N2
 Car fuel available: {'G': 20, 'N': 20, 'E': 20, 'Z': 20, 'O': 20, 'A': 20, 'L': 20, 'C': 100, 'B': 100, 'J': 100, 'W': 20}
 
 
-Runtime: 0.010293006896972656 seconds
-Search path length: 27
-Solution path length: 9
-Solution path: G left 1 -> W right 1 -> N right 1 -> C left 1 -> N left 2 -> O up 1 -> C right 1 -> A right 4 -> 
+Runtime: 0.005426883697509766 seconds
+Search path length: 15
+Solution path length: 5
+Solution path: G left 1 -> N left 1 -> O up 1 -> A right 4 -> 
 
 G	left	1 	 19 GG.NN.EEZZO.AALLO..CCCBB....J.WWW.J. 
-W	right	1 	 19 GG.NN.EEZZO.AALLO..CCCBB....J..WWWJ. 
-N	right	1 	 19 GG..NNEEZZO.AALLO..CCCBB....J..WWWJ. 
-C	left	1 	 99 GG..NNEEZZO.AALLO.CCC.BB....J..WWWJ. 
-N	left	2 	 17 GGNN..EEZZO.AALLO.CCC.BB....J..WWWJ. 
-O	up	1 	 19 GGNNO.EEZZO.AALL..CCC.BB....J..WWWJ. 
-C	right	1 	 98 GGNNO.EEZZO.AA.....CCCBB....J..WWWJ. 
-A	right	4 	 16 GGNNO.EEZZO.....AA.CCCBB....J..WWWJ. 
+N	left	1 	 19 GGNN..EEZZO.AALLO..CCCBB....J.WWW.J. 
+O	up	1 	 19 GGNNO.EEZZO.AALL...CCCBB....J.WWW.J. 
+A	right	4 	 16 GGNNO.EEZZO.....AA.CCCBB....J.WWW.J. 
 
 [['G' 'G' 'N' 'N' 'O' '.']
  ['E' 'E' 'Z' 'Z' 'O' '.']
  ['.' '.' '.' '.' 'A' 'A']
  ['.' 'C' 'C' 'C' 'B' 'B']
  ['.' '.' '.' '.' 'J' '.']
- ['.' 'W' 'W' 'W' 'J' '.']]
+ ['W' 'W' 'W' '.' 'J' '.']]

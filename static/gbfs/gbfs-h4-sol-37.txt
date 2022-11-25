@@ -10,64 +10,56 @@ Initial board configuration: .CYYYI.CZZZIAAL.VIBBLOV.W.LO..WPPO.. Y20 Z20 B20 W2
 Car fuel available: {'C': 20, 'Y': 20, 'I': 100, 'Z': 20, 'A': 20, 'L': 100, 'V': 100, 'B': 20, 'O': 100, 'W': 20, 'P': 20}
 
 
-Runtime: 1.4453630447387695 seconds
-Search path length: 344
-Solution path length: 50
-Solution path: I down 3 -> O up 1 -> P right 2 -> Y right 1 -> L down 1 -> V down 1 -> I up 2 -> A right 1 -> P right 1 -> I down 1 -> O down 1 -> Y left 1 -> A right 2 -> L up 1 -> Z right 1 -> L up 1 -> Y right 1 -> L up 1 -> C down 1 -> B right 1 -> W up 3 -> B left 1 -> L down 2 -> Y left 2 -> Z left 1 -> L down 1 -> A left 1 -> W up 1 -> V up 1 -> Y right 1 -> C up 1 -> W down 1 -> V down 1 -> I up 1 -> A left 1 -> O up 1 -> P left 1 -> W up 1 -> I down 2 -> V up 1 -> A left 1 -> L up 1 -> P left 3 -> O down 1 -> P right 1 -> V down 1 -> Z right 1 -> P left 1 -> L down 1 -> A right 4 -> 
+Runtime: 2.1599879264831543 seconds
+Search path length: 528
+Solution path length: 42
+Solution path: V down 1 -> I down 2 -> Z right 1 -> I down 1 -> O up 1 -> P right 2 -> L down 1 -> Z left 1 -> A right 1 -> I up 2 -> P right 1 -> O down 1 -> A right 2 -> C down 1 -> Y left 1 -> I down 1 -> Z right 1 -> L up 2 -> Y right 2 -> L up 1 -> B right 1 -> W up 4 -> B left 1 -> L down 2 -> Z left 1 -> C up 1 -> L down 1 -> A left 2 -> Y left 1 -> O up 1 -> P left 1 -> I down 1 -> Z right 1 -> A left 1 -> Y right 1 -> L up 1 -> P left 2 -> O down 1 -> P left 1 -> L down 1 -> Z left 1 -> A right 4 -> 
 
-I	down	3 	 97 .CYYY..CZZZ.AAL.V.BBLOVIW.LO.IWPPO.I 
-O	up	1 	 99 .CYYY..CZZZ.AALOV.BBLOVIW.LO.IWPP..I 
-P	right	2 	 18 .CYYY..CZZZ.AALOV.BBLOVIW.LO.IW..PPI 
-Y	right	1 	 19 .C.YYY.CZZZ.AALOV.BBLOVIW.LO.IW..PPI 
-L	down	1 	 99 .C.YYY.CZZZ.AA.OV.BBLOVIW.LO.IW.LPPI 
-V	down	1 	 99 .C.YYY.CZZZ.AA.O..BBLOVIW.LOVIW.LPPI 
-I	up	2 	 95 .C.YYY.CZZZIAA.O.IBBLOVIW.LOV.W.LPP. 
-A	right	1 	 19 .C.YYY.CZZZI.AAO.IBBLOVIW.LOV.W.LPP. 
-P	right	1 	 17 .C.YYY.CZZZI.AAO.IBBLOVIW.LOV.W.L.PP 
-I	down	1 	 94 .C.YYY.CZZZ..AAO.IBBLOVIW.LOVIW.L.PP 
-O	down	1 	 98 .C.YYY.CZZZ..AA..IBBLOVIW.LOVIW.LOPP 
-Y	left	1 	 18 .CYYY..CZZZ..AA..IBBLOVIW.LOVIW.LOPP 
-A	right	2 	 17 .CYYY..CZZZ....AAIBBLOVIW.LOVIW.LOPP 
-L	up	1 	 98 .CYYY..CZZZ...LAAIBBLOVIW.LOVIW..OPP 
-Z	right	1 	 19 .CYYY..C.ZZZ..LAAIBBLOVIW.LOVIW..OPP 
-L	up	1 	 97 .CYYY..CLZZZ..LAAIBBLOVIW..OVIW..OPP 
-Y	right	1 	 17 .C.YYY.CLZZZ..LAAIBBLOVIW..OVIW..OPP 
-L	up	1 	 96 .CLYYY.CLZZZ..LAAIBB.OVIW..OVIW..OPP 
-C	down	1 	 19 ..LYYY.CLZZZ.CLAAIBB.OVIW..OVIW..OPP 
+V	down	1 	 99 .CYYYI.CZZZIAAL..IBBLOV.W.LOV.WPPO.. 
+I	down	2 	 98 .CYYY..CZZZ.AAL..IBBLOVIW.LOVIWPPO.. 
+Z	right	1 	 19 .CYYY..C.ZZZAAL..IBBLOVIW.LOVIWPPO.. 
+I	down	1 	 97 .CYYY..C.ZZZAAL...BBLOVIW.LOVIWPPO.I 
+O	up	1 	 99 .CYYY..C.ZZZAALO..BBLOVIW.LOVIWPP..I 
+P	right	2 	 18 .CYYY..C.ZZZAALO..BBLOVIW.LOVIW..PPI 
+L	down	1 	 99 .CYYY..C.ZZZAA.O..BBLOVIW.LOVIW.LPPI 
+Z	left	1 	 18 .CYYY..CZZZ.AA.O..BBLOVIW.LOVIW.LPPI 
+A	right	1 	 19 .CYYY..CZZZ..AAO..BBLOVIW.LOVIW.LPPI 
+I	up	2 	 95 .CYYY..CZZZI.AAO.IBBLOVIW.LOV.W.LPP. 
+P	right	1 	 17 .CYYY..CZZZI.AAO.IBBLOVIW.LOV.W.L.PP 
+O	down	1 	 98 .CYYY..CZZZI.AA..IBBLOVIW.LOV.W.LOPP 
+A	right	2 	 17 .CYYY..CZZZI...AAIBBLOVIW.LOV.W.LOPP 
+C	down	1 	 19 ..YYY..CZZZI.C.AAIBBLOVIW.LOV.W.LOPP 
+Y	left	1 	 19 .YYY...CZZZI.C.AAIBBLOVIW.LOV.W.LOPP 
+I	down	1 	 94 .YYY...CZZZ..C.AAIBBLOVIW.LOVIW.LOPP 
+Z	right	1 	 17 .YYY...C.ZZZ.C.AAIBBLOVIW.LOVIW.LOPP 
+L	up	2 	 97 .YYY...CLZZZ.CLAAIBBLOVIW..OVIW..OPP 
+Y	right	2 	 17 ...YYY.CLZZZ.CLAAIBBLOVIW..OVIW..OPP 
+L	up	1 	 96 ..LYYY.CLZZZ.CLAAIBB.OVIW..OVIW..OPP 
 B	right	1 	 19 ..LYYY.CLZZZ.CLAAI.BBOVIW..OVIW..OPP 
-W	up	3 	 17 ..LYYYWCLZZZWCLAAI.BBOVI...OVI...OPP 
-B	left	1 	 18 ..LYYYWCLZZZWCLAAIBB.OVI...OVI...OPP 
-L	down	2 	 94 ...YYYWC.ZZZWCLAAIBBLOVI..LOVI...OPP 
-Y	left	2 	 15 .YYY..WC.ZZZWCLAAIBBLOVI..LOVI...OPP 
-Z	left	1 	 18 .YYY..WCZZZ.WCLAAIBBLOVI..LOVI...OPP 
-L	down	1 	 93 .YYY..WCZZZ.WC.AAIBBLOVI..LOVI..LOPP 
-A	left	1 	 16 .YYY..WCZZZ.WCAA.IBBLOVI..LOVI..LOPP 
-W	up	1 	 16 WYYY..WCZZZ..CAA.IBBLOVI..LOVI..LOPP 
-V	up	1 	 98 WYYY..WCZZZ..CAAVIBBLOVI..LO.I..LOPP 
-Y	right	1 	 14 W.YYY.WCZZZ..CAAVIBBLOVI..LO.I..LOPP 
-C	up	1 	 18 WCYYY.WCZZZ...AAVIBBLOVI..LO.I..LOPP 
-W	down	1 	 15 .CYYY.WCZZZ.W.AAVIBBLOVI..LO.I..LOPP 
-V	down	1 	 97 .CYYY.WCZZZ.W.AA.IBBLOVI..LOVI..LOPP 
-I	up	1 	 93 .CYYY.WCZZZIW.AA.IBBLOVI..LOV...LOPP 
-A	left	1 	 15 .CYYY.WCZZZIWAA..IBBLOVI..LOV...LOPP 
-O	up	1 	 97 .CYYY.WCZZZIWAAO.IBBLOVI..LOV...L.PP 
-P	left	1 	 16 .CYYY.WCZZZIWAAO.IBBLOVI..LOV...LPP. 
-W	up	1 	 14 WCYYY.WCZZZI.AAO.IBBLOVI..LOV...LPP. 
-I	down	2 	 91 WCYYY.WCZZZ..AAO..BBLOVI..LOVI..LPPI 
-V	up	1 	 96 WCYYY.WCZZZ..AAOV.BBLOVI..LO.I..LPPI 
-A	left	1 	 14 WCYYY.WCZZZ.AA.OV.BBLOVI..LO.I..LPPI 
-L	up	1 	 92 WCYYY.WCZZZ.AALOV.BBLOVI..LO.I...PPI 
-P	left	3 	 13 WCYYY.WCZZZ.AALOV.BBLOVI..LO.IPP...I 
-O	down	1 	 96 WCYYY.WCZZZ.AAL.V.BBLOVI..LO.IPP.O.I 
-P	right	1 	 12 WCYYY.WCZZZ.AAL.V.BBLOVI..LO.I.PPO.I 
-V	down	1 	 95 WCYYY.WCZZZ.AAL...BBLOVI..LOVI.PPO.I 
-Z	right	1 	 17 WCYYY.WC.ZZZAAL...BBLOVI..LOVI.PPO.I 
-P	left	1 	 11 WCYYY.WC.ZZZAAL...BBLOVI..LOVIPP.O.I 
-L	down	1 	 91 WCYYY.WC.ZZZAA....BBLOVI..LOVIPPLO.I 
-A	right	4 	 10 WCYYY.WC.ZZZ....AABBLOVI..LOVIPPLO.I 
+W	up	4 	 16 W.LYYYWCLZZZ.CLAAI.BBOVI...OVI...OPP 
+B	left	1 	 18 W.LYYYWCLZZZ.CLAAIBB.OVI...OVI...OPP 
+L	down	2 	 94 W..YYYWC.ZZZ.CLAAIBBLOVI..LOVI...OPP 
+Z	left	1 	 16 W..YYYWCZZZ..CLAAIBBLOVI..LOVI...OPP 
+C	up	1 	 18 WC.YYYWCZZZ...LAAIBBLOVI..LOVI...OPP 
+L	down	1 	 93 WC.YYYWCZZZ....AAIBBLOVI..LOVI..LOPP 
+A	left	2 	 15 WC.YYYWCZZZ..AA..IBBLOVI..LOVI..LOPP 
+Y	left	1 	 16 WCYYY.WCZZZ..AA..IBBLOVI..LOVI..LOPP 
+O	up	1 	 97 WCYYY.WCZZZ..AAO.IBBLOVI..LOVI..L.PP 
+P	left	1 	 16 WCYYY.WCZZZ..AAO.IBBLOVI..LOVI..LPP. 
+I	down	1 	 93 WCYYY.WCZZZ..AAO..BBLOVI..LOVI..LPPI 
+Z	right	1 	 15 WCYYY.WC.ZZZ.AAO..BBLOVI..LOVI..LPPI 
+A	left	1 	 14 WCYYY.WC.ZZZAA.O..BBLOVI..LOVI..LPPI 
+Y	right	1 	 15 WC.YYYWC.ZZZAA.O..BBLOVI..LOVI..LPPI 
+L	up	1 	 92 WC.YYYWC.ZZZAALO..BBLOVI..LOVI...PPI 
+P	left	2 	 14 WC.YYYWC.ZZZAALO..BBLOVI..LOVI.PP..I 
+O	down	1 	 96 WC.YYYWC.ZZZAAL...BBLOVI..LOVI.PPO.I 
+P	left	1 	 13 WC.YYYWC.ZZZAAL...BBLOVI..LOVIPP.O.I 
+L	down	1 	 91 WC.YYYWC.ZZZAA....BBLOVI..LOVIPPLO.I 
+Z	left	1 	 14 WC.YYYWCZZZ.AA....BBLOVI..LOVIPPLO.I 
+A	right	4 	 10 WC.YYYWCZZZ.....AABBLOVI..LOVIPPLO.I 
 
-[['W' 'C' 'Y' 'Y' 'Y' '.']
- ['W' 'C' '.' 'Z' 'Z' 'Z']
+[['W' 'C' '.' 'Y' 'Y' 'Y']
+ ['W' 'C' 'Z' 'Z' 'Z' '.']
  ['.' '.' '.' '.' 'A' 'A']
  ['B' 'B' 'L' 'O' 'V' 'I']
  ['.' '.' 'L' 'O' 'V' 'I']

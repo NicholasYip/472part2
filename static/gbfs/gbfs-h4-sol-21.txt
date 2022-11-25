@@ -10,21 +10,24 @@ Initial board configuration: .T.YYY.T.HHHAAFFFDGGGG.DR.BBBDREEVVV V20 A20 G20 H2
 Car fuel available: {'T': 20, 'Y': 100, 'H': 20, 'A': 20, 'F': 20, 'D': 100, 'G': 20, 'R': 20, 'B': 20, 'E': 20, 'V': 20}
 
 
-Runtime: 0.017191171646118164 seconds
-Search path length: 32
-Solution path length: 9
-Solution path: G right 1 -> B left 1 -> R up 1 -> E left 1 -> V left 1 -> D down 1 -> Y left 1 -> A right 4 -> 
+Runtime: 0.021053075790405273 seconds
+Search path length: 30
+Solution path length: 12
+Solution path: H left 1 -> G right 1 -> R up 1 -> E left 1 -> V left 1 -> D down 1 -> Y left 1 -> H right 1 -> Y right 1 -> B left 1 -> A right 4 -> 
 
-G	right	1 	 19 .T.YYY.T.HHHAAFFFD.GGGGDR.BBBDREEVVV 
-B	left	1 	 19 .T.YYY.T.HHHAAFFFD.GGGGDRBBB.DREEVVV 
-R	up	1 	 19 .T.YYY.T.HHHAAFFFDRGGGGDRBBB.D.EEVVV 
-E	left	1 	 19 .T.YYY.T.HHHAAFFFDRGGGGDRBBB.DEE.VVV 
-V	left	1 	 19 .T.YYY.T.HHHAAFFFDRGGGGDRBBB.DEEVVV. 
-D	down	1 	 99 .T.YYY.T.HHHAAFFF.RGGGGDRBBB.DEEVVVD 
-Y	left	1 	 99 .TYYY..T.HHHAAFFF.RGGGGDRBBB.DEEVVVD 
-A	right	4 	 16 .TYYY..T.HHH....AARGGGGDRBBB.DEEVVVD 
+H	left	1 	 19 .T.YYY.THHH.AAFFFDGGGG.DR.BBBDREEVVV 
+G	right	1 	 19 .T.YYY.THHH.AAFFFD.GGGGDR.BBBDREEVVV 
+R	up	1 	 19 .T.YYY.THHH.AAFFFDRGGGGDR.BBBD.EEVVV 
+E	left	1 	 19 .T.YYY.THHH.AAFFFDRGGGGDR.BBBDEE.VVV 
+V	left	1 	 19 .T.YYY.THHH.AAFFFDRGGGGDR.BBBDEEVVV. 
+D	down	1 	 99 .T.YYY.THHH.AAFFF.RGGGGDR.BBBDEEVVVD 
+Y	left	1 	 99 .TYYY..THHH.AAFFF.RGGGGDR.BBBDEEVVVD 
+H	right	1 	 18 .TYYY..T.HHHAAFFF.RGGGGDR.BBBDEEVVVD 
+Y	right	1 	 98 .T.YYY.T.HHHAA....RGGGGDR.BBBDEEVVVD 
+B	left	1 	 19 .T.YYY.T.HHHAA....RGGGGDRBBB.DEEVVVD 
+A	right	4 	 16 .T.YYY.T.HHH....AARGGGGDRBBB.DEEVVVD 
 
-[['.' 'T' 'Y' 'Y' 'Y' '.']
+[['.' 'T' '.' 'Y' 'Y' 'Y']
  ['.' 'T' '.' 'H' 'H' 'H']
  ['.' '.' '.' '.' 'A' 'A']
  ['R' 'G' 'G' 'G' 'G' 'D']

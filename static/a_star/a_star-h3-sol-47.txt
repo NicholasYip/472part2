@@ -10,7 +10,7 @@ Initial board configuration: ..B.....B...AAB...CCC..D.....D.....D A20 B20 C20 D2
 Car fuel available: {'B': 20, 'A': 20, 'C': 20, 'D': 20}
 
 
-Runtime: 0.004595041275024414 seconds
+Runtime: 0.004637241363525391 seconds
 Search path length: 28
 Solution path length: 9
 Solution path: D up 3 -> C right 3 -> B down 2 -> B down 1 -> A right 3 -> B up 3 -> C left 1 -> D down 3 -> A right 1 -> 

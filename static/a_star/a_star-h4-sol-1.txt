@@ -10,20 +10,20 @@ Initial board configuration: YBCCDDYBR..EY.RAAEH.Z..SH.Z..SH.Z..S
 Car fuel available: {'Y': 100, 'B': 100, 'C': 100, 'D': 100, 'R': 100, 'E': 100, 'A': 100, 'H': 100, 'Z': 100, 'S': 100}
 
 
-Runtime: 0.0028069019317626953 seconds
-Search path length: 16
+Runtime: 0.003979682922363281 seconds
+Search path length: 18
 Solution path length: 5
-Solution path: B down 3 -> C left 1 -> D left 1 -> E up 1 -> A right 1 -> 
+Solution path: B down 2 -> C left 1 -> D left 1 -> E up 1 -> A right 1 -> 
 
-B	down	3 	 97 Y.CCDDY.R..EY.RAAEHBZ..SHBZ..SH.Z..S 
-C	left	1 	 99 YCC.DDY.R..EY.RAAEHBZ..SHBZ..SH.Z..S 
-D	left	1 	 99 YCCDD.Y.R..EY.RAAEHBZ..SHBZ..SH.Z..S 
-E	up	1 	 99 YCCDDEY.R..EY.RAA.HBZ..SHBZ..SH.Z..S 
-A	right	1 	 99 YCCDDEY.R..EY.R.AAHBZ..SHBZ..SH.Z..S 
+B	down	2 	 98 Y.CCDDY.R..EYBRAAEHBZ..SH.Z..SH.Z..S 
+C	left	1 	 99 YCC.DDY.R..EYBRAAEHBZ..SH.Z..SH.Z..S 
+D	left	1 	 99 YCCDD.Y.R..EYBRAAEHBZ..SH.Z..SH.Z..S 
+E	up	1 	 99 YCCDDEY.R..EYBRAA.HBZ..SH.Z..SH.Z..S 
+A	right	1 	 99 YCCDDEY.R..EYBR.AAHBZ..SH.Z..SH.Z..S 
 
 [['Y' 'C' 'C' 'D' 'D' 'E']
  ['Y' '.' 'R' '.' '.' 'E']
- ['Y' '.' 'R' '.' 'A' 'A']
+ ['Y' 'B' 'R' '.' 'A' 'A']
  ['H' 'B' 'Z' '.' '.' 'S']
- ['H' 'B' 'Z' '.' '.' 'S']
+ ['H' '.' 'Z' '.' '.' 'S']
  ['H' '.' 'Z' '.' '.' 'S']]

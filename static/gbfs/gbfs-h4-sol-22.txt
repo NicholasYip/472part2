@@ -10,18 +10,16 @@ Initial board configuration: FFFTTT....YOAAGHYO..GH........DDDJJJ
 Car fuel available: {'F': 100, 'T': 100, 'Y': 100, 'O': 100, 'A': 100, 'G': 100, 'H': 100, 'D': 100, 'J': 100}
 
 
-Runtime: 0.014692068099975586 seconds
-Search path length: 23
-Solution path length: 7
-Solution path: H down 1 -> G down 1 -> A right 2 -> O down 1 -> Y down 2 -> O down 1 -> A right 2 -> 
+Runtime: 0.0061931610107421875 seconds
+Search path length: 9
+Solution path length: 5
+Solution path: G down 1 -> H down 1 -> Y down 2 -> O down 2 -> A right 4 -> 
 
-H	down	1 	 99 FFFTTT....YOAAG.YO..GH.....H..DDDJJJ 
-G	down	1 	 99 FFFTTT....YOAA..YO..GH....GH..DDDJJJ 
-A	right	2 	 98 FFFTTT....YO..AAYO..GH....GH..DDDJJJ 
-O	down	1 	 99 FFFTTT....Y...AAYO..GH.O..GH..DDDJJJ 
-Y	down	2 	 98 FFFTTT........AA.O..GHYO..GHY.DDDJJJ 
-O	down	1 	 98 FFFTTT........AA....GHYO..GHYODDDJJJ 
-A	right	2 	 96 FFFTTT..........AA..GHYO..GHYODDDJJJ 
+G	down	1 	 99 FFFTTT....YOAA.HYO..GH....G...DDDJJJ 
+H	down	1 	 99 FFFTTT....YOAA..YO..GH....GH..DDDJJJ 
+Y	down	2 	 98 FFFTTT.....OAA...O..GHY...GHY.DDDJJJ 
+O	down	2 	 98 FFFTTT......AA......GHYO..GHYODDDJJJ 
+A	right	4 	 96 FFFTTT..........AA..GHYO..GHYODDDJJJ 
 
 [['F' 'F' 'F' 'T' 'T' 'T']
  ['.' '.' '.' '.' '.' '.']

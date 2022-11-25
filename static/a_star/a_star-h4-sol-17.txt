@@ -10,16 +10,16 @@ Initial board configuration: CHH..YC....YCFAADE.F..DE..RITTBBRIPP
 Car fuel available: {'C': 100, 'H': 100, 'Y': 100, 'F': 100, 'A': 100, 'D': 100, 'E': 100, 'R': 100, 'I': 100, 'T': 100, 'B': 100, 'P': 100}
 
 
-Runtime: 18.437000036239624 seconds
-Search path length: 1042
+Runtime: 7.78470516204834 seconds
+Search path length: 611
 Solution path length: 7
-Solution path: F down 1 -> A left 1 -> I up 4 -> T left 1 -> D up 2 -> E down 1 -> A right 3 -> 
+Solution path: D up 2 -> F down 1 -> A left 1 -> I up 4 -> T left 1 -> E down 1 -> A right 3 -> 
 
-F	down	1 	 99 CHH..YC....YC.AADE.F..DE.FRITTBBRIPP 
-A	left	1 	 99 CHH..YC....YCAA.DE.F..DE.FRITTBBRIPP 
-I	up	4 	 96 CHHI.YC..I.YCAA.DE.F..DE.FR.TTBBR.PP 
-T	left	1 	 99 CHHI.YC..I.YCAA.DE.F..DE.FRTT.BBR.PP 
-D	up	2 	 98 CHHIDYC..IDYCAA..E.F...E.FRTT.BBR.PP 
+D	up	2 	 98 CHH.DYC...DYCFAA.E.F...E..RITTBBRIPP 
+F	down	1 	 99 CHH.DYC...DYC.AA.E.F...E.FRITTBBRIPP 
+A	left	1 	 99 CHH.DYC...DYCAA..E.F...E.FRITTBBRIPP 
+I	up	4 	 96 CHHIDYC..IDYCAA..E.F...E.FR.TTBBR.PP 
+T	left	1 	 99 CHHIDYC..IDYCAA..E.F...E.FRTT.BBR.PP 
 E	down	1 	 99 CHHIDYC..IDYCAA....F...E.FRTTEBBR.PP 
 A	right	3 	 96 CHHIDYC..IDYC...AA.F...E.FRTTEBBR.PP 
 

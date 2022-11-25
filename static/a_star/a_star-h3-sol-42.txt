@@ -10,7 +10,7 @@ Initial board configuration: .GGNN.EEZZO.AALLO..CCCBB....J.WWW.J. W20 Z20 G20 N2
 Car fuel available: {'G': 20, 'N': 20, 'E': 20, 'Z': 20, 'O': 20, 'A': 20, 'L': 20, 'C': 100, 'B': 100, 'J': 100, 'W': 20}
 
 
-Runtime: 0.006955146789550781 seconds
+Runtime: 0.007016897201538086 seconds
 Search path length: 23
 Solution path length: 5
 Solution path: G left 1 -> N left 1 -> O up 1 -> A right 4 -> 

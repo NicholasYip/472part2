@@ -10,25 +10,24 @@ Initial board configuration: LL..YYH....FHAAUUF..N..F..NTTT.RRRJJ
 Car fuel available: {'L': 100, 'Y': 100, 'H': 100, 'F': 100, 'A': 100, 'U': 100, 'N': 100, 'T': 100, 'R': 100, 'J': 100}
 
 
-Runtime: 0.12477803230285645 seconds
-Search path length: 84
-Solution path length: 16
-Solution path: H down 3 -> A left 1 -> U left 1 -> H up 1 -> L right 2 -> R left 1 -> U right 1 -> N up 2 -> J left 1 -> T left 2 -> F down 2 -> L left 2 -> N up 1 -> Y left 1 -> A right 4 -> 
+Runtime: 0.30550122261047363 seconds
+Search path length: 172
+Solution path length: 15
+Solution path: Y left 1 -> H down 3 -> A left 1 -> U left 1 -> H up 1 -> R left 1 -> J left 1 -> U right 1 -> N up 2 -> T left 2 -> N up 1 -> U left 1 -> F down 2 -> A right 4 -> 
 
-H	down	3 	 97 LL..YY.....F.AAUUF..N..FH.NTTTHRRRJJ 
-A	left	1 	 99 LL..YY.....FAA.UUF..N..FH.NTTTHRRRJJ 
-U	left	1 	 99 LL..YY.....FAAUU.F..N..FH.NTTTHRRRJJ 
-H	up	1 	 96 LL..YY.....FAAUU.FH.N..FH.NTTT.RRRJJ 
-L	right	2 	 98 ..LLYY.....FAAUU.FH.N..FH.NTTT.RRRJJ 
-R	left	1 	 99 ..LLYY.....FAAUU.FH.N..FH.NTTTRRR.JJ 
-U	right	1 	 98 ..LLYY.....FAA.UUFH.N..FH.NTTTRRR.JJ 
-N	up	2 	 98 ..LLYY..N..FAANUUFH....FH..TTTRRR.JJ 
-J	left	1 	 99 ..LLYY..N..FAANUUFH....FH..TTTRRRJJ. 
-T	left	2 	 98 ..LLYY..N..FAANUUFH....FHTTT..RRRJJ. 
-F	down	2 	 98 ..LLYY..N...AANUU.H....FHTTT.FRRRJJF 
-L	left	2 	 96 LL..YY..N...AANUU.H....FHTTT.FRRRJJF 
-N	up	1 	 97 LLN.YY..N...AA.UU.H....FHTTT.FRRRJJF 
-Y	left	1 	 99 LLNYY...N...AA....H....FHTTT.FRRRJJF 
+Y	left	1 	 99 LL.YY.H....FHAAUUF..N..F..NTTT.RRRJJ 
+H	down	3 	 97 LL.YY......F.AAUUF..N..FH.NTTTHRRRJJ 
+A	left	1 	 99 LL.YY......FAA.UUF..N..FH.NTTTHRRRJJ 
+U	left	1 	 99 LL.YY......FAAUU.F..N..FH.NTTTHRRRJJ 
+H	up	1 	 96 LL.YY......FAAUU.FH.N..FH.NTTT.RRRJJ 
+R	left	1 	 99 LL.YY......FAAUU.FH.N..FH.NTTTRRR.JJ 
+J	left	1 	 99 LL.YY......FAAUU.FH.N..FH.NTTTRRRJJ. 
+U	right	1 	 98 LL.YY......FAA.UUFH.N..FH.NTTTRRRJJ. 
+N	up	2 	 98 LL.YY...N..FAANUUFH....FH..TTTRRRJJ. 
+T	left	2 	 98 LL.YY...N..FAANUUFH....FHTTT..RRRJJ. 
+N	up	1 	 97 LLNYY...N..FAA.UUFH....FHTTT..RRRJJ. 
+U	left	1 	 97 LLNYY...N..FAAUU.FH....FHTTT..RRRJJ. 
+F	down	2 	 98 LLNYY...N...AAUU..H....FHTTT.FRRRJJF 
 A	right	4 	 95 LLNYY...N.......AAH....FHTTT.FRRRJJF 
 
 [['L' 'L' 'N' 'Y' 'Y' '.']

@@ -10,30 +10,30 @@ Initial board configuration: .B....SB.CDESAACDEHHHGDE..VG....VWW.
 Car fuel available: {'B': 100, 'S': 100, 'C': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'G': 100, 'V': 100, 'W': 100}
 
 
-Runtime: 41.62352395057678 seconds
-Search path length: 2428
+Runtime: 28.681407928466797 seconds
+Search path length: 2095
 Solution path length: 15
-Solution path: C up 1 -> E up 1 -> D up 1 -> S up 1 -> W right 1 -> G down 1 -> H right 3 -> A left 1 -> V up 4 -> H left 3 -> G up 1 -> W left 4 -> E down 3 -> D down 3 -> A right 4 -> 
+Solution path: D up 1 -> W right 1 -> S up 1 -> G down 1 -> A left 1 -> E up 1 -> H right 3 -> V up 4 -> H left 3 -> G up 1 -> W left 2 -> E down 3 -> D down 3 -> C up 1 -> A right 4 -> 
 
-C	up	1 	 99 .B.C..SB.CDESAA.DEHHHGDE..VG....VWW. 
-E	up	1 	 99 .B.C.ESB.CDESAA.DEHHHGD...VG....VWW. 
-D	up	1 	 99 .B.CDESB.CDESAA.DEHHHG....VG....VWW. 
-S	up	1 	 99 SB.CDESB.CDE.AA.DEHHHG....VG....VWW. 
-W	right	1 	 99 SB.CDESB.CDE.AA.DEHHHG....VG....V.WW 
-G	down	1 	 99 SB.CDESB.CDE.AA.DEHHH.....VG....VGWW 
-H	right	3 	 97 SB.CDESB.CDE.AA.DE...HHH..VG....VGWW 
-A	left	1 	 99 SB.CDESB.CDEAA..DE...HHH..VG....VGWW 
-V	up	4 	 96 SBVCDESBVCDEAA..DE...HHH...G.....GWW 
-H	left	3 	 94 SBVCDESBVCDEAA..DEHHH......G.....GWW 
-G	up	1 	 98 SBVCDESBVCDEAA..DEHHHG.....G......WW 
-W	left	4 	 95 SBVCDESBVCDEAA..DEHHHG.....G..WW.... 
-E	down	3 	 96 SBVCD.SBVCD.AA..D.HHHG.E...G.EWW...E 
-D	down	3 	 96 SBVC..SBVC..AA....HHHGDE...GDEWW..DE 
-A	right	4 	 95 SBVC..SBVC......AAHHHGDE...GDEWW..DE 
+D	up	1 	 99 .B..D.SB.CDESAACDEHHHG.E..VG....VWW. 
+W	right	1 	 99 .B..D.SB.CDESAACDEHHHG.E..VG....V.WW 
+S	up	1 	 99 SB..D.SB.CDE.AACDEHHHG.E..VG....V.WW 
+G	down	1 	 99 SB..D.SB.CDE.AACDEHHH..E..VG....VGWW 
+A	left	1 	 99 SB..D.SB.CDEAA.CDEHHH..E..VG....VGWW 
+E	up	1 	 99 SB..DESB.CDEAA.CDEHHH.....VG....VGWW 
+H	right	3 	 97 SB..DESB.CDEAA.CDE...HHH..VG....VGWW 
+V	up	4 	 96 SBV.DESBVCDEAA.CDE...HHH...G.....GWW 
+H	left	3 	 94 SBV.DESBVCDEAA.CDEHHH......G.....GWW 
+G	up	1 	 98 SBV.DESBVCDEAA.CDEHHHG.....G......WW 
+W	left	2 	 97 SBV.DESBVCDEAA.CDEHHHG.....G....WW.. 
+E	down	3 	 96 SBV.D.SBVCD.AA.CD.HHHG.E...G.E..WW.E 
+D	down	3 	 96 SBV...SBVC..AA.C..HHHGDE...GDE..WWDE 
+C	up	1 	 99 SBVC..SBVC..AA....HHHGDE...GDE..WWDE 
+A	right	4 	 95 SBVC..SBVC......AAHHHGDE...GDE..WWDE 
 
 [['S' 'B' 'V' 'C' '.' '.']
  ['S' 'B' 'V' 'C' '.' '.']
  ['.' '.' '.' '.' 'A' 'A']
  ['H' 'H' 'H' 'G' 'D' 'E']
  ['.' '.' '.' 'G' 'D' 'E']
- ['W' 'W' '.' '.' 'D' 'E']]
+ ['.' '.' 'W' 'W' 'D' 'E']]

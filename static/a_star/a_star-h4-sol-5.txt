@@ -10,26 +10,25 @@ Initial board configuration: ..D.....D...AADG.....GB.ECCGB.E.FFB.
 Car fuel available: {'D': 100, 'A': 100, 'G': 100, 'B': 100, 'E': 100, 'C': 100, 'F': 100}
 
 
-Runtime: 11.788752794265747 seconds
-Search path length: 1561
-Solution path length: 16
-Solution path: G up 1 -> B up 2 -> C right 3 -> F right 2 -> D down 3 -> A right 1 -> E up 4 -> A left 1 -> D up 2 -> C left 4 -> F left 4 -> B down 2 -> G down 2 -> D down 1 -> D down 1 -> A right 4 -> 
+Runtime: 11.159882068634033 seconds
+Search path length: 1387
+Solution path length: 15
+Solution path: E up 1 -> F left 2 -> G up 2 -> B up 3 -> C right 3 -> D down 3 -> A right 1 -> E up 3 -> A left 1 -> D up 3 -> C left 4 -> D down 3 -> B down 3 -> G down 3 -> A right 4 -> 
 
-G	up	1 	 99 ..D.....DG..AADG.....GB.ECC.B.E.FFB. 
-B	up	2 	 98 ..D.....DGB.AADGB....GB.ECC...E.FF.. 
-C	right	3 	 97 ..D.....DGB.AADGB....GB.E...CCE.FF.. 
-F	right	2 	 98 ..D.....DGB.AADGB....GB.E...CCE...FF 
-D	down	3 	 97 .........GB.AA.GB...DGB.E.D.CCE.D.FF 
-A	right	1 	 99 .........GB..AAGB...DGB.E.D.CCE.D.FF 
-E	up	4 	 96 E.....E..GB..AAGB...DGB...D.CC..D.FF 
-A	left	1 	 98 E.....E..GB.AA.GB...DGB...D.CC..D.FF 
-D	up	2 	 95 E.....E.DGB.AADGB...DGB.....CC....FF 
-C	left	4 	 93 E.....E.DGB.AADGB...DGB.CC........FF 
-F	left	4 	 94 E.....E.DGB.AADGB...DGB.CC....FF.... 
-B	down	2 	 96 E.....E.DG..AADG....DGB.CC..B.FF..B. 
-G	down	2 	 97 E.....E.D...AAD.....DGB.CC.GB.FF.GB. 
-D	down	1 	 94 E.....E.....AAD.....DGB.CCDGB.FF.GB. 
-D	down	1 	 93 E.....E.....AA......DGB.CCDGB.FFDGB. 
+E	up	1 	 99 ..D.....D...AADG..E..GB.ECCGB...FFB. 
+F	left	2 	 98 ..D.....D...AADG..E..GB.ECCGB.FF..B. 
+G	up	2 	 98 ..DG....DG..AADG..E...B.ECC.B.FF..B. 
+B	up	3 	 97 ..DGB...DGB.AADGB.E.....ECC...FF.... 
+C	right	3 	 97 ..DGB...DGB.AADGB.E.....E...CCFF.... 
+D	down	3 	 97 ...GB....GB.AA.GB.E.D...E.D.CCFFD... 
+A	right	1 	 99 ...GB....GB..AAGB.E.D...E.D.CCFFD... 
+E	up	3 	 96 E..GB.E..GB..AAGB...D.....D.CCFFD... 
+A	left	1 	 98 E..GB.E..GB.AA.GB...D.....D.CCFFD... 
+D	up	3 	 94 E.DGB.E.DGB.AADGB...........CCFF.... 
+C	left	4 	 93 E.DGB.E.DGB.AADGB.......CC....FF.... 
+D	down	3 	 91 E..GB.E..GB.AA.GB...D...CCD...FFD... 
+B	down	3 	 94 E..G..E..G..AA.G....D.B.CCD.B.FFD.B. 
+G	down	3 	 95 E.....E.....AA......DGB.CCDGB.FFDGB. 
 A	right	4 	 94 E.....E.........AA..DGB.CCDGB.FFDGB. 
 
 [['E' '.' '.' '.' '.' '.']

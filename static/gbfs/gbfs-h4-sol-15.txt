@@ -10,29 +10,24 @@ Initial board configuration: ..DEETR.DN.TRAAN..R..KK..G.FFF.GHHBB
 Car fuel available: {'D': 100, 'E': 100, 'T': 100, 'R': 100, 'N': 100, 'A': 100, 'K': 100, 'G': 100, 'F': 100, 'H': 100, 'B': 100}
 
 
-Runtime: 0.7146179676055908 seconds
-Search path length: 127
-Solution path length: 16
-Solution path: K left 2 -> F left 1 -> N down 1 -> R down 2 -> A left 1 -> N up 1 -> K right 3 -> G up 1 -> N down 1 -> D down 2 -> E left 2 -> G down 1 -> N up 2 -> F right 1 -> D down 1 -> A right 4 -> 
+Runtime: 0.5906498432159424 seconds
+Search path length: 147
+Solution path length: 11
+Solution path: K right 1 -> N down 1 -> R down 2 -> A left 1 -> G up 1 -> D down 3 -> A right 1 -> G down 1 -> E left 3 -> N up 2 -> A right 3 -> 
 
-K	left	2 	 98 ..DEETR.DN.TRAAN..RKK....G.FFF.GHHBB 
-F	left	1 	 99 ..DEETR.DN.TRAAN..RKK....GFFF..GHHBB 
-N	down	1 	 99 ..DEETR.D..TRAAN..RKKN...GFFF..GHHBB 
-R	down	2 	 98 ..DEET..D..T.AAN..RKKN..RGFFF.RGHHBB 
-A	left	1 	 99 ..DEET..D..TAA.N..RKKN..RGFFF.RGHHBB 
-N	up	1 	 98 ..DEET..DN.TAA.N..RKK...RGFFF.RGHHBB 
-K	right	3 	 95 ..DEET..DN.TAA.N..R...KKRGFFF.RGHHBB 
-G	up	1 	 99 ..DEET..DN.TAA.N..RG..KKRGFFF.R.HHBB 
-N	down	1 	 97 ..DEET..D..TAA.N..RG.NKKRGFFF.R.HHBB 
-D	down	2 	 98 ...EET.....TAADN..RGDNKKRGFFF.R.HHBB 
-E	left	2 	 98 .EE..T.....TAADN..RGDNKKRGFFF.R.HHBB 
-G	down	1 	 98 .EE..T.....TAADN..R.DNKKRGFFF.RGHHBB 
-N	up	2 	 95 .EEN.T...N.TAAD...R.D.KKRGFFF.RGHHBB 
-F	right	1 	 98 .EEN.T...N.TAAD...R.D.KKRG.FFFRGHHBB 
-D	down	1 	 97 .EEN.T...N.TAA....R.D.KKRGDFFFRGHHBB 
-A	right	4 	 95 .EEN.T...N.T....AAR.D.KKRGDFFFRGHHBB 
+K	right	1 	 99 ..DEETR.DN.TRAAN..R...KK.G.FFF.GHHBB 
+N	down	1 	 99 ..DEETR.D..TRAAN..R..NKK.G.FFF.GHHBB 
+R	down	2 	 98 ..DEET..D..T.AAN..R..NKKRG.FFFRGHHBB 
+A	left	1 	 99 ..DEET..D..TAA.N..R..NKKRG.FFFRGHHBB 
+G	up	1 	 99 ..DEET..D..TAA.N..RG.NKKRG.FFFR.HHBB 
+D	down	3 	 97 ...EET.....TAA.N..RGDNKKRGDFFFR.HHBB 
+A	right	1 	 98 ...EET.....T.AAN..RGDNKKRGDFFFR.HHBB 
+G	down	1 	 98 ...EET.....T.AAN..R.DNKKRGDFFFRGHHBB 
+E	left	3 	 97 EE...T.....T.AAN..R.DNKKRGDFFFRGHHBB 
+N	up	2 	 97 EE.N.T...N.T.AA...R.D.KKRGDFFFRGHHBB 
+A	right	3 	 95 EE.N.T...N.T....AAR.D.KKRGDFFFRGHHBB 
 
-[['.' 'E' 'E' 'N' '.' 'T']
+[['E' 'E' '.' 'N' '.' 'T']
  ['.' '.' '.' 'N' '.' 'T']
  ['.' '.' '.' '.' 'A' 'A']
  ['R' '.' 'D' '.' 'K' 'K']

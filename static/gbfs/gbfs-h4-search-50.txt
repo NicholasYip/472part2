@@ -1,4 +1,4 @@
-0 0 2 : ............AA.B..CC.BD..E..D..EFFD. 
+0 0 1 : ............AA.B..CC.BD..E..D..EFFD. 
 0 1 0 : ............AA....CC.BD..E.BD..EFFD. 
 0 2 0 : .............AA...CC.BD..E.BD..EFFD. 
 0 2 0 : ............AA.....CCBD..E.BD..EFFD. 

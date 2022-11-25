@@ -10,58 +10,49 @@ Initial board configuration: SGG.T.S...T.SCAAT..CEDFF.CEDBB.PPP..
 Car fuel available: {'S': 100, 'G': 100, 'T': 100, 'C': 100, 'A': 100, 'E': 100, 'D': 100, 'F': 100, 'B': 100, 'P': 100}
 
 
-Runtime: 3.871865749359131 seconds
-Search path length: 373
-Solution path length: 43
-Solution path: P right 1 -> C down 1 -> G right 1 -> P right 1 -> E down 1 -> A left 1 -> D up 2 -> B left 1 -> F left 2 -> G left 1 -> B right 1 -> F right 1 -> S down 2 -> B left 1 -> D up 1 -> G left 1 -> B right 1 -> S down 1 -> A left 1 -> B left 1 -> E up 4 -> B left 1 -> F left 1 -> P left 1 -> D down 1 -> F right 1 -> B right 2 -> A right 1 -> B left 1 -> F right 1 -> D up 1 -> S up 1 -> F left 2 -> P right 1 -> T down 1 -> B left 1 -> A right 1 -> S down 1 -> T down 1 -> C up 2 -> P left 2 -> T down 1 -> A right 2 -> 
+Runtime: 6.747840166091919 seconds
+Search path length: 891
+Solution path length: 34
+Solution path: S down 1 -> P right 2 -> C up 1 -> S down 1 -> P left 2 -> G left 1 -> P right 1 -> C down 2 -> P right 1 -> E down 1 -> A left 1 -> S up 1 -> D up 3 -> F left 2 -> S down 2 -> A left 1 -> B left 1 -> F right 2 -> E up 4 -> F left 2 -> B left 1 -> P left 1 -> A right 2 -> C up 1 -> B right 1 -> P right 1 -> S up 1 -> B right 1 -> C up 1 -> P left 3 -> B left 2 -> S up 1 -> T down 3 -> A right 2 -> 
 
-P	right	1 	 99 SGG.T.S...T.SCAAT..CEDFF.CEDBB..PPP. 
-C	down	1 	 99 SGG.T.S...T.S.AAT..CEDFF.CEDBB.CPPP. 
-G	right	1 	 99 S.GGT.S...T.S.AAT..CEDFF.CEDBB.CPPP. 
-P	right	1 	 98 S.GGT.S...T.S.AAT..CEDFF.CEDBB.C.PPP 
-E	down	1 	 99 S.GGT.S...T.S.AAT..C.DFF.CEDBB.CEPPP 
-A	left	1 	 99 S.GGT.S...T.SAA.T..C.DFF.CEDBB.CEPPP 
-D	up	2 	 98 S.GGT.S..DT.SAADT..C..FF.CE.BB.CEPPP 
-B	left	1 	 99 S.GGT.S..DT.SAADT..C..FF.CEBB..CEPPP 
-F	left	2 	 98 S.GGT.S..DT.SAADT..CFF...CEBB..CEPPP 
-G	left	1 	 98 SGG.T.S..DT.SAADT..CFF...CEBB..CEPPP 
-B	right	1 	 98 SGG.T.S..DT.SAADT..CFF...CE.BB.CEPPP 
-F	right	1 	 97 SGG.T.S..DT.SAADT..C.FF..CE.BB.CEPPP 
-S	down	2 	 98 .GG.T....DT.SAADT.SC.FF.SCE.BB.CEPPP 
-B	left	1 	 97 .GG.T....DT.SAADT.SC.FF.SCEBB..CEPPP 
-D	up	1 	 97 .GGDT....DT.SAA.T.SC.FF.SCEBB..CEPPP 
-G	left	1 	 97 GG.DT....DT.SAA.T.SC.FF.SCEBB..CEPPP 
-B	right	1 	 96 GG.DT....DT.SAA.T.SC.FF.SCE.BB.CEPPP 
-S	down	1 	 97 GG.DT....DT..AA.T.SC.FF.SCE.BBSCEPPP 
-A	left	1 	 98 GG.DT....DT.AA..T.SC.FF.SCE.BBSCEPPP 
-B	left	1 	 95 GG.DT....DT.AA..T.SC.FF.SCEBB.SCEPPP 
-E	up	4 	 95 GGEDT...EDT.AA..T.SC.FF.SC.BB.SC.PPP 
-B	left	1 	 94 GGEDT...EDT.AA..T.SC.FF.SCBB..SC.PPP 
-F	left	1 	 96 GGEDT...EDT.AA..T.SCFF..SCBB..SC.PPP 
-P	left	1 	 97 GGEDT...EDT.AA..T.SCFF..SCBB..SCPPP. 
-D	down	1 	 96 GGE.T...EDT.AA.DT.SCFF..SCBB..SCPPP. 
-F	right	1 	 95 GGE.T...EDT.AA.DT.SC.FF.SCBB..SCPPP. 
-B	right	2 	 92 GGE.T...EDT.AA.DT.SC.FF.SC..BBSCPPP. 
-A	right	1 	 97 GGE.T...EDT..AADT.SC.FF.SC..BBSCPPP. 
-B	left	1 	 91 GGE.T...EDT..AADT.SC.FF.SC.BB.SCPPP. 
-F	right	1 	 94 GGE.T...EDT..AADT.SC..FFSC.BB.SCPPP. 
-D	up	1 	 95 GGEDT...EDT..AA.T.SC..FFSC.BB.SCPPP. 
-S	up	1 	 96 GGEDT...EDT.SAA.T.SC..FFSC.BB..CPPP. 
-F	left	2 	 92 GGEDT...EDT.SAA.T.SCFF..SC.BB..CPPP. 
-P	right	1 	 96 GGEDT...EDT.SAA.T.SCFF..SC.BB..C.PPP 
-T	down	1 	 99 GGED....EDT.SAA.T.SCFFT.SC.BB..C.PPP 
-B	left	1 	 90 GGED....EDT.SAA.T.SCFFT.SCBB...C.PPP 
-A	right	1 	 96 GGED....EDT.S.AAT.SCFFT.SCBB...C.PPP 
-S	down	1 	 95 GGED....EDT...AAT.SCFFT.SCBB..SC.PPP 
-T	down	1 	 98 GGED....ED....AAT.SCFFT.SCBBT.SC.PPP 
-C	up	2 	 97 GGED...CED...CAAT.SCFFT.S.BBT.S..PPP 
-P	left	2 	 94 GGED...CED...CAAT.SCFFT.S.BBT.SPPP.. 
-T	down	1 	 97 GGED...CED...CAA..SCFFT.S.BBT.SPPPT. 
-A	right	2 	 94 GGED...CED...C..AASCFFT.S.BBT.SPPPT. 
+S	down	1 	 99 .GG.T.S...T.SCAAT.SCEDFF.CEDBB.PPP.. 
+P	right	2 	 98 .GG.T.S...T.SCAAT.SCEDFF.CEDBB...PPP 
+C	up	1 	 99 .GG.T.SC..T.SCAAT.SCEDFF..EDBB...PPP 
+S	down	1 	 98 .GG.T..C..T.SCAAT.SCEDFFS.EDBB...PPP 
+P	left	2 	 96 .GG.T..C..T.SCAAT.SCEDFFS.EDBB.PPP.. 
+G	left	1 	 99 GG..T..C..T.SCAAT.SCEDFFS.EDBB.PPP.. 
+P	right	1 	 95 GG..T..C..T.SCAAT.SCEDFFS.EDBB..PPP. 
+C	down	2 	 97 GG..T.....T.S.AAT.SCEDFFSCEDBB.CPPP. 
+P	right	1 	 94 GG..T.....T.S.AAT.SCEDFFSCEDBB.C.PPP 
+E	down	1 	 99 GG..T.....T.S.AAT.SC.DFFSCEDBB.CEPPP 
+A	left	1 	 99 GG..T.....T.SAA.T.SC.DFFSCEDBB.CEPPP 
+S	up	1 	 97 GG..T.S...T.SAA.T.SC.DFF.CEDBB.CEPPP 
+D	up	3 	 97 GG.DT.S..DT.SAA.T.SC..FF.CE.BB.CEPPP 
+F	left	2 	 98 GG.DT.S..DT.SAA.T.SCFF...CE.BB.CEPPP 
+S	down	2 	 95 GG.DT....DT..AA.T.SCFF..SCE.BBSCEPPP 
+A	left	1 	 98 GG.DT....DT.AA..T.SCFF..SCE.BBSCEPPP 
+B	left	1 	 99 GG.DT....DT.AA..T.SCFF..SCEBB.SCEPPP 
+F	right	2 	 96 GG.DT....DT.AA..T.SC..FFSCEBB.SCEPPP 
+E	up	4 	 95 GGEDT...EDT.AA..T.SC..FFSC.BB.SC.PPP 
+F	left	2 	 94 GGEDT...EDT.AA..T.SCFF..SC.BB.SC.PPP 
+B	left	1 	 98 GGEDT...EDT.AA..T.SCFF..SCBB..SC.PPP 
+P	left	1 	 93 GGEDT...EDT.AA..T.SCFF..SCBB..SCPPP. 
+A	right	2 	 96 GGEDT...EDT...AAT.SCFF..SCBB..SCPPP. 
+C	up	1 	 96 GGEDT...EDT..CAAT.SCFF..SCBB..S.PPP. 
+B	right	1 	 97 GGEDT...EDT..CAAT.SCFF..SC.BB.S.PPP. 
+P	right	1 	 92 GGEDT...EDT..CAAT.SCFF..SC.BB.S..PPP 
+S	up	1 	 94 GGEDT...EDT.SCAAT.SCFF..SC.BB....PPP 
+B	right	1 	 96 GGEDT...EDT.SCAAT.SCFF..SC..BB...PPP 
+C	up	1 	 95 GGEDT..CEDT.SCAAT.SCFF..S...BB...PPP 
+P	left	3 	 89 GGEDT..CEDT.SCAAT.SCFF..S...BBPPP... 
+B	left	2 	 94 GGEDT..CEDT.SCAAT.SCFF..S.BB..PPP... 
+S	up	1 	 93 GGEDT.SCEDT.SCAAT.SCFF....BB..PPP... 
+T	down	3 	 97 GGED..SCED..SCAA..SCFFT...BBT.PPP.T. 
+A	right	2 	 94 GGED..SCED..SC..AASCFFT...BBT.PPP.T. 
 
 [['G' 'G' 'E' 'D' '.' '.']
- ['.' 'C' 'E' 'D' '.' '.']
- ['.' 'C' '.' '.' 'A' 'A']
+ ['S' 'C' 'E' 'D' '.' '.']
+ ['S' 'C' '.' '.' 'A' 'A']
  ['S' 'C' 'F' 'F' 'T' '.']
- ['S' '.' 'B' 'B' 'T' '.']
- ['S' 'P' 'P' 'P' 'T' '.']]
+ ['.' '.' 'B' 'B' 'T' '.']
+ ['P' 'P' 'P' '.' 'T' '.']]

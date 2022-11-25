@@ -10,22 +10,20 @@ Initial board configuration: ..B.....BCCC..AAF.....F.....E.....E.
 Car fuel available: {'B': 100, 'C': 100, 'A': 100, 'F': 100, 'E': 100}
 
 
-Runtime: 0.01351022720336914 seconds
-Search path length: 29
-Solution path length: 7
-Solution path: A left 2 -> B down 2 -> B down 2 -> C left 3 -> F up 1 -> F up 1 -> A right 4 -> 
+Runtime: 0.016554832458496094 seconds
+Search path length: 28
+Solution path length: 5
+Solution path: A left 2 -> B down 3 -> C left 3 -> F up 2 -> A right 4 -> 
 
 A	left	2 	 98 ..B.....BCCCAA..F.....F.....E.....E. 
-B	down	2 	 98 .........CCCAAB.F...B.F.....E.....E. 
-B	down	2 	 96 .........CCCAA..F.....F...B.E...B.E. 
-C	left	3 	 97 ......CCC...AA..F.....F...B.E...B.E. 
-F	up	1 	 99 ......CCC.F.AA..F.........B.E...B.E. 
-F	up	1 	 98 ....F.CCC.F.AA............B.E...B.E. 
-A	right	4 	 94 ....F.CCC.F.....AA........B.E...B.E. 
+B	down	3 	 97 .........CCCAA..F...B.F...B.E.....E. 
+C	left	3 	 97 ......CCC...AA..F...B.F...B.E.....E. 
+F	up	2 	 98 ....F.CCC.F.AA......B.....B.E.....E. 
+A	right	4 	 94 ....F.CCC.F.....AA..B.....B.E.....E. 
 
 [['.' '.' '.' '.' 'F' '.']
  ['C' 'C' 'C' '.' 'F' '.']
  ['.' '.' '.' '.' 'A' 'A']
- ['.' '.' '.' '.' '.' '.']
+ ['.' '.' 'B' '.' '.' '.']
  ['.' '.' 'B' '.' 'E' '.']
- ['.' '.' 'B' '.' 'E' '.']]
+ ['.' '.' '.' '.' 'E' '.']]

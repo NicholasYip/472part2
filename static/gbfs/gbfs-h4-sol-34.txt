@@ -10,42 +10,78 @@ Initial board configuration: .B....SB.CDESAACDEHHHGDE..VG....VWW.
 Car fuel available: {'B': 100, 'S': 100, 'C': 100, 'D': 100, 'E': 100, 'A': 100, 'H': 100, 'G': 100, 'V': 100, 'W': 100}
 
 
-Runtime: 14.105077028274536 seconds
-Search path length: 842
-Solution path length: 27
-Solution path: C up 1 -> A right 1 -> W right 1 -> D up 1 -> G down 1 -> H right 2 -> B down 3 -> A left 1 -> E down 1 -> B down 1 -> E up 2 -> H right 1 -> S down 2 -> A left 1 -> V up 4 -> H left 2 -> E down 1 -> D down 2 -> A right 1 -> S up 3 -> H left 1 -> G up 1 -> W left 2 -> E down 2 -> S down 1 -> D down 1 -> A right 3 -> 
+Runtime: 27.276963233947754 seconds
+Search path length: 1837
+Solution path length: 63
+Solution path: C up 1 -> E down 2 -> D up 1 -> S up 1 -> A right 1 -> E up 3 -> W right 1 -> D down 1 -> A left 2 -> G down 1 -> H right 1 -> D down 1 -> A right 1 -> S down 2 -> E down 2 -> A right 1 -> D up 2 -> E up 2 -> S down 1 -> H right 1 -> B down 3 -> A left 1 -> S up 3 -> E down 1 -> S down 2 -> E down 1 -> B down 1 -> H left 1 -> S up 1 -> H left 1 -> G up 1 -> E up 1 -> D down 1 -> G down 1 -> S up 1 -> A left 1 -> E down 1 -> G up 1 -> W left 1 -> E down 1 -> A right 2 -> S down 1 -> E up 3 -> W right 1 -> G down 1 -> H right 1 -> S up 1 -> D down 1 -> S down 4 -> A left 2 -> D up 2 -> H right 2 -> V up 4 -> H left 2 -> D down 2 -> A right 2 -> H left 1 -> G up 1 -> W left 2 -> D down 1 -> A right 1 -> E down 3 -> A right 1 -> 
 
 C	up	1 	 99 .B.C..SB.CDESAA.DEHHHGDE..VG....VWW. 
-A	right	1 	 99 .B.C..SB.CDES.AADEHHHGDE..VG....VWW. 
-W	right	1 	 99 .B.C..SB.CDES.AADEHHHGDE..VG....V.WW 
-D	up	1 	 99 .B.CD.SB.CDES.AADEHHHG.E..VG....V.WW 
-G	down	1 	 99 .B.CD.SB.CDES.AADEHHH..E..VG....VGWW 
-H	right	2 	 98 .B.CD.SB.CDES.AADE..HHHE..VG....VGWW 
-B	down	3 	 97 ...CD.S..CDES.AADE.BHHHE.BVG....VGWW 
-A	left	1 	 98 ...CD.S..CDESAA.DE.BHHHE.BVG....VGWW 
-E	down	1 	 99 ...CD.S..CD.SAA.DE.BHHHE.BVG.E..VGWW 
-B	down	1 	 96 ...CD.S..CD.SAA.DE..HHHE.BVG.E.BVGWW 
-E	up	2 	 97 ...CDES..CDESAA.DE..HHH..BVG...BVGWW 
-H	right	1 	 97 ...CDES..CDESAA.DE...HHH.BVG...BVGWW 
-S	down	2 	 98 ...CDE...CDE.AA.DES..HHHSBVG...BVGWW 
-A	left	1 	 97 ...CDE...CDEAA..DES..HHHSBVG...BVGWW 
-V	up	4 	 96 ..VCDE..VCDEAA..DES..HHHSB.G...B.GWW 
-H	left	2 	 95 ..VCDE..VCDEAA..DESHHH..SB.G...B.GWW 
-E	down	1 	 96 ..VCD...VCDEAA..DESHHH.ESB.G...B.GWW 
-D	down	2 	 97 ..VC....VC.EAA..DESHHHDESB.GD..B.GWW 
-A	right	1 	 96 ..VC....VC.E.AA.DESHHHDESB.GD..B.GWW 
-S	up	3 	 95 S.VC..S.VC.E.AA.DE.HHHDE.B.GD..B.GWW 
-H	left	1 	 94 S.VC..S.VC.E.AA.DEHHH.DE.B.GD..B.GWW 
-G	up	1 	 98 S.VC..S.VC.E.AA.DEHHHGDE.B.GD..B..WW 
-W	left	2 	 97 S.VC..S.VC.E.AA.DEHHHGDE.B.GD..BWW.. 
-E	down	2 	 94 S.VC..S.VC...AA.D.HHHGDE.B.GDE.BWW.E 
-S	down	1 	 94 ..VC..S.VC..SAA.D.HHHGDE.B.GDE.BWW.E 
-D	down	1 	 96 ..VC..S.VC..SAA...HHHGDE.B.GDE.BWWDE 
-A	right	3 	 93 ..VC..S.VC..S...AAHHHGDE.B.GDE.BWWDE 
+E	down	2 	 98 .B.C..SB.CD.SAA.D.HHHGDE..VG.E..VWWE 
+D	up	1 	 99 .B.CD.SB.CD.SAA.D.HHHG.E..VG.E..VWWE 
+S	up	1 	 99 SB.CD.SB.CD..AA.D.HHHG.E..VG.E..VWWE 
+A	right	1 	 99 SB.CD.SB.CD...AAD.HHHG.E..VG.E..VWWE 
+E	up	3 	 95 SB.CDESB.CDE..AADEHHHG....VG....VWW. 
+W	right	1 	 99 SB.CDESB.CDE..AADEHHHG....VG....V.WW 
+D	down	1 	 98 SB.C.ESB.CDE..AADEHHHGD...VG....V.WW 
+A	left	2 	 97 SB.C.ESB.CDEAA..DEHHHGD...VG....V.WW 
+G	down	1 	 99 SB.C.ESB.CDEAA..DEHHH.D...VG....VGWW 
+H	right	1 	 99 SB.C.ESB.CDEAA..DE.HHHD...VG....VGWW 
+D	down	1 	 97 SB.C.ESB.C.EAA..DE.HHHD...VGD...VGWW 
+A	right	1 	 96 SB.C.ESB.C.E.AA.DE.HHHD...VGD...VGWW 
+S	down	2 	 97 .B.C.E.B.C.ESAA.DESHHHD...VGD...VGWW 
+E	down	2 	 93 .B.C...B.C..SAA.DESHHHDE..VGDE..VGWW 
+A	right	1 	 95 .B.C...B.C..S.AADESHHHDE..VGDE..VGWW 
+D	up	2 	 95 .B.CD..B.CD.S.AADESHHH.E..VG.E..VGWW 
+E	up	2 	 91 .B.CDE.B.CDES.AADESHHH....VG....VGWW 
+S	down	1 	 96 .B.CDE.B.CDE..AADESHHH..S.VG....VGWW 
+H	right	1 	 98 .B.CDE.B.CDE..AADES.HHH.S.VG....VGWW 
+B	down	3 	 97 ...CDE...CDE..AADESBHHH.SBVG....VGWW 
+A	left	1 	 94 ...CDE...CDE.AA.DESBHHH.SBVG....VGWW 
+S	up	3 	 93 S..CDES..CDE.AA.DE.BHHH..BVG....VGWW 
+E	down	1 	 90 S..CD.S..CDE.AA.DE.BHHHE.BVG....VGWW 
+S	down	2 	 91 ...CD....CDESAA.DESBHHHE.BVG....VGWW 
+E	down	1 	 89 ...CD....CD.SAA.DESBHHHE.BVG.E..VGWW 
+B	down	1 	 96 ...CD....CD.SAA.DES.HHHE.BVG.E.BVGWW 
+H	left	1 	 97 ...CD....CD.SAA.DESHHH.E.BVG.E.BVGWW 
+S	up	1 	 90 ...CD.S..CD.SAA.DE.HHH.E.BVG.E.BVGWW 
+H	left	1 	 96 ...CD.S..CD.SAA.DEHHH..E.BVG.E.BVGWW 
+G	up	1 	 98 ...CD.S..CD.SAA.DEHHHG.E.BVG.E.BV.WW 
+E	up	1 	 88 ...CD.S..CDESAA.DEHHHG.E.BVG...BV.WW 
+D	down	1 	 94 ...C..S..CDESAA.DEHHHGDE.BVG...BV.WW 
+G	down	1 	 97 ...C..S..CDESAA.DEHHH.DE.BVG...BVGWW 
+S	up	1 	 89 S..C..S..CDE.AA.DEHHH.DE.BVG...BVGWW 
+A	left	1 	 93 S..C..S..CDEAA..DEHHH.DE.BVG...BVGWW 
+E	down	1 	 87 S..C..S..CD.AA..DEHHH.DE.BVG.E.BVGWW 
+G	up	1 	 96 S..C..S..CD.AA..DEHHHGDE.BVG.E.BV.WW 
+W	left	1 	 98 S..C..S..CD.AA..DEHHHGDE.BVG.E.BVWW. 
+E	down	1 	 86 S..C..S..CD.AA..D.HHHGDE.BVG.E.BVWWE 
+A	right	2 	 91 S..C..S..CD...AAD.HHHGDE.BVG.E.BVWWE 
+S	down	1 	 88 ...C..S..CD.S.AAD.HHHGDE.BVG.E.BVWWE 
+E	up	3 	 83 ...C.ES..CDES.AADEHHHGD..BVG...BVWW. 
+W	right	1 	 97 ...C.ES..CDES.AADEHHHGD..BVG...BV.WW 
+G	down	1 	 95 ...C.ES..CDES.AADEHHH.D..BVG...BVGWW 
+H	right	1 	 95 ...C.ES..CDES.AADE.HHHD..BVG...BVGWW 
+S	up	1 	 87 S..C.ES..CDE..AADE.HHHD..BVG...BVGWW 
+D	down	1 	 93 S..C.ES..C.E..AADE.HHHD..BVGD..BVGWW 
+S	down	4 	 83 ...C.E...C.E..AADE.HHHD.SBVGD.SBVGWW 
+A	left	2 	 89 ...C.E...C.EAA..DE.HHHD.SBVGD.SBVGWW 
+D	up	2 	 91 ...CDE...CDEAA..DE.HHH..SBVG..SBVGWW 
+H	right	2 	 93 ...CDE...CDEAA..DE...HHHSBVG..SBVGWW 
+V	up	4 	 96 ..VCDE..VCDEAA..DE...HHHSB.G..SB.GWW 
+H	left	2 	 91 ..VCDE..VCDEAA..DE.HHH..SB.G..SB.GWW 
+D	down	2 	 89 ..VC.E..VC.EAA..DE.HHHD.SB.GD.SB.GWW 
+A	right	2 	 87 ..VC.E..VC.E..AADE.HHHD.SB.GD.SB.GWW 
+H	left	1 	 90 ..VC.E..VC.E..AADEHHH.D.SB.GD.SB.GWW 
+G	up	1 	 94 ..VC.E..VC.E..AADEHHHGD.SB.GD.SB..WW 
+W	left	2 	 95 ..VC.E..VC.E..AADEHHHGD.SB.GD.SBWW.. 
+D	down	1 	 88 ..VC.E..VC.E..AA.EHHHGD.SB.GD.SBWWD. 
+A	right	1 	 86 ..VC.E..VC.E...AAEHHHGD.SB.GD.SBWWD. 
+E	down	3 	 80 ..VC....VC.....AA.HHHGDESB.GDESBWWDE 
+A	right	1 	 85 ..VC....VC......AAHHHGDESB.GDESBWWDE 
 
 [['.' '.' 'V' 'C' '.' '.']
- ['S' '.' 'V' 'C' '.' '.']
- ['S' '.' '.' '.' 'A' 'A']
+ ['.' '.' 'V' 'C' '.' '.']
+ ['.' '.' '.' '.' 'A' 'A']
  ['H' 'H' 'H' 'G' 'D' 'E']
- ['.' 'B' '.' 'G' 'D' 'E']
- ['.' 'B' 'W' 'W' 'D' 'E']]
+ ['S' 'B' '.' 'G' 'D' 'E']
+ ['S' 'B' 'W' 'W' 'D' 'E']]

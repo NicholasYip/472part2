@@ -10,32 +10,27 @@ Initial board configuration: ..E..OWWE..OQAABBCQIIIHC.Z..HC.ZYYDD
 Car fuel available: {'E': 100, 'O': 100, 'W': 100, 'Q': 100, 'A': 100, 'B': 100, 'C': 100, 'I': 100, 'H': 100, 'Z': 100, 'Y': 100, 'D': 100}
 
 
-Runtime: 0.022884130477905273 seconds
-Search path length: 36
-Solution path length: 18
-Solution path: Q down 1 -> A left 1 -> B left 1 -> Q down 1 -> I left 1 -> H up 3 -> I right 2 -> Q up 1 -> Z up 1 -> Y left 1 -> D left 1 -> C down 1 -> Q down 1 -> A right 1 -> Q up 2 -> Y left 1 -> A right 3 -> 
+Runtime: 0.013716936111450195 seconds
+Search path length: 28
+Solution path length: 13
+Solution path: Q down 1 -> A left 1 -> B left 1 -> H up 3 -> I right 1 -> Q down 1 -> Z up 1 -> Y left 1 -> D left 1 -> C down 1 -> Q up 1 -> A right 4 -> 
 
 Q	down	1 	 99 ..E..OWWE..O.AABBCQIIIHCQZ..HC.ZYYDD 
 A	left	1 	 99 ..E..OWWE..OAA.BBCQIIIHCQZ..HC.ZYYDD 
 B	left	1 	 99 ..E..OWWE..OAABB.CQIIIHCQZ..HC.ZYYDD 
-Q	down	1 	 98 ..E..OWWE..OAABB.C.IIIHCQZ..HCQZYYDD 
-I	left	1 	 99 ..E..OWWE..OAABB.CIII.HCQZ..HCQZYYDD 
-H	up	3 	 97 ..E.HOWWE.HOAABB.CIII..CQZ...CQZYYDD 
-I	right	2 	 97 ..E.HOWWE.HOAABB.C..IIICQZ...CQZYYDD 
-Q	up	1 	 97 ..E.HOWWE.HOAABB.CQ.IIICQZ...C.ZYYDD 
-Z	up	1 	 99 ..E.HOWWE.HOAABB.CQZIIICQZ...C..YYDD 
-Y	left	1 	 99 ..E.HOWWE.HOAABB.CQZIIICQZ...C.YY.DD 
-D	left	1 	 99 ..E.HOWWE.HOAABB.CQZIIICQZ...C.YYDD. 
-C	down	1 	 99 ..E.HOWWE.HOAABB..QZIIICQZ...C.YYDDC 
-Q	down	1 	 96 ..E.HOWWE.HOAABB...ZIIICQZ...CQYYDDC 
-A	right	1 	 98 ..E.HOWWE.HO.AA....ZIIICQZ...CQYYDDC 
-Q	up	2 	 94 ..E.HOWWE.HOQAA...QZIIIC.Z...C.YYDDC 
-Y	left	1 	 98 ..E.HOWWE.HOQAA...QZIIIC.Z...CYY.DDC 
-A	right	3 	 95 ..E.HOWWE.HOQ...AAQZIIIC.Z...CYY.DDC 
+H	up	3 	 97 ..E.HOWWE.HOAABB.CQIII.CQZ...C.ZYYDD 
+I	right	1 	 99 ..E.HOWWE.HOAABB.CQ.IIICQZ...C.ZYYDD 
+Q	down	1 	 98 ..E.HOWWE.HOAABB.C..IIICQZ...CQZYYDD 
+Z	up	1 	 99 ..E.HOWWE.HOAABB.C.ZIIICQZ...CQ.YYDD 
+Y	left	1 	 99 ..E.HOWWE.HOAABB.C.ZIIICQZ...CQYY.DD 
+D	left	1 	 99 ..E.HOWWE.HOAABB.C.ZIIICQZ...CQYYDD. 
+C	down	1 	 99 ..E.HOWWE.HOAABB...ZIIICQZ...CQYYDDC 
+Q	up	1 	 97 ..E.HOWWE.HOAA....QZIIICQZ...C.YYDDC 
+A	right	4 	 95 ..E.HOWWE.HO....AAQZIIICQZ...C.YYDDC 
 
 [['.' '.' 'E' '.' 'H' 'O']
  ['W' 'W' 'E' '.' 'H' 'O']
- ['Q' '.' '.' '.' 'A' 'A']
+ ['.' '.' '.' '.' 'A' 'A']
  ['Q' 'Z' 'I' 'I' 'I' 'C']
- ['.' 'Z' '.' '.' '.' 'C']
- ['Y' 'Y' '.' 'D' 'D' 'C']]
+ ['Q' 'Z' '.' '.' '.' 'C']
+ ['.' 'Y' 'Y' 'D' 'D' 'C']]

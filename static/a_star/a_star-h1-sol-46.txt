@@ -10,6 +10,6 @@ Initial board configuration: ..GGOR..DFORAADFO.T.DF..TVKKJJ.VIII. G20 O20 R20 D2
 Car fuel available: {'G': 20, 'O': 20, 'R': 20, 'D': 20, 'F': 100, 'A': 20, 'T': 100, 'V': 100, 'K': 100, 'J': 100, 'I': 100}
 
 
-Runtime: 3.0416879653930664 seconds
+Runtime: 3.0927469730377197 seconds
 
 No solution found GG WP 
